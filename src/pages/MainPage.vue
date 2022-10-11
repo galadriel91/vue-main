@@ -26,6 +26,12 @@
                     기술 스택을 갖추기 위해 최선을 다할 것입니다.
                 </p>
             </div>
+            <div class="mainProductWrap">
+                <h2><span>PROJECTS</span></h2>
+                <div>
+                    <MainSwiper />
+                </div>
+            </div>
         </main>
     </div>
 </template>
@@ -33,10 +39,12 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import MainSlide from '../components/main/MainSlide.vue';
+import MainSwiper from '../components/main/MainSwiper.vue';
 
 export default defineComponent({
     components: {
         MainSlide,
+        MainSwiper,
     },
 });
 </script>
