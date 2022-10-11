@@ -9,9 +9,8 @@ export const router = createRouter({
         },
         {
             path: '/',
-            redirect: '/main',
+            component: () => import('@/pages/MainPage.vue'),
         },
-
         {
             path: '/404',
             component: () => import('@/pages/NotPage.vue'),
