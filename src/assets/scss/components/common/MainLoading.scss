@@ -9,7 +9,7 @@
         div{
             position: absolute; width: 6px; height: 13px;
             display: inline-block;
-            background: #def3f7;
+            background: rgb(135, 216, 247);
             animation: lds-facebook 1.2s cubic-bezier(0, .5 , .5 ,1) infinite;
             &:nth-child(1){
                 left: 6px;
@@ -30,7 +30,7 @@
     0%{
         top: 6px;
         height: 61px;
-        background: royalblue;
+        background: rgb(21, 54, 111);
     }
     50%, 100%{
         top: 19px;
