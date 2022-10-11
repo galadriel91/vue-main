@@ -7,5 +7,9 @@ export const router = createRouter({
             path: '/',
             redirect: '/main',
         },
+        {
+            path: '/about',
+            component: () => import('@/pages/AboutPage.vue'),
+        },
     ],
 });

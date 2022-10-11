@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <div>
+        <div class="pageWrap">
             <RouterView />
         </div>
         <MainFooter />
