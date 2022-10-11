@@ -1,5 +1,9 @@
 <template>
     <div>
+        <MainHeader />
+        <div>
+            <RouterView />
+        </div>
         <MainFooter />
         <MainLoading />
     </div>
@@ -9,11 +13,13 @@
 import { defineComponent } from 'vue';
 import MainFooter from './components/common/MainFooter.vue';
 import MainLoading from './components/common/MainLoading.vue';
+import MainHeader from './components/common/MainHeader.vue';
 
 export default defineComponent({
     components: {
         MainFooter,
         MainLoading,
+        MainHeader,
     },
     setup() {
         return {};
