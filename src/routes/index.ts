@@ -27,5 +27,9 @@ export const router = createRouter({
             path: '/projects',
             component: () => import('@/pages/ProjectsPage.vue'),
         },
+        {
+            path: '/post/:id',
+            component: () => import('@/pages/PostPage.vue'),
+        },
     ],
 });
