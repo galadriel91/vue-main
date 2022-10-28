@@ -1,11 +1,14 @@
 <template>
     <div>
         <MainSlide />
-        <main></main>
+        <main>
+            <MainAbout />
+        </main>
     </div>
 </template>
 
 <script lang="ts">
+import MainAbout from '@/components/main/MainAbout.vue';
 import { defineComponent } from 'vue';
 import MainSlide from '../components/main/MainSlide.vue';
 // import MainSwiper from '../components/main/MainSwiper.vue';
@@ -13,7 +16,7 @@ import MainSlide from '../components/main/MainSlide.vue';
 export default defineComponent({
     components: {
         MainSlide,
-        // MainSwiper,
+        MainAbout,
     },
 });
 </script>
