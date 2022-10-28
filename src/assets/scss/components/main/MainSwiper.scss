@@ -8,7 +8,7 @@
         & > div{
             display: flex; flex-direction: column; justify-content: center;
             .itemPost{
-                position: relative; display: block; margin: 3rem auto; padding-bottom: .5rem; width: 42rem;
+                position: relative; display: block; margin: 3rem auto; padding-bottom: .5rem; width: 38rem;
                 & > span{
                     position: absolute; transition: all .8s; background: #000;
                     &:nth-of-type(1){
@@ -130,6 +130,18 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:360px){
+    .swiperItemWrap{
+        .itemWrap{
+            & > div{
+                .itemPost{
+                    width: 35rem;
                 }
             }
         }

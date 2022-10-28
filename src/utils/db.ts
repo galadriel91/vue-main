@@ -173,7 +173,7 @@ const db: ProjectItem[] = [
             subTitle: 'Vue & React Todo 구현',
             responsive: 'O',
             deploy: 'CAFE24',
-            backend: 'JSONPlaceholder',
+            backend: 'Firebase',
             sites: [
                 {
                     link: 'https://galadriel91.cafe24.com/vuetodo/',

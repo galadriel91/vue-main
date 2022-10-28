@@ -3,8 +3,9 @@
         <swiper
             :modules="modules"
             :slides-per-view="4"
-            :space-between="30"
+            :space-between="10"
             :autoplay="autoplay"
+            :breakpoints="breakpoints"
         >
             <swiper-slide v-for="item in projectsList" :key="item.id">
                 <div class="itemWrap">
@@ -143,10 +144,16 @@ export default defineComponent({
         const autoplay = ref({
             delay: 3000,
         });
-        const breakpoints = ref({});
+        const breakpoints = ref({
+            360: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+        });
         return {
             autoplay,
             projectsList,
+            breakpoints,
             modules: [Autoplay],
         };
     },
