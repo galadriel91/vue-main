@@ -9,6 +9,9 @@
                 <MainAbout />
             </div>
             <div class="section">
+                <MainProducts />
+            </div>
+            <div class="section">
                 <MainContact />
             </div>
         </FullPage>
@@ -20,6 +23,7 @@ import { defineComponent, reactive } from 'vue';
 import MainHeader from './components/common/MainHeader.vue';
 import MainAbout from './components/main/MainAbout.vue';
 import MainContact from './components/main/MainContact.vue';
+import MainProducts from './components/main/MainProducts.vue';
 import MainSlide from './components/main/MainSlide.vue';
 
 export default defineComponent({
@@ -28,13 +32,14 @@ export default defineComponent({
         MainContact,
         MainHeader,
         MainSlide,
+        MainProducts,
     },
     setup() {
         const options = reactive({
             licenseKey: 'YOUR_KEY_HEERE',
             menu: '#menu',
             anchors: ['page1', 'page2', 'page3'],
-            sectionsColor: ['#fff', '#f7f7f7', '#0798ec'],
+            sectionsColor: ['#fff', '#f7f7f7', '#fff', '#fff'],
         });
         return {
             options,
