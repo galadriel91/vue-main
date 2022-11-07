@@ -5,6 +5,7 @@
             <div class="section">
                 <MainSlide />
                 <MainIntro />
+                <!-- <MainSwiper /> -->
             </div>
             <div class="section">
                 <MainAbout />
@@ -27,6 +28,7 @@ import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSlide from './components/main/MainSlide.vue';
 import MainIntro from './components/main/MainIntro.vue';
+// // import MainSwiper from './components/main/MainSwiper.vue';
 
 export default defineComponent({
     components: {
@@ -36,6 +38,7 @@ export default defineComponent({
         MainHeader,
         MainSlide,
         MainProjects,
+        // MainSwiper,
     },
     setup() {
         const options = reactive({
