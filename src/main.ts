@@ -1,10 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import vuetify from './plugins/vuetify'
-import { loadFonts } from './plugins/webfontloader'
+import 'vue-fullpage.js/dist/style.css';
+import VueFullPage from 'vue-fullpage.js';
 
-loadFonts()
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
+const pinia = createPinia();
 
-createApp(App)
-  .use(vuetify)
-  .mount('#app')
+createApp(App).use(VueFullPage).use(pinia).mount('#app');
