@@ -5,7 +5,7 @@
             <div class="section">
                 <MainSlide />
             </div>
-            <div class="section">
+            <!-- <div class="section">
                 <MainAbout />
             </div>
             <div class="section">
@@ -13,7 +13,7 @@
             </div>
             <div class="section">
                 <MainContact />
-            </div>
+            </div> -->
         </FullPage>
     </div>
 </template>
