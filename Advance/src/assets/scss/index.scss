@@ -31,6 +31,10 @@ button{
     margin-top: 8rem;
 }
 
+.fp-watermark{
+    display: none !important;
+}
+
 @media all and (max-width:1080px){
     .pageWrap{
         margin-top: 7rem;

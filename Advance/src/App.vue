@@ -42,7 +42,7 @@ export default defineComponent({
     },
     setup() {
         const options = reactive({
-            licenseKey: '467c7391a4e5ee3b84ac1f9ee3b1ca02',
+            licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
             anchors: ['home', 'about', 'projects', 'contact'],
             sectionsColor: ['#fff', '#f7f7f7', '#fff', '#fff'],
