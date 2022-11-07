@@ -38,7 +38,7 @@ export default defineComponent({
         const options = reactive({
             licenseKey: 'YOUR_KEY_HEERE',
             menu: '#menu',
-            anchors: ['page1', 'page2', 'page3'],
+            anchors: ['home', 'about', 'projects', 'contact'],
             sectionsColor: ['#fff', '#f7f7f7', '#fff', '#fff'],
         });
         return {

@@ -1,27 +1,21 @@
 <template>
     <header>
         <div class="headerWrap">
-            <h1><RouterLink to="/">PORTFOLIO</RouterLink></h1>
+            <h1><a href="/">PORTFOLIO</a></h1>
             <div>
                 <nav :class="{ showing: isActive }">
                     <ul>
                         <li @click="onClickRemove">
-                            <RouterLink to="/"><span>Home</span></RouterLink>
+                            <a href="/"><span>Home</span></a>
                         </li>
                         <li @click="onClickRemove">
-                            <RouterLink to="/about"
-                                ><span>About</span></RouterLink
-                            >
+                            <a href="/about"><span>About</span></a>
                         </li>
                         <li @click="onClickRemove">
-                            <RouterLink to="/projects"
-                                ><span>Projects</span></RouterLink
-                            >
+                            <a href="/projects"><span>Projects</span></a>
                         </li>
                         <li @click="onClickRemove">
-                            <RouterLink to="/contact"
-                                ><span>Contact</span></RouterLink
-                            >
+                            <a href="/contact"><span>Contact</span></a>
                         </li>
                     </ul>
                 </nav>
