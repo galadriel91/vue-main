@@ -8,10 +8,10 @@
             <div class="section">
                 <MainAbout />
             </div>
-            <!-- <div class="section">
-                <MainProducts />
-            </div>
             <div class="section">
+                <MainProjects />
+            </div>
+            <!-- <div class="section">
                 <MainContact />
             </div> -->
         </FullPage>
@@ -21,9 +21,9 @@
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
 import MainAbout from '@/components/about/MainAbout.vue';
-import MainHeader from './components/common/MainHeader.vue';
+import MainHeader from '@/components/common/MainHeader.vue';
 import MainContact from './components/main/MainContact.vue';
-import MainProducts from './components/main/MainProducts.vue';
+import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSlide from './components/main/MainSlide.vue';
 
 export default defineComponent({
@@ -32,7 +32,7 @@ export default defineComponent({
         MainContact,
         MainHeader,
         MainSlide,
-        MainProducts,
+        MainProjects,
     },
     setup() {
         const options = reactive({

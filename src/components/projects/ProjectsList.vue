@@ -5,7 +5,7 @@
                 v-for="item in projectsList.slice(0, showLimits)"
                 :key="item.id"
             >
-                <RouterLink :to="`/post/${item.id}`" class="clear">
+                <a :href="`/post/${item.id}`" class="clear">
                     <span>{{ 10 > item.id ? `0${item.id}` : item.id }}.</span>
                     <h3>{{ item.title }}</h3>
                     <div>
@@ -13,7 +13,7 @@
                             {{ item.time }}
                         </span>
                     </div>
-                </RouterLink>
+                </a>
             </li>
         </transition-group>
         <button v-if="hasMorePost" @click="onClickMorePost">더보기</button>
