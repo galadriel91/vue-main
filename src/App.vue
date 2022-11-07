@@ -4,6 +4,7 @@
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
                 <MainSlide />
+                <MainIntro />
             </div>
             <div class="section">
                 <MainAbout />
@@ -25,9 +26,11 @@ import MainHeader from '@/components/common/MainHeader.vue';
 import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSlide from './components/main/MainSlide.vue';
+import MainIntro from './components/main/MainIntro.vue';
 
 export default defineComponent({
     components: {
+        MainIntro,
         MainAbout,
         MainContact,
         MainHeader,
@@ -36,7 +39,7 @@ export default defineComponent({
     },
     setup() {
         const options = reactive({
-            licenseKey: 'YOUR_KEY_HEERE',
+            licenseKey: '467c7391a4e5ee3b84ac1f9ee3b1ca02',
             menu: '#menu',
             anchors: ['home', 'about', 'projects', 'contact'],
             sectionsColor: ['#fff', '#f7f7f7', '#fff', '#fff'],
