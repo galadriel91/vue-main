@@ -5,10 +5,10 @@
             <div class="section">
                 <MainSlide />
             </div>
-            <!-- <div class="section">
+            <div class="section">
                 <MainAbout />
             </div>
-            <div class="section">
+            <!-- <div class="section">
                 <MainProducts />
             </div>
             <div class="section">
@@ -20,8 +20,8 @@
 
 <script lang="ts">
 import { defineComponent, reactive } from 'vue';
+import MainAbout from '@/components/about/MainAbout.vue';
 import MainHeader from './components/common/MainHeader.vue';
-import MainAbout from './components/main/MainAbout.vue';
 import MainContact from './components/main/MainContact.vue';
 import MainProducts from './components/main/MainProducts.vue';
 import MainSlide from './components/main/MainSlide.vue';

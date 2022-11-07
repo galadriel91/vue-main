@@ -105,5 +105,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/pages/AboutPage';
+@import '@/assets/scss/components/about/AboutPage.scss';
 </style>
