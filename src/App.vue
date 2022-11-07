@@ -11,9 +11,9 @@
             <div class="section">
                 <MainProjects />
             </div>
-            <!-- <div class="section">
+            <div class="section">
                 <MainContact />
-            </div> -->
+            </div>
         </FullPage>
     </div>
 </template>
@@ -22,7 +22,7 @@
 import { defineComponent, reactive } from 'vue';
 import MainAbout from '@/components/about/MainAbout.vue';
 import MainHeader from '@/components/common/MainHeader.vue';
-import MainContact from './components/main/MainContact.vue';
+import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSlide from './components/main/MainSlide.vue';
 

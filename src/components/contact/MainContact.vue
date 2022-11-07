@@ -36,5 +36,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/pages/ContactPage';
+@import '@/assets/scss/components/contact/MainContact.scss';
 </style>
