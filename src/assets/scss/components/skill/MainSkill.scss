@@ -1,0 +1,52 @@
+h2{
+    padding: 3rem 0; font-size: 4rem; color: #000; text-align: center;
+}
+
+.techWrap{
+    width: 132rem; margin: 5rem auto 0;
+    display: flex; justify-content: space-between;
+    & > div{
+        width: 60rem; background: #f1f1f1; border-radius: 1rem;
+        padding: 0 2rem; text-align: center;
+        h3{
+            padding: 2rem 0;
+            color: #000; font-size: 2.5rem;
+        }
+        p{
+            padding: 1.5rem 0 2rem;
+            color: #000;
+            font-size: 2rem; line-height: 3.5rem;
+        }
+    }
+    ul{
+        display: flex; justify-content: space-between;
+        .html{
+            background: url('@/assets/image/html5.png')no-repeat center center; background-size: 80% ; 
+        }
+        .css{
+            background: url('@/assets/image/css3.png')no-repeat center center; background-size: 80%
+        }
+        .ts{
+            background: url('@/assets/image/ts.png')no-repeat center center; background-size: 80%
+        }
+        .vue{
+            background: url('@/assets/image/vue.png')no-repeat center center; background-size: 80%
+        }
+        .python{
+            background: url('@/assets/image/python.png')no-repeat center center; background-size: 80% 
+        }
+        .django{
+            background: url('@/assets/image/django.png')no-repeat center center; background-size: 80% 
+        }
+        .flu{
+            background: url('@/assets/image/fluter.png')no-repeat center center; background-size: 80% 
+        }
+        .react{
+            background: url('@/assets/image/react.png')no-repeat center center; background-size: 80% 
+        }
+        li{
+            width: 13rem; height: 13rem;
+            border: 1px solid #ddd; border-radius: 1rem;
+        }
+    }
+}

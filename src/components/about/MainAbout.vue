@@ -43,46 +43,6 @@
                 </div>
             </div>
         </div>
-        <div class="skills">
-            <h2>Tech Stack</h2>
-            <div>
-                <div class="present skillbox">
-                    <h3>현재</h3>
-                    <p>
-                        가장 기본이 되는 HTML & CSS & JS를 <br class="brick" />
-                        단단하게 만들기 위해 노력하고 있습니다<br />
-                        JS의 대표적인 프레임워크와 라이브러리인
-                        <br class="brick" />
-                        Vue.js , React를 학습하고 있습니다.<br />
-                        Git을 이용하여 버전관리를 하고 있습니다.
-                    </p>
-                    <ul>
-                        <li class="html">HTML</li>
-                        <li class="css">CSS</li>
-                        <li class="js">JS</li>
-                        <li class="vue">VUE.JS</li>
-                    </ul>
-                </div>
-                <div class="future skillbox">
-                    <h3>목표</h3>
-                    <p>
-                        Python의 Django를 이용하여 풀 스택 개발자로
-                        <br class="brick" />
-                        성장하는 것을 목표로 삼고 있습니다.<br />
-                        React Native로 모바일 앱 개발도 도전하고 싶습니다.
-                        <br class="brick" />
-                        완벽보다는 최선을 다해 완료하고 <br class="brick" />
-                        발전하는 개발자가 되겠습니다.
-                    </p>
-                    <ul>
-                        <li class="python">PYTHON</li>
-                        <li class="django">DJANGO</li>
-                        <li class="db">DB</li>
-                        <li class="react">REACTNATIVE</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
