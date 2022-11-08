@@ -1,20 +1,9 @@
 <template>
     <div class="aboutWrap">
-        <h1>ABOUT ME</h1>
         <div class="introWrap">
-            <div class="introWrapLeft">
-                <img
-                    src="@/assets/image/about-pic.png"
-                    alt="경주여행 할 때 찍은 사진"
-                    @load="onLoadImage"
-                />
-            </div>
-            <div class="introWrapRight">
+            <div class="introWrapProfile">
+                <h3>Profile</h3>
                 <div class="myInfo">
-                    <h3>
-                        오늘의 꿈을 내일의 현실로<br />
-                        만들어 나가는 웹 개발 지원자.
-                    </h3>
                     <div>
                         <ul>
                             <li><span>Name</span>이문섭</li>
@@ -25,21 +14,44 @@
                         </ul>
                     </div>
                 </div>
-                <div class="myGoal">
-                    <h2 class="promise">
-                        항상 흐르는 물 처럼 <br class="mobile" />
-                        고여 있지 않겠습니다.
-                    </h2>
-                    <p class="introSelf">
-                        아버지의 유리 가게 홈페이지를 만들고 싶다는 생각이<br />
-                        웹 개발자가 되고싶다는 목표로 바뀌었습니다.<br />
-                        늦었다고 생각했을 땐 이미 늦었지만 <br />
-                        시작이 다른 사람보다 늦었다고 해서 항상
-                        <br class="brick" />
-                        뒤쳐질 거라고 생각하지 않습니다.<br />
-                        늦은 만큼 계속 정진하여 목표한 <br class="brick" />
-                        기술 역량을 갖추기 위해 나아갈 것입니다.<br />
-                    </p>
+            </div>
+            <div class="introWrapTech">
+                <h3>Tech Stack</h3>
+                <div class="myTech">
+                    <div class="myTechPresent">
+                        <h4>현재</h4>
+                        <div>
+                            <ul>
+                                <li class="html"></li>
+                                <li class="css"></li>
+                                <li class="ts"></li>
+                                <li class="vue"></li>
+                            </ul>
+                            <p>
+                                기본이 되는 HTML & CSS & TS를
+                                <br class="brick" />
+                                단단하게 만들기 위해 노력하고 있습니다<br />
+                                JS의 대표적인 프레임워크인
+                                <br class="brick" />
+                                Vue.js를 계속 단련하고 있습니다.<br />
+                            </p>
+                        </div>
+                    </div>
+                    <div class="myTechFuture">
+                        <h4>목표</h4>
+                        <ul>
+                            <li class="python"></li>
+                            <li class="django"></li>
+                            <li class="flu"></li>
+                            <li class="react"></li>
+                        </ul>
+                        <p>
+                            Python의 Django를 이용하여 풀 스택 개발자로
+                            <br class="brick" />
+                            성장하는 것을 목표로 삼고 있습니다.<br />
+                            Flutter로 모바일 앱 개발도 도전하고 싶습니다.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

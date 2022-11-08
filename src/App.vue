@@ -3,20 +3,24 @@
         <MainHeader />
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
-                <MainSlide />
+                <MainIntro />
+                <MainFooter />
             </div>
             <div class="section">
                 <MainAbout />
+                <MainWave />
             </div>
             <div class="section">
                 <MainSkill />
+                <MainFooter />
             </div>
-            <!-- <div class="section">
+            <div class="section">
                 <MainProjects />
+                <MainWave />
             </div>
             <div class="section">
                 <MainContact />
-            </div> -->
+            </div>
             <div class="section fp-auto-height">
                 <MainFooter />
             </div>
@@ -30,11 +34,10 @@ import MainAbout from '@/components/about/MainAbout.vue';
 import MainHeader from '@/components/common/MainHeader.vue';
 import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
-import MainSlide from './components/main/MainSlide.vue';
 import MainIntro from './components/main/MainIntro.vue';
 import MainFooter from './components/common/MainFooter.vue';
-import MainSwiper from './components/main/MainSwiper.vue';
 import MainSkill from './components/skills/MainSkill.vue';
+import MainWave from './components/common/MainWave.vue';
 
 export default defineComponent({
     components: {
@@ -42,11 +45,10 @@ export default defineComponent({
         MainAbout,
         MainContact,
         MainHeader,
-        MainSlide,
         MainProjects,
         MainFooter,
-        MainSwiper,
         MainSkill,
+        MainWave,
     },
     setup() {
         const options = reactive({
@@ -54,7 +56,7 @@ export default defineComponent({
             menu: '#menu',
             responsiveHeight: 800,
             anchors: ['home', 'about', 'projects', 'contact'],
-            sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
+            sectionsColor: ['#fff', '#bceef8', '#fff', '#bceef8', '#fff'],
         });
         return {
             options,

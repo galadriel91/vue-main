@@ -29,5 +29,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/components/common/MainFooter';
+@import '@/assets/scss/components/common/MainWave';
 </style>

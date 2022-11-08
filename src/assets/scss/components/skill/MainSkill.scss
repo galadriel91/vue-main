@@ -3,10 +3,10 @@ h2{
 }
 
 .techWrap{
-    width: 132rem; margin: 5rem auto 0;
+    width: 132rem; margin: 5rem auto 0; background: #fff; padding: 3rem; border-radius: 1rem;
     display: flex; justify-content: space-between;
     & > div{
-        width: 60rem; background: #f1f1f1; border-radius: 1rem;
+        width: 60rem;
         padding: 0 2rem; text-align: center;
         h3{
             padding: 2rem 0;
