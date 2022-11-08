@@ -6,6 +6,9 @@
                 <MainSlide />
             </div>
             <div class="section">
+                <MainSkill />
+            </div>
+            <!-- <div class="section">
                 <MainAbout />
             </div>
             <div class="section">
@@ -13,7 +16,7 @@
             </div>
             <div class="section">
                 <MainContact />
-            </div>
+            </div> -->
             <div class="section fp-auto-height">
                 <MainFooter />
             </div>
@@ -31,6 +34,7 @@ import MainSlide from './components/main/MainSlide.vue';
 import MainIntro from './components/main/MainIntro.vue';
 import MainFooter from './components/common/MainFooter.vue';
 import MainSwiper from './components/main/MainSwiper.vue';
+import MainSkill from './components/skills/MainSkill.vue';
 
 export default defineComponent({
     components: {
@@ -42,6 +46,7 @@ export default defineComponent({
         MainProjects,
         MainFooter,
         MainSwiper,
+        MainSkill,
     },
     setup() {
         const options = reactive({
