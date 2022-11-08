@@ -1,6 +1,6 @@
 header{
-    position: fixed; left: 50%; top: 0; transform: translateX(-50%);
-    width: 180rem; z-index: 10; background: #fff;
+    position: fixed; left: 2.5%; top: 0; 
+    width: 95%; z-index: 10; 
 }
 
 .headerWrap{
@@ -9,7 +9,7 @@ header{
     h1{
         a{
             display: block;
-            font-size: 3.5rem; font-weight: bold; color: #000; line-height: 8rem;
+            font-size: 4rem; font-weight: bold; color: #000; line-height: 8rem;
         }
     }
     div{
@@ -46,7 +46,7 @@ header{
             }
         }
         .wholeBtn{
-            display: none; height: 8rem; width: 8rem ; background: #fff; z-index: 9998; text-align: center;
+            display: block; height: 8rem; width: 8rem ; z-index: 9998; text-align: center;
             span{
                 position: relative; margin-top: 4rem; 
                 display: inline-block; width: 5rem; height: .2rem; background: #000; transition: all .5s;

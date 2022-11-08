@@ -4,9 +4,8 @@
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
                 <MainSlide />
-                <!-- <MainSwiper /> -->
             </div>
-            <!-- <div class="section">
+            <div class="section">
                 <MainAbout />
             </div>
             <div class="section">
@@ -17,7 +16,7 @@
             </div>
             <div class="section fp-auto-height">
                 <MainFooter />
-            </div> -->
+            </div>
         </FullPage>
     </div>
 </template>
@@ -31,7 +30,7 @@ import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSlide from './components/main/MainSlide.vue';
 import MainIntro from './components/main/MainIntro.vue';
 import MainFooter from './components/common/MainFooter.vue';
-// // import MainSwiper from './components/main/MainSwiper.vue';
+import MainSwiper from './components/main/MainSwiper.vue';
 
 export default defineComponent({
     components: {
@@ -42,13 +41,15 @@ export default defineComponent({
         MainSlide,
         MainProjects,
         MainFooter,
+        MainSwiper,
     },
     setup() {
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
+            parallax: true,
             menu: '#menu',
             anchors: ['home', 'about', 'projects', 'contact'],
-            sectionsColor: ['#fff', '#f7f7f7', '#fff', '#fff'],
+            sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
         });
         return {
             options,

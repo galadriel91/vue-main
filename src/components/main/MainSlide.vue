@@ -53,7 +53,7 @@ export default defineComponent({
             OFF_LOADING();
         };
         onMounted(() => {
-            interval.value = setInterval(onChangeScreen, 3000);
+            interval.value = setInterval(onChangeScreen, 4000);
         });
         onBeforeUnmount(() => {
             clearInterval(interval.value);

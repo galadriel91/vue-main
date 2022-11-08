@@ -1,6 +1,6 @@
 .visualWrap{
-    width: 100%; margin: 8rem auto 0; 
-    position: relative; min-height: calc(100vh - 8rem);
+    width: 100%;
+    position: relative; min-height: 100vh;
     div{
         &.on{
             z-index: 1; opacity: 1; visibility: visible;

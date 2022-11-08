@@ -3,7 +3,7 @@
         <div class="headerWrap">
             <h1><a href="/">PORTFOLIO</a></h1>
             <div>
-                <nav :class="{ showing: isActive }">
+                <!-- <nav :class="{ showing: isActive }">
                     <ul>
                         <li @click="onClickRemove">
                             <a href="/"><span>Home</span></a>
@@ -18,7 +18,7 @@
                             <a href="/contact"><span>Contact</span></a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
                 <a
                     href="javascript:void(0)"
                     class="wholeBtn"
