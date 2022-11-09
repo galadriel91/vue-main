@@ -54,7 +54,7 @@ export default defineComponent({
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
-            responsiveHeight: 800,
+            // responsiveHeight: 800,
             anchors: ['home', 'about', 'projects', 'contact'],
             sectionsColor: ['#fff', '#bceef8', '#fff', '#bceef8', '#fff'],
         });
