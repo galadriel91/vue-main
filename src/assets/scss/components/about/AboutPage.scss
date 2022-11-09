@@ -5,7 +5,7 @@
     }
     .introWrap{
         width: 100rem; margin: 3rem auto; background: #fff; border-radius: 1rem;
-        padding: 2rem 0 0;
+        padding: 2rem 0 1rem;
         h3{
             border-bottom: 1px solid #e5e5e5;
             padding-bottom: 2rem; text-align: center;
@@ -15,10 +15,23 @@
             padding: 0 2rem;
         }
         &Profile{
+            &Wrap{
+                display: flex; justify-content: space-between; align-items: center;
+                img{
+                    width: 30%; height: 35rem; border-radius: 1rem;
+                }
+                .myInfoWrap{
+                    width: 70%;
+                }
+            }
             .myInfo{
-                display: flex; justify-content: center;
+                // padding: 1rem 0;
+                display: flex; justify-content: space-around; align-items: center;
                 div{
                     position: relative;
+                    img{
+                        width: 18rem; height: 18rem; border-radius: 50%;
+                    }
                     ul{
                         li{
                             margin: 1.5rem 0; font-size: 1.8rem; color: #323232;

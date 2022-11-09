@@ -27,11 +27,11 @@
 <script lang="ts">
 import { defineComponent, onBeforeUnmount, onMounted, ref } from 'vue';
 import { useCommon } from '@/store/commonStore';
+
 export default defineComponent({
     setup() {
         const commonStore = useCommon();
         const { OFF_LOADING } = commonStore;
-
         const isFirst = ref(true);
         const isSecond = ref(false);
         const isThird = ref(false);

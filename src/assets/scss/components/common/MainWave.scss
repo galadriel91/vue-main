@@ -1,5 +1,5 @@
 .waveWrap{
-    position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 10;
+    position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 5;
     @-webkit-keyframes move{
         from{-webkit-mask-position:0 top;mask-position:0 top}
         to{-webkit-mask-position:-150rem top;mask-position:-150rem top}
