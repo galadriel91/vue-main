@@ -1,7 +1,7 @@
 <template>
     <div class="contact">
         <!-- <h1>CONTACT</h1> -->
-        <ContactInfo />
+        <!-- <ContactInfo /> -->
         <ContactForm />
         <ContactModal :isModal="isModal">
             <template #alertMessage>{{ modalMessage }}</template>

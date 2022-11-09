@@ -1,12 +1,17 @@
 h2{
-    padding: 3rem 0; font-size: 4rem; color: #000; text-align: center;
+    position: relative;
+    padding-bottom: 2rem; text-align: center;
+    font-size: 4rem; color: #222; 
+    &::after{
+        content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;
+    }
 }
 
 .techWrap{
-    width: 132rem; margin: 5rem auto 0; background: #fff; padding: 3rem; border-radius: 1rem;
+    width: 100rem; margin: 3rem auto; background: #fff; border-radius: 1rem;
     display: flex; justify-content: space-between;
     & > div{
-        width: 60rem;
+        width: 50rem;
         padding: 0 2rem; text-align: center;
         h3{
             padding: 2rem 0;
@@ -15,11 +20,11 @@ h2{
         p{
             padding: 1.5rem 0 2rem;
             color: #000;
-            font-size: 2rem; line-height: 3.5rem;
+            font-size: 1.8rem; line-height: 3.2rem;
         }
     }
     ul{
-        display: flex; justify-content: space-between;
+        display: flex; justify-content: center;
         .html{
             background: url('@/assets/image/html5.png')no-repeat center center; background-size: 80% ; 
         }
@@ -45,8 +50,61 @@ h2{
             background: url('@/assets/image/react.png')no-repeat center center; background-size: 80% 
         }
         li{
-            width: 13rem; height: 13rem;
+            width: 7rem; height: 7rem; margin: 0 1rem;
             border: 1px solid #ddd; border-radius: 1rem;
         }
     }
 }
+// &Tech{
+        //     h3{
+        //         padding-top: 2rem;
+        //         border-top: 1px solid #e5e5e5;
+        //     }
+        //     .myTech{
+        //         display: flex; justify-content: space-between;
+        //         & > div{
+        //             width: 50rem;
+        //             padding: 0 2rem; text-align: center;
+        //             h4{
+        //                 padding: 1.5rem 0;
+        //                 color: #000; font-size: 2.5rem;
+        //             }
+        //             p{
+        //                 padding: 1.5rem 0 2rem;
+        //                 color: #323232;
+        //                 font-size: 1.6rem; line-height: 3rem;
+        //             }
+        //         }
+        //     }
+        //     ul{
+        //         display: flex; justify-content: center;
+        //         li{
+        //             width: 7rem; height: 7rem; margin: 0 1rem;
+        //             border: 1px solid #ddd; border-radius: 1rem;
+        //         }
+        //         .html{
+        //             background: url('@/assets/image/html5.png')no-repeat center center; background-size: 80% ; 
+        //         }
+        //         .css{
+        //             background: url('@/assets/image/css3.png')no-repeat center center; background-size: 80%
+        //         }
+        //         .ts{
+        //             background: url('@/assets/image/ts.png')no-repeat center center; background-size: 80%
+        //         }
+        //         .vue{
+        //             background: url('@/assets/image/vue.png')no-repeat center center; background-size: 80%
+        //         }
+        //         .python{
+        //             background: url('@/assets/image/python.png')no-repeat center center; background-size: 80% 
+        //         }
+        //         .django{
+        //             background: url('@/assets/image/django.png')no-repeat center center; background-size: 80% 
+        //         }
+        //         .flu{
+        //             background: url('@/assets/image/fluter.png')no-repeat center center; background-size: 80% 
+        //         }
+        //         .react{
+        //             background: url('@/assets/image/react.png')no-repeat center center; background-size: 80% 
+        //         }
+        //     }
+        // }

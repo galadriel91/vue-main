@@ -11,7 +11,7 @@
             </div>
             <div class="section">
                 <MainSkill />
-                <MainFooter />
+                <MainWave />
             </div>
             <div class="section">
                 <MainProjects />
@@ -57,7 +57,7 @@ export default defineComponent({
             menu: '#menu',
             // responsiveHeight: 800,
             anchors: ['home', 'about', 'projects', 'contact'],
-            sectionsColor: ['#fff', '#fff', '#fff', '#bceef8', '#fff'],
+            sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         });
 
         const setScreenSize = () => {
