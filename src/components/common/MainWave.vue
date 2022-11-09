@@ -1,31 +1,16 @@
 <template>
     <div class="waveWrap">
         <div class="wave wave-bg">&nbsp;</div>
-        <footer>
-            <div class="footerWrap">
-                <h2>© {{ YEAR }} LEE MOON SEOB</h2>
-                <a href="https://github.com/galadriel91" target="_blank">
-                    <img
-                        src="@/assets/image/github.png"
-                        alt="깃허브 로고 아이콘"
-                    />
-                </a>
-            </div>
-        </footer>
+        <div class="waveInnerWrap">
+            <div></div>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, type ComputedRef } from 'vue';
+import { defineComponent } from 'vue';
 
-export default defineComponent({
-    setup() {
-        const YEAR: ComputedRef<number> = computed(() => {
-            return new Date().getFullYear();
-        });
-        return { YEAR };
-    },
-});
+export default defineComponent({});
 </script>
 
 <style lang="scss" scoped>

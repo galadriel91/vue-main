@@ -1,7 +1,5 @@
 .waveWrap{
-    position: absolute; left: 0; bottom: 0; width: 100%; z-index: 10; 
-}
-div{
+    position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 10;
     @-webkit-keyframes move{
         from{-webkit-mask-position:0 top;mask-position:0 top}
         to{-webkit-mask-position:-150rem top;mask-position:-150rem top}
@@ -17,21 +15,12 @@ div{
         animation: move 10s linear infinite; -webkit-animation: move 10s linear infinite;
     }
     .wave-bg{
-        background: #fff;
+        background: #fff; 
     }
-    footer{
-        text-align: center; background: #fff; 
-        .footerWrap{
+    .waveInnerWrap{
+        text-align: center; background: #fff;
+        & > div{
             height: 8rem;
-            h2{
-                font-size: 2rem; color: #000;
-            }
-            a{
-                img{
-                    margin-top: .5rem;
-                    width: 4rem; height: 4rem;
-                }
-            }
         }
     }
 }
