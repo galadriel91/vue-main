@@ -3,9 +3,7 @@
         <MainHeader />
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
-                <!-- <MainIntro /> -->
                 <MainSlide />
-                <MainWave />
             </div>
             <div class="section">
                 <MainAbout />
@@ -59,7 +57,7 @@ export default defineComponent({
             menu: '#menu',
             // responsiveHeight: 800,
             anchors: ['home', 'about', 'projects', 'contact'],
-            sectionsColor: ['#f1f1f1', '#bceef8', '#fff', '#bceef8', '#fff'],
+            sectionsColor: ['#fff', '#fff', '#fff', '#bceef8', '#fff'],
         });
 
         const setScreenSize = () => {
