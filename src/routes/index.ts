@@ -1,4 +1,5 @@
 import { createWebHistory, createRouter } from 'vue-router';
+import { getPage } from './guard';
 
 export const router = createRouter({
     history: createWebHistory(),
@@ -6,10 +7,7 @@ export const router = createRouter({
         {
             path: '/',
             component: () => import('@/pages/MainPage.vue'),
-        },
-        {
-            path: '/post/:id',
-            component: () => import('@/pages/PostPage.vue'),
+            beforeEnter: getPage(),
         },
     ],
 });

@@ -4,7 +4,7 @@
             <div class="section">
                 <MainSlide />
             </div>
-            <div class="section about">
+            <div class="section">
                 <MainAbout />
                 <MainWave />
             </div>
@@ -13,6 +13,7 @@
                 <MainWave />
             </div>
             <div class="section">
+                <!-- <TheProjects /> -->
                 <MainProjects />
                 <MainWave />
             </div>
@@ -50,11 +51,10 @@ export default defineComponent({
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
-            // responsiveHeight: 800,
-            // anchors: ['home', 'about', 'projects', 'contact'],
+            // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
+            lockAnchors: true,
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         });
-
         return {
             options,
         };

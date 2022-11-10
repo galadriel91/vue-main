@@ -31,6 +31,7 @@ export default defineComponent({
             );
             return postItem as ProjectItem;
         });
+
         return {
             POST,
         };
