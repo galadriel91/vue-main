@@ -5,7 +5,7 @@
             <div class="section">
                 <MainSlide />
             </div>
-            <div class="section">
+            <div class="section about">
                 <MainAbout />
                 <MainWave />
             </div>

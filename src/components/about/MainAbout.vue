@@ -67,5 +67,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/components/about/AboutPage.scss';
+@import '@/assets/scss/components/about/MainAbout.scss';
 </style>
