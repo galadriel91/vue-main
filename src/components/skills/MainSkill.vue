@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h2>Tech Stack</h2>
+    <div class="allTechWrap">
+        <h2>TECH STACK</h2>
         <div class="techWrap">
             <div class="techWrapPresent">
                 <h3>현재</h3>
