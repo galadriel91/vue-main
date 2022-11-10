@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-        <!-- <h1>CONTACT</h1> -->
+        <h1>CONTACT</h1>
         <!-- <ContactInfo /> -->
         <ContactForm />
         <ContactModal :isModal="isModal">
@@ -13,13 +13,11 @@
 import { defineComponent } from 'vue';
 import { useCommon } from '@/store/commonStore';
 import { storeToRefs } from 'pinia';
-import ContactInfo from '@/components/contact/ContactInfo.vue';
 import ContactForm from '@/components/contact/ContactForm.vue';
 import ContactModal from '@/components/contact/ContactModal.vue';
 
 export default defineComponent({
     components: {
-        ContactInfo,
         ContactForm,
         ContactModal,
     },

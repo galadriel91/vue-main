@@ -33,7 +33,6 @@ import MainAbout from '@/components/about/MainAbout.vue';
 import MainHeader from '@/components/common/MainHeader.vue';
 import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
-import MainIntro from './components/main/MainIntro.vue';
 import MainFooter from './components/common/MainFooter.vue';
 import MainSkill from './components/skills/MainSkill.vue';
 import MainWave from './components/common/MainWave.vue';
@@ -41,7 +40,6 @@ import MainSlide from './components/main/MainSlide.vue';
 
 export default defineComponent({
     components: {
-        MainIntro,
         MainAbout,
         MainContact,
         MainHeader,

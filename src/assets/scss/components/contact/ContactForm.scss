@@ -1,43 +1,36 @@
 .contactForm{
     width: 100rem; margin: 5rem auto 8rem;
+    display: flex; align-items: center; justify-content: center;
     form{
+        width: 50rem;
         div{
-            display: inline-block; vertical-align: top; width: 45%;
-            margin: 2rem 2%;
-            label{
-                text-align: left;
-                display: block; margin-bottom: 2rem;
-                font-size: 2rem; font-weight: bold; color: #000;
-                &.failCheck{
-                    color: crimson;
-                }
-            }
+            display: inline-block; vertical-align: top; width: 23rem;
+            margin: .5rem;
             input{
-                width: 100%; height: 5rem; border: 1px solid #ddd; font-size: 1.5rem; text-indent: 1rem; font-family: 'ChosunSg';
-                border-bottom: 2px solid #777;
-                font-size: 1.5rem; font-weight: normal; color: #000;
+                width: 100%; height: 5rem; border: 1px solid #000; font-size: 1.5rem; text-indent: 1rem; font-family: 'ChosunSg';
+                font-size: 1.5rem; font-weight: bold; color: #000; 
                 &::placeholder{
                     color: #000;
                 }
             }
         }
         .inputContentWrap{
-            width: 94%;
+            width: 47rem;
             textarea{
                 padding: 2rem 0; width: 100%; height:15rem; 
-                border: 1px solid #ddd; border-bottom: 2px solid #777; resize: none;
-                font-family: 'ChosunSg'; text-indent: 1rem;
+                border: 1px solid #000;  resize: none; 
+                
                 box-sizing: border-box; 
-                font-size: 1.5rem; font-weight: normal; color: #000;
+                font-size: 1.5rem; font-weight: bold; color: #000;
                 &::placeholder{
                     color: #000;
                 }
             }
         }
         button{
-            margin: 3.5rem 2% 0;width: 94%; height: 6rem;
-            border: 1px solid #ddd; border-bottom: 2px solid #777; background: none;
-            font-size: 1.7rem; font-weight: bold; color: #000; font-family: 'ChosunSg';
+            display: block; margin: 1rem auto 0; width: 22rem; height: 5rem;
+            border: 1px solid #000;  background: #fff; 
+            font-size: 1.6rem;  color: #000; font-family: 'ChosunSg'; font-weight: bold;
             cursor: pointer; transition: all .5s; 
             &:hover{
                 background: #eee;

@@ -2,7 +2,6 @@
     <div class="contactForm">
         <form ref="form" @submit.prevent="onSendEmail">
             <div>
-                <label for="inputName">이름</label>
                 <input
                     id="inputName"
                     type="text"
@@ -12,10 +11,6 @@
                 />
             </div>
             <div>
-                <label for="inputEmail" v-if="isValid">이메일</label>
-                <label for="inputEmail" class="failCheck" v-else
-                    >유효한 이메일을 입력해 주세요</label
-                >
                 <input
                     id="inputEmail"
                     type="text"
@@ -25,7 +20,6 @@
                 />
             </div>
             <div>
-                <label for="inputTel">연락처</label>
                 <input
                     id="inputTel"
                     type="text"
@@ -35,7 +29,6 @@
                 />
             </div>
             <div>
-                <label for="inputTitle">제목</label>
                 <input
                     id="inputTitle"
                     type="text"
@@ -45,7 +38,6 @@
                 />
             </div>
             <div class="inputContentWrap">
-                <label for="inputContent">메세지를 남겨주세요</label>
                 <textarea
                     id="inputContent"
                     type="text"

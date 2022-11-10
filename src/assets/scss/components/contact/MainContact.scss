@@ -1,14 +1,17 @@
 .contact{
     h1{
-        padding: 5rem 0;
+        position: relative;
         font-size: 4.5rem; color: #000; text-align: center;
+        &::after{
+            content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;
+        }
     }
 }
 
 @media all and (max-width: 1080px) {
     .contact{
         h1{
-            padding: 3rem 0; font-size: 3.5rem;
+            font-size: 3.5rem;
         }
     }
 }
