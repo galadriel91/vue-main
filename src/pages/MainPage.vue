@@ -13,14 +13,11 @@
                 <MainWave />
             </div>
             <div class="section">
-                <!-- <TheProjects /> -->
                 <MainProjects />
                 <MainWave />
             </div>
             <div class="section">
                 <MainContact />
-            </div>
-            <div class="section fp-auto-height">
                 <MainFooter />
             </div>
         </FullPage>

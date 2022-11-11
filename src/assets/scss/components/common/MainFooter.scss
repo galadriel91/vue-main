@@ -37,13 +37,12 @@ div{
 }
 
 @media all and (max-width: 1080px) {
-    div{
+    .waveWrap{
         .wave{
             height: 3rem;
         }
         footer{
             .footerWrap{
-                padding: 1rem 0;
                 h2{
                     font-size: 1.6rem;
                 }
