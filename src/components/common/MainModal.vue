@@ -39,5 +39,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/components/contact/ContactModal';
+@import '@/assets/scss/components/common/MainModal';
 </style>

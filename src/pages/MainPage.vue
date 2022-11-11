@@ -57,6 +57,7 @@ export default defineComponent({
             // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
             normalScrollElements: '.alertContainer .loadingWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
+            css3: true,
         });
         const YEAR: ComputedRef<number> = computed(() => {
             return new Date().getFullYear();
