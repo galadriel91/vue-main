@@ -8,6 +8,7 @@
                     placeholder="이름"
                     name="from_name"
                     v-model="name"
+                    :class="{ valid: name.length }"
                 />
             </div>
             <div>
@@ -17,6 +18,7 @@
                     placeholder="제목"
                     v-model="title"
                     name="from_title"
+                    :class="{ valid: title.length }"
                 />
             </div>
             <div>
@@ -26,6 +28,7 @@
                     placeholder="이메일"
                     name="from_email"
                     v-model="email"
+                    :class="{ valid: isValid }"
                 />
             </div>
             <div>
@@ -35,6 +38,7 @@
                     placeholder="연락처"
                     v-model="number"
                     name="from_number"
+                    :class="{ valid: number.length }"
                 />
             </div>
             <div class="inputContentWrap">
@@ -44,6 +48,7 @@
                     placeholder="내용을 입력해주세요"
                     name="from_message"
                     v-model="content"
+                    :class="{ valid: content.length }"
                 ></textarea>
             </div>
             <button class="inputButton" value="Send" type="submit">
@@ -75,7 +80,7 @@ export default defineComponent({
         const isCheck = ref(true);
         const isValid: ComputedRef<boolean> = computed(() => {
             if (email.value === '') {
-                return true;
+                return false;
             } else {
                 return checkValidateEmail(email.value);
             }

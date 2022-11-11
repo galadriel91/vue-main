@@ -12,6 +12,9 @@
                     color: #000;
                 }
                 outline: none;
+                &.valid{
+                    border-bottom: 2px solid #51B587;
+                }
             }
         }
         .inputContentWrap{
@@ -26,6 +29,9 @@
                 outline: none;
                 &::placeholder{
                     color: #000;
+                }
+                &.valid{
+                    border: 2px solid #51B587;
                 }
             }
         }
