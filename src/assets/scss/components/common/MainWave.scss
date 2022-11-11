@@ -21,6 +21,15 @@
         text-align: center; background: #bceef8;
         & > div{
             height: 8rem;
+            h2{
+                font-size: 2rem; color: #000;
+            }
+            a{
+                img{
+                    margin-top: .5rem;
+                    width: 4rem; height: 4rem;
+                }
+            }
         }
     }
 }
@@ -30,13 +39,15 @@
         .wave{
             height: 3rem;
         }
-        footer{
-            .footerWrap{
+        .waveInnerWrap{
+            & > div{
                 h2{
-                    font-size: 1.6rem;
+                    padding-top: 1rem;
+                    font-size: 1.8rem;
                 }
                 a{
                     img{
+                        margin-top: 1rem;
                         width: 3rem; height: 3rem;
                     }
                 }

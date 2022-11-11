@@ -6,30 +6,37 @@
             </div>
             <div class="section">
                 <MainAbout />
-                <MainWave />
+                <MainWave>
+                    <template #waveMessage>ABOUT ME</template>
+                </MainWave>
             </div>
             <div class="section">
                 <MainSkill />
-                <MainWave />
+                <MainWave>
+                    <template #waveMessage>SKILL</template>
+                </MainWave>
             </div>
             <div class="section">
                 <MainProjects />
-                <MainWave />
+                <MainWave>
+                    <template #waveMessage>PORTFOLIO</template>
+                </MainWave>
             </div>
             <div class="section">
                 <MainContact />
-                <MainFooter />
+                <MainWave>
+                    <template #waveMessage>© {{ YEAR }} LEE MOON SEOB</template>
+                </MainWave>
             </div>
         </FullPage>
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive } from 'vue';
+import { defineComponent, reactive, computed, type ComputedRef } from 'vue';
 import MainAbout from '@/components/about/MainAbout.vue';
 import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
-import MainFooter from '@/components/common/MainFooter.vue';
 import MainSkill from '@/components/skills/MainSkill.vue';
 import MainWave from '@/components/common/MainWave.vue';
 import MainSlide from '@/components/main/MainSlide.vue';
@@ -39,7 +46,6 @@ export default defineComponent({
         MainAbout,
         MainContact,
         MainProjects,
-        MainFooter,
         MainSkill,
         MainWave,
         MainSlide,
@@ -52,7 +58,11 @@ export default defineComponent({
             normalScrollElements: '.alertContainer .loadingWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         });
+        const YEAR: ComputedRef<number> = computed(() => {
+            return new Date().getFullYear();
+        });
         return {
+            YEAR,
             options,
         };
     },
