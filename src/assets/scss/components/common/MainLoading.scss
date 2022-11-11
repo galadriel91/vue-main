@@ -1,5 +1,5 @@
 .loadingWrap{
-    position: fixed; left: 0; top: 0; width: 100vw; height: 1000vw;
+    position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;
     background: #f7f7f7; z-index: 9998; 
     .lds-facebook{
         position: fixed; width: 64px; height: 64px;

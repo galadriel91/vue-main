@@ -52,7 +52,7 @@ export default defineComponent({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
             // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
-            lockAnchors: true,
+            normalScrollElements: '.alertContainer .loadingWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
         });
         return {
