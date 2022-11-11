@@ -5,16 +5,25 @@
                 <input
                     id="inputName"
                     type="text"
-                    placeholder="이름을 입력해주세요."
+                    placeholder="이름"
                     name="from_name"
                     v-model="name"
                 />
             </div>
             <div>
                 <input
+                    id="inputTitle"
+                    type="text"
+                    placeholder="제목"
+                    v-model="title"
+                    name="from_title"
+                />
+            </div>
+            <div>
+                <input
                     id="inputEmail"
                     type="text"
-                    placeholder="이메일을 입력해주세요"
+                    placeholder="이메일"
                     name="from_email"
                     v-model="email"
                 />
@@ -23,18 +32,9 @@
                 <input
                     id="inputTel"
                     type="text"
-                    placeholder="연락처를 입력해주세요"
+                    placeholder="연락처"
                     v-model="number"
                     name="from_number"
-                />
-            </div>
-            <div>
-                <input
-                    id="inputTitle"
-                    type="text"
-                    placeholder="제목을 입력해주세요"
-                    v-model="title"
-                    name="from_title"
                 />
             </div>
             <div class="inputContentWrap">
