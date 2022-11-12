@@ -1,9 +1,107 @@
 .itemWrap{
     position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh; overflow-y: auto;
-    background: royalblue; z-index: 9998; 
-    .closeBtn{
-        position: fixed; top: 3rem; right: 5%;
-        font-size: 5rem; background: none; color: #000;
-        cursor: pointer;
+    background: #f7f7f7; z-index: 9998; 
+    &Inner{
+        width: 100%; height: 100%; 
+        display: flex; justify-content: center; align-items: center;
+        &Info{
+            display: flex; width: 100rem; justify-content: space-around; 
+            &Image{
+            }
+            &Text{
+                h3{
+                    font-size: 1.8rem; margin-bottom: 1rem; color: #000;
+                }
+                &How{
+                    display: flex;
+                    p{
+                        margin-right: 1.5rem;
+                        font-size: 1.5rem; font-weight: bold; color: #000; 
+                    }
+                }
+                &Skill{
+                    margin-top: .5rem;
+                    display: flex; align-items: center;
+                    font-size: 1.5rem; font-weight: bold; color: #000;
+                    ul{
+                        display: flex; font-size: 0;
+                        li{
+                            margin-left: 1rem;
+                            &.icon{
+                                width: 3rem; height: 3rem;
+                            }
+                            &.html{
+                                background: url('@/assets/image/html5.png')no-repeat; background-size: cover ;
+                            }
+                            &.css{
+                                background: url('@/assets/image/css3.png')no-repeat; background-size: cover ;
+                            }
+                            &.js{
+                                background: url('@/assets/image/js.png')no-repeat; background-size: cover ;
+                            }
+                            &.vue{
+                                background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
+                            }
+                            &.react{
+                                background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
+                            }
+                            &.sass{
+                                background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
+                            }   
+                        }
+                    }
+                }
+                &Color{
+                    margin-top: 1rem;
+                    display: flex; align-items: center;
+                    p{
+                        font-size: 1.5rem; color: #000; font-weight: bold;
+                    }
+                    ul{
+                        font-size: 0; display: flex;
+                        li{
+                            margin-left: 1rem;
+                            span{
+                                display: inline-block; vertical-align: middle;
+                                font-size: 1.5rem; color: #000; font-weight: bold;
+                                &.color{
+                                    width: 2rem; height: 2rem; margin-right: 1rem; border-radius: .5rem;
+                                    background: #000; font-size: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                &Font{
+                    margin-top: 1rem;
+                    display: flex; align-items: center;
+                    p , span{
+                        font-size: 1.5rem; color: #000; font-weight: bold;
+                    }
+                    p{
+                        margin-right: 1rem;
+                    }
+                }
+                &Link{
+                    
+                }
+            }
+            &Detail{
+                p{
+                    font-size: 1.8rem; color: #000; font-weight: bold;
+                }
+                ul{
+                    li{
+                        margin-top: 1rem;
+                        font-size: 1.5rem; color: #555; font-weight: bold;
+                    }
+                }
+            }
+        }
     }
+}
+.closeBtn{
+    position: fixed; top: 3rem; right: 5%;
+    font-size: 5rem; background: none; color: #000;
+    cursor: pointer;
 }

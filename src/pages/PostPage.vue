@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <PostItem :post="POST" />
-        <MainFooter />
+        <!-- <MainFooter /> -->
     </div>
 </template>
 
@@ -13,12 +13,12 @@ import { usePost } from '@/store/postStore';
 import { storeToRefs } from 'pinia';
 import { useRoute } from 'vue-router';
 import PostItem from '../components/post/PostItem.vue';
-import MainFooter from '@/components/common/MainFooter.vue';
+// import MainFooter from '@/components/common/MainFooter.vue';
 
 export default defineComponent({
     components: {
         PostItem,
-        MainFooter,
+        // MainFooter,
     },
     setup() {
         // useLoading();

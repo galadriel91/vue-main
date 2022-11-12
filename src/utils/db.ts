@@ -27,11 +27,11 @@ const db: ProjectItem[] = [
             responsive: 'X',
             deploy: 'CAFE24',
             sites: [
-                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
                     link: 'http://galadriel91.cafe24.com/domino/',
                     name: '리뉴얼 사이트',
                 },
+                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
                     link: 'https://github.com/galadriel91/html-basic/tree/master/03.Domino',
                     name: '설명 및 코드',
