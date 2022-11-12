@@ -81,10 +81,6 @@
                             >
                         </div>
                     </div>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
                 </li>
             </ul>
         </div>

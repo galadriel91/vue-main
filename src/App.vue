@@ -6,6 +6,7 @@
         <MainModal :isModal="isModal">
             <template #alertMessage>{{ modalMessage }}</template>
         </MainModal>
+        <!-- <ProjectsItem /> -->
     </div>
 </template>
 
@@ -16,12 +17,14 @@ import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
 import { useCommon } from '@/store/commonStore';
 import { storeToRefs } from 'pinia';
+import ProjectsItem from './components/projects/ProjectsItem.vue';
 
 export default defineComponent({
     components: {
         MainHeader,
         MainLoading,
         MainModal,
+        ProjectsItem,
     },
     setup() {
         const setScreenSize = () => {

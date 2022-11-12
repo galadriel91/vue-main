@@ -1,8 +1,8 @@
 <template>
     <div class="projects">
-        <ProjectsItem />
         <div class="projectsTitle">
             <h2>PROJECTS</h2>
+            <!-- <ProjectsItem /> -->
             <ProjectsList />
         </div>
     </div>

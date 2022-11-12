@@ -1,4 +1,5 @@
 .projectsWrap{
-    position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;
-    background: #f7f7f7; z-index: 9998 !important;
+    position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh; overflow-y: scroll;
+    background: #f7f7f7; z-index: 9998; background: royalblue;
+    font-size: 3rem;
 }

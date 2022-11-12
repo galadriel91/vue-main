@@ -55,7 +55,8 @@ export default defineComponent({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
             // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
-            normalScrollElements: '.alertContainer .loadingWrap',
+            normalScrollElements:
+                '.alertContainer, .loadingWrap, .projectsWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
             css3: true,
         });
