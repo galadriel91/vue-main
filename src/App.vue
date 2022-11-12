@@ -6,7 +6,7 @@
         <MainModal :isModal="isModal">
             <template #alertMessage>{{ modalMessage }}</template>
         </MainModal>
-        <!-- <ProjectsItem /> -->
+        <ProjectsItem />
     </div>
 </template>
 
