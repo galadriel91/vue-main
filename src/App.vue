@@ -6,7 +6,7 @@
         <MainModal :isModal="isModal">
             <template #alertMessage>{{ modalMessage }}</template>
         </MainModal>
-        <MainItem v-if="isMain" />
+        <MainItem v-if="isMain" :item="projectsList[itemIndex]" />
     </div>
 </template>
 
@@ -43,13 +43,14 @@ export default defineComponent({
         const { isModal, modalMessage } = storeToRefs(commonStore);
         //Item
         const postStore = usePost();
-        const { isMain } = storeToRefs(postStore);
-        const { ON_MAINITEM, OFF_MAINITEM } = postStore;
+        const { isMain, projectsList, itemIndex } = storeToRefs(postStore);
 
         return {
             isModal,
             modalMessage,
             isMain,
+            projectsList,
+            itemIndex,
         };
     },
 });

@@ -8,6 +8,7 @@ export const usePost = defineStore('post', {
         hasMorePost: true,
         showLimits: 3,
         isMain: true,
+        itemIndex: 0,
     }),
     actions: {
         MORE_POST() {
@@ -18,6 +19,9 @@ export const usePost = defineStore('post', {
                 this.showLimits = 3;
             }
             this.hasMorePost = this.projectsList.length > this.showLimits;
+        },
+        SET_INDEX(value: number) {
+            this.itemIndex = value;
         },
         ON_MAINITEM() {
             this.isMain = true;
