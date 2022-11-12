@@ -1,0 +1,9 @@
+.itemWrap{
+    position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh; overflow-y: auto;
+    background: royalblue; z-index: 9998; 
+    .closeBtn{
+        position: fixed; top: 3rem; right: 5%;
+        font-size: 5rem; background: none; color: #000;
+        cursor: pointer;
+    }
+}

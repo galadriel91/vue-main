@@ -7,6 +7,7 @@ export const usePost = defineStore('post', {
         projectsList: db as ProjectItem[],
         hasMorePost: true,
         showLimits: 3,
+        isMain: true,
     }),
     actions: {
         MORE_POST() {
@@ -17,6 +18,12 @@ export const usePost = defineStore('post', {
                 this.showLimits = 3;
             }
             this.hasMorePost = this.projectsList.length > this.showLimits;
+        },
+        ON_MAINITEM() {
+            this.isMain = true;
+        },
+        OFF_MAINITEM() {
+            this.isMain = false;
         },
     },
 });

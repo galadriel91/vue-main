@@ -2,7 +2,6 @@
     <div class="projects">
         <div class="projectsTitle">
             <h2>PROJECTS</h2>
-            <!-- <ProjectsItem /> -->
             <ProjectsList />
         </div>
     </div>
@@ -11,12 +10,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import ProjectsList from '@/components/projects/ProjectsList.vue';
-import ProjectsItem from './ProjectsItem.vue';
 
 export default defineComponent({
     components: {
         ProjectsList,
-        ProjectsItem,
     },
     setup() {
         return {};
