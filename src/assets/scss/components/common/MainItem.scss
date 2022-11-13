@@ -2,100 +2,145 @@
     position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh; overflow-y: auto;
     background: #f7f7f7; z-index: 9998; 
     &Inner{
-        width: 100%; height: 100%; 
-        display: flex; justify-content: center; align-items: center;
+        width: 100%; min-height: 100%; 
+        display: flex; justify-content: center; align-items: center; flex-direction: column;
         &Info{
-            display: flex; width: 100rem; justify-content: space-around; 
+            width: 65rem; margin-top: 15rem;
             &Image{
-            }
-            &Text{
-                h3{
-                    font-size: 1.8rem; margin-bottom: 1rem; color: #000;
-                }
-                &How{
-                    display: flex;
-                    p{
-                        margin-right: 1.5rem;
-                        font-size: 1.5rem; font-weight: bold; color: #000; 
+                margin-bottom: 4rem; text-align: center;
+                & > div{
+                    strong{
+                        margin-right: 1rem;
+                        font-size: 3rem; color: #000; 
+                    }
+                    span{
+                        vertical-align: .3rem;
+                        font-size: 2rem; font-weight: bold; color: #000;
                     }
                 }
-                &Skill{
-                    margin-top: .5rem;
-                    display: flex; align-items: center;
-                    font-size: 1.5rem; font-weight: bold; color: #000;
+            }
+            &Flex{
+                display: flex; justify-content: space-between;
+                &Detail{
+                    p{
+                        font-size: 1.8rem; color: #000; font-weight: bold;
+                    }
                     ul{
-                        display: flex; font-size: 0;
                         li{
-                            margin-left: 1rem;
-                            &.icon{
-                                width: 3rem; height: 3rem;
-                            }
-                            &.html{
-                                background: url('@/assets/image/html5.png')no-repeat; background-size: cover ;
-                            }
-                            &.css{
-                                background: url('@/assets/image/css3.png')no-repeat; background-size: cover ;
-                            }
-                            &.js{
-                                background: url('@/assets/image/js.png')no-repeat; background-size: cover ;
-                            }
-                            &.vue{
-                                background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
-                            }
-                            &.react{
-                                background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
-                            }
-                            &.sass{
-                                background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
-                            }   
+                            margin-top: 1rem;
+                            font-size: 1.5rem; color: #555; font-weight: bold;
                         }
                     }
                 }
-                &Color{
-                    margin-top: 1rem;
-                    display: flex; align-items: center;
-                    p{
-                        font-size: 1.5rem; color: #000; font-weight: bold;
+                &Text{
+                    h3{
+                        font-size: 1.8rem; margin-bottom: 1rem; color: #000;
                     }
-                    ul{
-                        font-size: 0; display: flex;
-                        li{
-                            margin-left: 1rem;
-                            span{
-                                display: inline-block; vertical-align: middle;
-                                font-size: 1.5rem; color: #000; font-weight: bold;
-                                &.color{
-                                    width: 2rem; height: 2rem; margin-right: 1rem; border-radius: .5rem;
-                                    background: #000; font-size: 0;
+                    &How{
+                        display: flex;
+                        p{
+                            margin-right: 1.5rem;
+                            font-size: 1.5rem; font-weight: bold; color: #000; 
+                        }
+                    }
+                    &Skill{
+                        margin-top: .5rem;
+                        display: flex; align-items: center;
+                        font-size: 1.5rem; font-weight: bold; color: #000;
+                        ul{
+                            display: flex; font-size: 0;
+                            li{
+                                margin-left: 1rem;
+                                &.icon{
+                                    width: 3rem; height: 3rem;
+                                }
+                                &.html{
+                                    background: url('@/assets/image/html5.png')no-repeat; background-size: cover ;
+                                }
+                                &.css{
+                                    background: url('@/assets/image/css3.png')no-repeat; background-size: cover ;
+                                }
+                                &.js{
+                                    background: url('@/assets/image/js.png')no-repeat; background-size: cover ;
+                                }
+                                &.vue{
+                                    background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
+                                }
+                                &.react{
+                                    background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
+                                }
+                                &.sass{
+                                    background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
+                                }   
+                            }
+                        }
+                    }
+                    &Color{
+                        margin-top: 1rem;
+                        display: flex; align-items: center;
+                        p{
+                            font-size: 1.5rem; color: #000; font-weight: bold;
+                        }
+                        ul{
+                            font-size: 0; display: flex;
+                            li{
+                                margin-left: 1rem;
+                                span{
+                                    display: inline-block; vertical-align: middle;
+                                    font-size: 1.5rem; color: #000; font-weight: bold;
+                                    &.color{
+                                        width: 2rem; height: 2rem; margin-right: 1rem; border-radius: .5rem;
+                                        background: #000; font-size: 0;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                &Font{
-                    margin-top: 1rem;
-                    display: flex; align-items: center;
-                    p , span{
-                        font-size: 1.5rem; color: #000; font-weight: bold;
+                    &Font{
+                        margin-top: 1rem;
+                        display: flex; align-items: center;
+                        p , span{
+                            font-size: 1.5rem; color: #000; font-weight: bold;
+                        }
+                        p{
+                            margin-right: 1rem;
+                        }
                     }
-                    p{
-                        margin-right: 1rem;
+                    &Link{
+                        margin-top: 1rem;
+                        span{
+                            margin-right: 1rem;
+                            font-size: 1.5rem; color: #000; font-weight: bold;
+                        }
+                        a{
+                            display: inline-block; padding: 0 .5rem; height: 2.8rem; background: #000; border-radius: 1rem;
+                            font-size: 1.4rem; color: #fff; text-align: center; line-height: 2.8rem; transition: all .5s; font-weight: 700;
+                            &:hover{
+                                background: #def3f7; color: #000; 
+                            }
+                            &:nth-of-type(2){
+                                margin: 0 1rem;
+                            }
+                        }
                     }
-                }
-                &Link{
-                    
                 }
             }
-            &Detail{
-                p{
-                    font-size: 1.8rem; color: #000; font-weight: bold;
+            
+        }
+        &Image{
+            width: 125rem; margin: 0 auto;
+            position: relative; margin-top: 8rem;
+            .pcShadow{
+                max-width: 100rem; width: 80%; margin: 0 auto; height: 60rem; overflow-y: hidden;
+                border: 10px solid #000; border-radius :3rem;
+                img{
+                    width: 100%;
                 }
-                ul{
-                    li{
-                        margin-top: 1rem;
-                        font-size: 1.5rem; color: #555; font-weight: bold;
-                    }
-                }
+            }
+            .mobileShadow{
+                position: absolute; left: 0; bottom: 0;
+                width: 24rem; height: 42rem; background: #fff;
+                border: 10px solid #000; border-radius :3rem;
             }
         }
     }
@@ -104,4 +149,27 @@
     position: fixed; top: 3rem; right: 5%;
     font-size: 5rem; background: none; color: #000;
     cursor: pointer;
+}
+
+
+
+
+@media all and (max-width:900px){
+    .itemWrap{
+        &Inner{
+            &Info{
+                width: 100%; margin-top: 5rem;
+                &Flex{
+                    flex-direction: column; align-items: center;
+                    &Detail{
+                        margin-top: 3rem;
+                        width: 35rem;
+                    }
+                    &Text{
+                        width: 35rem;
+                    }
+                }
+            }
+        }
+    }
 }

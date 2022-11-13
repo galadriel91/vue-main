@@ -14,6 +14,9 @@ interface PostItem {
     subTitle: string;
     responsive: string;
     deploy: string;
+    color: string[];
+    review: string[];
+    fonts: string;
     backend?: string;
     sites: SitesItem[];
     support: SkillsItem[];

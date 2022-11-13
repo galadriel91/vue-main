@@ -27,14 +27,14 @@ const db: ProjectItem[] = [
             responsive: 'X',
             deploy: 'CAFE24',
             sites: [
+                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
                     link: 'http://galadriel91.cafe24.com/domino/',
                     name: '리뉴얼 사이트',
                 },
-                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
                     link: 'https://github.com/galadriel91/html-basic/tree/master/03.Domino',
-                    name: '설명 및 코드',
+                    name: '깃허브',
                 },
             ],
             support: [
@@ -46,6 +46,14 @@ const db: ProjectItem[] = [
                     src: '/src/assets/image/fox.png',
                     title: '파이어폭스 로고',
                 },
+            ],
+            color: ['#000', '#fff'],
+            fonts: 'Noto Sans KR',
+            review: [
+                '기존 사이트의 디자인을 바꾸지 않고',
+                '반응형으로 구현하는 것에 집중',
+                '최소 360px을 기준으로 작업',
+                'Slick 슬라이더를 이용해 보았다',
             ],
         },
     },
@@ -95,6 +103,9 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
+            color: ['#000', '#fff'],
+            fonts: 'Noto Sans KR',
+            review: [],
         },
     },
     {
@@ -143,6 +154,9 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
+            color: ['#000', '#fff'],
+            fonts: 'Noto Sans KR',
+            review: [],
         },
     },
     {
@@ -198,6 +212,9 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
+            color: ['#000', '#fff'],
+            fonts: 'Noto Sans KR',
+            review: [],
         },
     },
     // {
