@@ -29,6 +29,16 @@
                                 배포 : <span>{{ item.posts.deploy }}</span>
                             </p>
                         </div>
+                        <div class="itemWrapInnerInfoFlexTextLink">
+                            <span>바로 가기 :</span>
+                            <a
+                                v-for="(post, i) in item.posts.sites"
+                                :key="i"
+                                :href="post.link"
+                                target="_blank"
+                                >{{ post.name }}</a
+                            >
+                        </div>
                         <div class="itemWrapInnerInfoFlexTextColor">
                             <p>사용 색상 :</p>
                             <ul>
@@ -54,21 +64,12 @@
                                 <li class="html icon" v-if="item.markup">
                                     HTML
                                 </li>
-                                <li class="css icon" v-if="item.markup">CSS</li>
+                                <li class="sass icon" v-if="item.markup">
+                                    SASS
+                                </li>
                                 <li class="js icon" v-if="item.markup">JS</li>
                                 <li class="vue icon" v-if="item.vue">VUE</li>
-                                <li class="sass icon" v-if="item.vue">SASS</li>
                             </ul>
-                        </div>
-                        <div class="itemWrapInnerInfoFlexTextLink">
-                            <span>바로 가기 :</span>
-                            <a
-                                v-for="(post, i) in item.posts.sites"
-                                :key="i"
-                                :href="post.link"
-                                target="_blank"
-                                >{{ post.name }}</a
-                            >
                         </div>
                     </div>
                     <div class="itemWrapInnerInfoFlexDetail">
