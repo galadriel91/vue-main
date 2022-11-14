@@ -61,14 +61,18 @@
                         <div class="itemWrapInnerInfoFlexTextSkill">
                             <span>사용 기술 :</span>
                             <ul>
+                                <li class="vue icon" v-if="item.vue">VUE</li>
+                                <li class="ts icon" v-if="item.vue">TS</li>
                                 <li class="html icon" v-if="item.markup">
                                     HTML
                                 </li>
-                                <li class="sass icon" v-if="item.markup">
+                                <li
+                                    class="sass icon"
+                                    v-if="item.markup || item.vue"
+                                >
                                     SASS
                                 </li>
                                 <li class="js icon" v-if="item.markup">JS</li>
-                                <li class="vue icon" v-if="item.vue">VUE</li>
                             </ul>
                         </div>
                     </div>
@@ -85,13 +89,16 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="itemWrapInnerImage">
+            <div class="itemWrapInnerImage">
                 <div class="pcShadow">
                     <img src="@/assets/image/dominoWeb.png" alt="" />
                 </div>
-                <div class="mobileShadow"></div>
-                v-if="item.posts.responsive !== 'X'"
-            </div> -->
+                <div
+                    class="mobileShadow"
+                    v-if="item.posts.responsive !== 'X'"
+                ></div>
+                <!-- v-if="item.posts.responsive !== 'X'" -->
+            </div>
         </div>
         <button class="closeBtn xi-close-thin" @click="onClickClose"></button>
     </div>

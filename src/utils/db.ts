@@ -68,14 +68,14 @@ const db: ProjectItem[] = [
         rating: 0,
         skills: [
             {
-                src: '/src/assets/image/html5.png',
+                src: '@/assets/image/html5.png',
                 title: 'HTML 로고 아이콘',
             },
             {
-                src: '/src/assets/image/css3.png',
-                title: 'CSS 로고 아이콘',
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
             },
-            { src: '/src/assets/image/js.png', title: 'JS 로고 아이콘' },
+            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
         ],
         posts: {
             mainImage: '/src/assets/image/alpha.png',
@@ -91,7 +91,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     link: 'https://github.com/galadriel91/html-basic/tree/master/01.AlphaColor',
-                    name: '설명 및 코드',
+                    name: '깃허브',
                 },
             ],
             support: [
@@ -104,9 +104,15 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#000', '#fff'],
-            fonts: 'Noto Sans KR',
-            review: [],
+            color: ['#ed1f2d', '#000000'],
+            fonts: 'S-CoreDream-4Regular',
+            review: [
+                '처음하는 반응형 작업인 만큼',
+                '디자인의 변경 없이 구현하는 것을 목표로 했다.',
+                '헤더를 반응형으로 구현하는 것이 힘들었다.',
+                '최소 360px을 기준으로 작업했다.',
+                'Slick 슬라이더를 이용해 보았다',
+            ],
         },
     },
     {
@@ -119,14 +125,14 @@ const db: ProjectItem[] = [
         rating: 0,
         skills: [
             {
-                src: '/src/assets/image/html5.png',
+                src: '@/assets/image/html5.png',
                 title: 'HTML 로고 아이콘',
             },
             {
-                src: '/src/assets/image/css3.png',
-                title: 'CSS 로고 아이콘',
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
             },
-            { src: '/src/assets/image/js.png', title: 'JS 로고 아이콘' },
+            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
         ],
         posts: {
             mainImage: '/src/assets/image/hollys.png',
@@ -142,7 +148,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     link: 'https://github.com/galadriel91/html-basic/tree/master/02.Hollys',
-                    name: '설명 및 코드',
+                    name: '깃허브',
                 },
             ],
             support: [
@@ -155,14 +161,20 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#000', '#fff'],
-            fonts: 'Noto Sans KR',
-            review: [],
+            color: ['#cb333b', '#000000'],
+            fonts: 'ChosunGu',
+            review: [
+                '최소 360px을 기준으로 반응형으로 작업했다.',
+                '기존의 홈페이지가 다른 프랜차이즈에 비해',
+                '옛날 느낌의 인상이 강해서 다른 커피 프랜차이즈',
+                '홈페이지를 참고하여 작업했다.',
+                'Slick과 aos를 이용해 보았다',
+            ],
         },
     },
     {
         id: 4,
-        title: 'Vue & React Todo',
+        title: 'Vue Hacker News',
         vue: true,
         react: true,
         markup: false,
@@ -174,33 +186,33 @@ const db: ProjectItem[] = [
                 title: 'Vue 로고 아이콘',
             },
             {
-                src: '/src/assets/image/react.png',
-                title: 'Vue 로고 아이콘',
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
             },
             {
-                src: '/src/assets/image/sass.png',
-                title: 'Sass 로고 아이콘',
+                src: '@/assets/image/ts.png',
+                title: 'TS 로고 아이콘',
             },
         ],
         posts: {
             mainImage: '/src/assets/image/reactvue.png',
-            title: 'Vue & React CRUD',
-            subTitle: 'Vue & React Todo 구현',
+            title: 'Vue Hacker News',
+            subTitle: 'Hacker News 클론',
             responsive: 'O',
-            deploy: 'CAFE24',
-            backend: 'Firebase',
+            deploy: 'Netlify',
+            backend: 'Hacker Api',
             sites: [
                 {
                     link: 'https://galadriel91.cafe24.com/vuetodo/',
-                    name: 'Vue 사이트',
+                    name: '기존 사이트',
                 },
                 {
                     link: 'https://galadriel91.cafe24.com/reacttodo/',
-                    name: 'React 사이트',
+                    name: '클론 사이트',
                 },
                 {
                     link: 'https://github.com/galadriel91/vue-basic/tree/master/04.VueTodo/Advance',
-                    name: '설명 및 코드',
+                    name: '깃허브',
                 },
             ],
             support: [
@@ -213,9 +225,16 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#000', '#fff'],
-            fonts: 'Noto Sans KR',
-            review: [],
+            color: ['#00a19d', '#00000'],
+            fonts: 'ChosunSg',
+            review: [
+                'JS의 대표 프레임워크 중 하나인 Vue.js를',
+                '사용해서 Hacker News 클론 사이트를 구현했다.',
+                'Vue3와 Vue2의 차이점을 체크하면서 만들었다.',
+                'Vue2에 비해 TS를 적용하는 것이 훨씬 편했다.',
+                'Vite는 CLI보다 빨라서 만족스러웠다.',
+                '기존 Vuex 보다 Pinia 쪽이 사용하기 편했다.',
+            ],
         },
     },
     // {

@@ -56,7 +56,7 @@ export default defineComponent({
             menu: '#menu',
             // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
             normalScrollElements:
-                '.alertContainer, .loadingWrap, .projectsWrap',
+                '.alertContainer, .loadingWrap, .projectsWrap, .itemWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],
             css3: true,
         });

@@ -63,11 +63,11 @@
                                 &.js{
                                     background: url('@/assets/image/js.png')no-repeat; background-size: cover ;
                                 }
+                                &.ts{
+                                    background: url('@/assets/image/ts.png')no-repeat; background-size: cover ;
+                                }
                                 &.vue{
                                     background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
-                                }
-                                &.react{
-                                    background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
                                 }
                                 &.sass{
                                     background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
@@ -129,13 +129,15 @@
             
         }
         &Image{
-            width: 125rem; margin: 0 auto;
-            position: relative; margin-top: 8rem;
+            width: 125rem; margin: 8rem auto;
+            position: relative; 
             .pcShadow{
-                max-width: 100rem; width: 80%; margin: 0 auto; height: 60rem; overflow-y: hidden;
+                position: relative; max-width: 100rem; width: 80%; margin: 0 auto; overflow-y: hidden;
                 border: 10px solid #000; border-radius :3rem;
+                padding: 20% 0;
                 img{
-                    width: 100%;
+                    position: absolute; left: 0; top: 0;
+                    width: 100%; 
                 }
             }
             .mobileShadow{
@@ -152,6 +154,35 @@
     cursor: pointer;
 }
 
+
+@media all and (max-width:1300px){
+    .itemWrap{
+        &Inner{
+            &Image{
+                width: 100%;
+                .pcShadow{
+                    border: 5px solid #000; 
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:500px){
+    .itemWrap{
+        &Inner{
+            &Image{
+                width: 100%;
+                .pcShadow{
+                    border: 5px solid #000; border-radius: 2rem;
+                    padding: 25% 0;
+                }
+            }
+        }
+    }
+}
+
+
 @media all and (max-width:900px){
     .itemWrap{
         &Inner{
@@ -166,6 +197,9 @@
                         width: 34rem; margin: 0 auto;
                     }
                 }
+            }
+            &Image{
+                margin: 5rem 0;
             }
         }
     }
