@@ -17,7 +17,9 @@ interface PostItem {
     color: string[];
     review: string[];
     fonts: string;
+    pc: string;
     backend?: string;
+    mobile?: string;
     sites: SitesItem[];
     support: SkillsItem[];
 }

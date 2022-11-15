@@ -56,6 +56,7 @@ const db: ProjectItem[] = [
                 '간단한 피자 정보를 메인 섹션에 추가해보았다.',
                 'BX 슬라이더를 이용해 보았다',
             ],
+            pc: './src/assets/image/dominoPc.png',
         },
     },
     {
@@ -113,6 +114,8 @@ const db: ProjectItem[] = [
                 '최소 360px을 기준으로 작업했다.',
                 'Slick 슬라이더를 이용해 보았다',
             ],
+            pc: './src/assets/image/alphaPc.png',
+            mobile: './src/assets/image/alphaMo.png',
         },
     },
     {
@@ -170,6 +173,8 @@ const db: ProjectItem[] = [
                 '홈페이지를 참고하여 작업했다.',
                 'Slick과 aos를 이용해 보았다',
             ],
+            pc: './src/assets/image/hollysPc.png',
+            mobile: './src/assets/image/hollysMo.png',
         },
     },
     {
@@ -195,7 +200,7 @@ const db: ProjectItem[] = [
             },
         ],
         posts: {
-            mainImage: '/src/assets/image/reactvue.png',
+            mainImage: '/src/assets/image/vueLogo.png',
             title: 'Vue Hacker News',
             subTitle: 'Hacker News 클론',
             responsive: 'O',
@@ -235,6 +240,8 @@ const db: ProjectItem[] = [
                 'Vite는 CLI보다 빨라서 만족스러웠다.',
                 '기존 Vuex 보다 Pinia 쪽이 사용하기 편했다.',
             ],
+            pc: './src/assets/image/hackerPc.png',
+            mobile: './src/assets/image/hackerMo.png',
         },
     },
     // {

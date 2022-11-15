@@ -24,11 +24,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { usePost } from '@/store/postStore';
+import { useCommon } from '@/store/commonStore';
 import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
         const postStore = usePost();
+        const commonStore = useCommon();
+        const { ON_LOADING } = commonStore;
         const { projectsList, showLimits, hasMorePost } =
             storeToRefs(postStore);
         const { MORE_POST, ON_MAINITEM, SET_INDEX } = postStore;
@@ -36,6 +39,7 @@ export default defineComponent({
             MORE_POST();
         };
         const onClickMainItem = (value: number) => {
+            ON_LOADING();
             ON_MAINITEM();
             SET_INDEX(value);
         };

@@ -7,7 +7,7 @@ export const usePost = defineStore('post', {
         projectsList: db as ProjectItem[],
         hasMorePost: true,
         showLimits: 3,
-        isMain: true,
+        isMain: false,
         itemIndex: 0,
     }),
     actions: {

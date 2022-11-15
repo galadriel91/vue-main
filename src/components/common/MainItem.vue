@@ -91,13 +91,11 @@
             </div>
             <div class="itemWrapInnerImage">
                 <div class="pcShadow">
-                    <img src="@/assets/image/dominoWeb.png" alt="" />
+                    <img :src="item.posts.pc" alt="" @load="onLoadImage" />
                 </div>
-                <div
-                    class="mobileShadow"
-                    v-if="item.posts.responsive !== 'X'"
-                ></div>
-                <!-- v-if="item.posts.responsive !== 'X'" -->
+                <div class="mobileShadow" v-if="item.posts.responsive !== 'X'">
+                    <img :src="item.posts.mobile" alt="" />
+                </div>
             </div>
         </div>
         <button class="closeBtn xi-close-thin" @click="onClickClose"></button>
@@ -108,6 +106,7 @@
 import { defineComponent, type PropType } from 'vue';
 import { usePost } from '@/store/postStore';
 import type { ProjectItem } from '@/store/types';
+import { useCommon } from '@/store/commonStore';
 export default defineComponent({
     props: {
         item: {
@@ -118,12 +117,20 @@ export default defineComponent({
     setup() {
         const postStore = usePost();
         const { OFF_MAINITEM } = postStore;
+        const commonStore = useCommon();
+        const { OFF_LOADING } = commonStore;
 
         const onClickClose = () => {
             OFF_MAINITEM();
         };
+
+        const onLoadImage = () => {
+            OFF_LOADING();
+        };
+
         return {
             onClickClose,
+            onLoadImage,
         };
     },
 });
