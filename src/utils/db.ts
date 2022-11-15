@@ -7,7 +7,7 @@ const db: ProjectItem[] = [
         react: false,
         markup: true,
         title: '도미노피자 메인 퍼블리싱',
-        time: '2022-03',
+        time: '2022-10',
         rating: 0,
         skills: [
             {
@@ -56,7 +56,7 @@ const db: ProjectItem[] = [
                 '간단한 피자 정보를 메인 섹션에 추가해보았다.',
                 'BX 슬라이더를 이용해 보았다',
             ],
-            pc: './src/assets/image/dominoPc.png',
+            pc: '@/assets/image/dominoPc.png',
         },
     },
     {
