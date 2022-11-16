@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue';
+import { defineComponent, onMounted, nextTick, watch } from 'vue';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
 import { storeToRefs } from 'pinia';
@@ -19,6 +19,7 @@ import MainHeader from '@/components/common/MainHeader.vue';
 import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
 import MainItem from './components/common/MainItem.vue';
+import { useRoute } from 'vue-router';
 
 export default defineComponent({
     components: {
@@ -28,6 +29,8 @@ export default defineComponent({
         MainItem,
     },
     setup() {
+        const route = useRoute();
+
         const setScreenSize = () => {
             const vh = window.innerHeight * 0.01;
             console.log(window.innerHeight);
@@ -44,6 +47,20 @@ export default defineComponent({
         //Item
         const postStore = usePost();
         const { isMain, projectsList, itemIndex } = storeToRefs(postStore);
+
+        // HeaderName
+        const editHeaderName = (value: string) => {
+            const stringArray = value.split('').slice(1, value.length).join('');
+            return stringArray.toUpperCase();
+        };
+        watch(
+            () => {
+                return route.hash;
+            },
+            () => {
+                document.title = `PORTFOLIO | ${editHeaderName(route.hash)}`;
+            },
+        );
 
         return {
             isModal,
