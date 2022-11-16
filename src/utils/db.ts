@@ -21,7 +21,7 @@ const db: ProjectItem[] = [
             { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
         ],
         posts: {
-            mainImage: '/src/assets/image/domino.png',
+            mainImage: '/images/domino.png',
             title: '도미노피자',
             subTitle: '웹 사이트 퍼블리싱',
             responsive: 'X',
@@ -56,7 +56,7 @@ const db: ProjectItem[] = [
                 '간단한 피자 정보를 메인 섹션에 추가해보았다.',
                 'BX 슬라이더를 이용해 보았다',
             ],
-            pc: '/src/assets/image/dominoPc.png',
+            pc: '/images/dominoPc.png',
         },
     },
     {
