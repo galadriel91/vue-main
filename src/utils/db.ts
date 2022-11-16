@@ -79,7 +79,7 @@ const db: ProjectItem[] = [
             { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
         ],
         posts: {
-            mainImage: '/src/assets/image/alpha.png',
+            mainImage: '/images/alpha.png',
             title: '알파색채',
             subTitle: '웹 사이트 퍼블리싱',
             responsive: 'O',
@@ -114,8 +114,8 @@ const db: ProjectItem[] = [
                 '최소 360px을 기준으로 작업했다.',
                 'Slick 슬라이더를 이용해 보았다',
             ],
-            pc: './src/assets/image/alphaPc.png',
-            mobile: './src/assets/image/alphaMo.png',
+            pc: '/images/alphaPc.png',
+            mobile: '/images/alphaMo.png',
         },
     },
     {
@@ -138,7 +138,7 @@ const db: ProjectItem[] = [
             { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
         ],
         posts: {
-            mainImage: '/src/assets/image/hollys.png',
+            mainImage: '/images/hollys.png',
             title: '할리스 커피',
             subTitle: '웹 사이트 퍼블리싱',
             responsive: 'O',
@@ -173,8 +173,8 @@ const db: ProjectItem[] = [
                 '홈페이지를 참고하여 작업했다.',
                 'Slick과 aos를 이용해 보았다',
             ],
-            pc: './src/assets/image/hollysPc.png',
-            mobile: './src/assets/image/hollysMo.png',
+            pc: '/images/hollysPc.png',
+            mobile: '/images/hollysMo.png',
         },
     },
     {
@@ -240,8 +240,8 @@ const db: ProjectItem[] = [
                 'Vite는 CLI보다 빨라서 만족스러웠다.',
                 '기존 Vuex 보다 Pinia 쪽이 사용하기 편했다.',
             ],
-            pc: './src/assets/image/hackerPc.png',
-            mobile: './src/assets/image/hackerMo.png',
+            pc: '/images/hackerPc.png',
+            mobile: '/images/hackerMo.png',
         },
     },
     // {
