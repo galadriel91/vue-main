@@ -56,7 +56,7 @@ const db: ProjectItem[] = [
                 '간단한 피자 정보를 메인 섹션에 추가해보았다.',
                 'BX 슬라이더를 이용해 보았다',
             ],
-            pc: '@/assets/image/dominoPc.png',
+            pc: '/src/assets/image/dominoPc.png',
         },
     },
     {

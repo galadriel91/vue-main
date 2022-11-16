@@ -54,7 +54,7 @@ export default defineComponent({
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
-            // anchors: ['home', 'about', 'skill', 'projects', 'contact'],
+            anchors: ['home', 'about', 'skill', 'projects', 'contact'],
             normalScrollElements:
                 '.alertContainer, .loadingWrap, .projectsWrap, .itemWrap',
             sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff'],

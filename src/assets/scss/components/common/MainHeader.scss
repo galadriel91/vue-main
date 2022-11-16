@@ -22,13 +22,16 @@ header{
                     &:last-child a{
                         padding-right: 0;
                     }
-                    a{
-                        display: block; padding: 0 1.5rem; 
-                        &.router-link-exact-active{
+                    &.active{
+                        a{
                             span::after{
                                 width: 100%; right: 0%;
+
                             }
                         }
+                    }
+                    a{
+                        display: block; padding: 0 1.5rem; 
                         &:hover{
                             span::after{
                                 width: 100%; right: 0%;
@@ -46,7 +49,7 @@ header{
             }
         }
         .wholeBtn{
-            display: block; height: 8rem; width: 8rem ; z-index: 9998; text-align: center;
+            display: none; height: 8rem; width: 8rem ; z-index: 9998; text-align: center;
             span{
                 position: relative; margin-top: 4rem; 
                 display: inline-block; width: 5rem; height: .2rem; background: #000; transition: all .5s;

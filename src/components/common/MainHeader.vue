@@ -1,24 +1,27 @@
 <template>
     <header>
         <div class="headerWrap">
-            <h1><a href="/">PORTFOLIO</a></h1>
+            <h1><a href="#home">PORTFOLIO</a></h1>
             <div>
-                <!-- <nav :class="{ showing: isActive }">
-                    <ul>
-                        <li @click="onClickRemove">
-                            <a href="/"><span>Home</span></a>
+                <nav :class="{ showing: isActive }">
+                    <ul id="menu">
+                        <li data-menuanchor="home" @click="onClickRemove">
+                            <a href="#home"><span>Home</span></a>
                         </li>
-                        <li @click="onClickRemove">
-                            <a href="/about"><span>About</span></a>
+                        <li data-menuanchor="about" @click="onClickRemove">
+                            <a href="#about"><span>About</span></a>
                         </li>
-                        <li @click="onClickRemove">
-                            <a href="/projects"><span>Projects</span></a>
+                        <li data-menuanchor="skill" @click="onClickRemove">
+                            <a href="#skill"><span>Skill</span></a>
                         </li>
-                        <li @click="onClickRemove">
-                            <a href="/contact"><span>Contact</span></a>
+                        <li data-menuanchor="projects" @click="onClickRemove">
+                            <a href="#projects"><span>Projects</span></a>
+                        </li>
+                        <li data-menuanchor="contact" @click="onClickRemove">
+                            <a href="#contact"><span>Contact</span></a>
                         </li>
                     </ul>
-                </nav> -->
+                </nav>
                 <a
                     href="javascript:void(0)"
                     class="wholeBtn"
