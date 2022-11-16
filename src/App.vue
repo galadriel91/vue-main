@@ -11,15 +11,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, nextTick, watch } from 'vue';
+import { defineComponent, onMounted, watch } from 'vue';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
 import { storeToRefs } from 'pinia';
+import { useRoute } from 'vue-router';
 import MainHeader from '@/components/common/MainHeader.vue';
 import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
 import MainItem from './components/common/MainItem.vue';
-import { useRoute } from 'vue-router';
 
 export default defineComponent({
     components: {

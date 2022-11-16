@@ -127,6 +127,7 @@ export default defineComponent({
             title.value = '';
             content.value = '';
         };
+
         return {
             name,
             email,

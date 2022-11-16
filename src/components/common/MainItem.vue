@@ -104,9 +104,10 @@
 
 <script lang="ts">
 import { defineComponent, type PropType } from 'vue';
-import { usePost } from '@/store/postStore';
 import type { ProjectItem } from '@/store/types';
 import { useCommon } from '@/store/commonStore';
+import { usePost } from '@/store/postStore';
+
 export default defineComponent({
     props: {
         item: {

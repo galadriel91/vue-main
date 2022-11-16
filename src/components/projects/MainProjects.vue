@@ -15,6 +15,7 @@ export default defineComponent({
     components: {
         ProjectsList,
     },
+
     setup() {
         return {};
     },

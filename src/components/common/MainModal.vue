@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
 import { useCommon } from '@/store/commonStore';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
     props: {
@@ -31,6 +31,7 @@ export default defineComponent({
         const onClickClose = () => {
             CLOSE_MODAL();
         };
+
         return {
             onClickClose,
         };

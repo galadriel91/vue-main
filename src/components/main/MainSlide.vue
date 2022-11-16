@@ -58,6 +58,7 @@ export default defineComponent({
         onBeforeUnmount(() => {
             clearInterval(interval.value);
         });
+
         return {
             isFirst,
             isSecond,
