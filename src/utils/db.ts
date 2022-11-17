@@ -28,11 +28,11 @@ const db: ProjectItem[] = [
             sites: [
                 { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
-                    link: 'http://galadriel91.cafe24.com/domino/',
+                    link: 'http://lothlorien91.cafe24.com/domino/',
                     name: '리뉴얼 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/html-basic/tree/master/03.Domino',
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/02.Domino',
                     name: '깃허브',
                 },
             ],
@@ -85,11 +85,11 @@ const db: ProjectItem[] = [
             sites: [
                 { link: 'http://www.alphacolor.com/', name: '기존사이트' },
                 {
-                    link: 'http://galadriel91.cafe24.com/alphacolor/',
+                    link: 'http://lothlorien91.cafe24.com/alpha/',
                     name: '리뉴얼 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/html-basic/tree/master/01.AlphaColor',
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/03.AlphaColor',
                     name: '깃허브',
                 },
             ],
@@ -143,11 +143,11 @@ const db: ProjectItem[] = [
             sites: [
                 { link: 'https://www.hollys.co.kr/', name: '기존사이트' },
                 {
-                    link: 'http://galadriel91.cafe24.com/hollys/index.html',
+                    link: 'http://lothlorien91.cafe24.com/hollys/index.html',
                     name: '리뉴얼 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/html-basic/tree/master/02.Hollys',
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/04.Hollys',
                     name: '깃허브',
                 },
             ],
@@ -204,15 +204,15 @@ const db: ProjectItem[] = [
             backend: 'Hacker Api',
             sites: [
                 {
-                    link: 'https://galadriel91.cafe24.com/vuetodo/',
+                    link: 'https://news.ycombinator.com/',
                     name: '기존 사이트',
                 },
                 {
-                    link: 'https://galadriel91.cafe24.com/reacttodo/',
+                    link: 'https://vue-hacker.netlify.app',
                     name: '클론 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/vue-basic/tree/master/04.VueTodo/Advance',
+                    link: 'https://github.com/galadriel91/vue-hacker',
                     name: '깃허브',
                 },
             ],
