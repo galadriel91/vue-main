@@ -2,7 +2,7 @@
     position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh; overflow-y: auto; 
     background: #f7f7f7; z-index: 9990; 
     &Inner{
-        width: 100%; min-height: 100%;
+        width: 100%; height: 100%;
         display: flex; justify-content: center; align-items: center; flex-direction: column;
         &Info{
             width: 65rem; margin: 10rem 0 0;
@@ -183,7 +183,7 @@
         &Inner{
             &Info{
                 &Image{
-                    width: 34rem;
+                    width: 34rem; margin: 0 auto;
                 }
                 width: 100%; margin-top: 3rem;
                 &Flex{
@@ -197,7 +197,7 @@
                 }
             }
             &Image{
-                padding: 3rem 0 ;
+                padding: 3rem 0;
                 .mobileShadow{
                     bottom: 3rem;
                 }
@@ -209,7 +209,9 @@
 @media all and (max-width:500px){
     .itemWrap{
         &Inner{
+            height: 130vh;
             &Info{
+                margin-top: 0;
                 &Flex{
                     &Detail{
                         padding-left: 1rem; box-sizing: border-box;
