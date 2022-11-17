@@ -196,7 +196,7 @@ const db: ProjectItem[] = [
             },
         ],
         posts: {
-            mainImage: '/src/assets/image/vueLogo.png',
+            mainImage: '/images/vueLogo.png',
             title: 'Vue Hacker News',
             subTitle: 'Hacker News 클론',
             responsive: 'O',
