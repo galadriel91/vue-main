@@ -30,7 +30,7 @@
                             </p>
                         </div>
                         <div class="itemWrapInnerInfoFlexTextLink">
-                            <span>바로 가기 :</span>
+                            <p>바로 가기 :</p>
                             <a
                                 v-for="(post, i) in item.posts.sites"
                                 :key="i"
