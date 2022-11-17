@@ -22,10 +22,10 @@
             <div class="techWrapFuture">
                 <h3>목표</h3>
                 <ul>
+                    <li class="react"></li>
                     <li class="python"></li>
                     <li class="django"></li>
                     <li class="flu"></li>
-                    <li class="react"></li>
                 </ul>
                 <p>
                     Python의 Django를 이용하여 풀 스택 개발자로
