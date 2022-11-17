@@ -24,26 +24,17 @@ body{
     font-family: 'ChosunSg';
 }
 
-// .fp-overflow::-webkit-scrollbar-thumb{
-//     -ms-overflow-style: none; /* IE and Edge */
-//     scrollbar-width: none; /* Firefox */
-//     &::-webkit-scrollbar{
-//         display: none;
-//     } /* Chrome, Safari, Opera*/
+.fp-scroll-mac .fp-overflow::-webkit-scrollbar{
+    width: 6px;
+    // background-color: #bceef8;
+}
+
+// .fp-scroll-mac .fp-overflow::-webkit-scrollbar-thumb{
+//     background-color: transparent;
 // }
 
 button , textarea{
     font-family: 'ChosunSg';
-}
-
-
-.section{
-    // background: url('@/assets/image/bnr_bg.jpg')no-repeat; 
-    
-}
-
-.pageWrap{
-    // margin-top: 8rem;
 }
 
 .fp-watermark{
