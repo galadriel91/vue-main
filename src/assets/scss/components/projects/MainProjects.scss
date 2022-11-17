@@ -11,7 +11,7 @@
     &Title{
         text-align: center; color: #000;
         h2{
-            font-size: 4.5rem;
+            position: relative; font-size: 4.5rem;
             &::after{
                 content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;
             }
@@ -24,6 +24,16 @@
         &Title{
             h2{
                 font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:760px){
+    .projects{
+        &Title{
+            h2{
+                font-size: 3rem;
             }
         }
     }
