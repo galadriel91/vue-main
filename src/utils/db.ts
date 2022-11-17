@@ -4,7 +4,6 @@ const db: ProjectItem[] = [
     {
         id: 1,
         vue: false,
-        react: false,
         markup: true,
         title: '도미노피자 메인 퍼블리싱',
         time: '2022-10',
@@ -62,10 +61,9 @@ const db: ProjectItem[] = [
     {
         id: 2,
         vue: false,
-        react: false,
         markup: true,
         title: '알파색채 메인 퍼블리싱',
-        time: '2022-03',
+        time: '2022-10',
         rating: 0,
         skills: [
             {
@@ -122,9 +120,8 @@ const db: ProjectItem[] = [
         id: 3,
         title: '할리스커피 메인 퍼블리싱',
         vue: false,
-        react: false,
         markup: true,
-        time: '2022-03',
+        time: '2022-10',
         rating: 0,
         skills: [
             {
@@ -179,11 +176,10 @@ const db: ProjectItem[] = [
     },
     {
         id: 4,
-        title: 'Vue Hacker News',
+        title: 'Hacker News 뷰어 사이트',
         vue: true,
-        react: true,
         markup: false,
-        time: '2022-01',
+        time: '2022-10',
         rating: 0,
         skills: [
             {
