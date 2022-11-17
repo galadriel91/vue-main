@@ -242,25 +242,23 @@ const db: ProjectItem[] = [
     },
     // {
     //     id: 5,
-    //     title: 'Hacker News',
+    //     title: 'PORTFOLIO 개선 작업',
     //     vue: true,
-    //     react: false,
     //     markup: false,
     //     time: '2022-03',
     //     rating: 0,
     //     skills: [
     //         {
-    //             src: require('@/assets/image/vue.png'),
+    //             src: '@/assets/image/vue.png',
     //             title: 'Vue 로고 아이콘',
     //         },
     //         {
-    //             src: require('@/assets/image/sass.png'),
+    //             src: '@/assets/image/sass.png',
     //             title: 'Sass 로고 아이콘',
     //         },
     //     ],
     //     posts: {
-    //         index: 5,
-    //         mainImage: require('@/assets/image/vuemain.png'),
+    //         mainImage: '@/assets/image/vuemain.png',
     //         title: 'Vue CLI',
     //         subTitle: 'Vue CLI & Vue Router',
     //         responsive: 'O',
@@ -276,139 +274,19 @@ const db: ProjectItem[] = [
     //         ],
     //         support: [
     //             {
-    //                 src: require('@/assets/image/Chromium.png'),
+    //                 src: '@/assets/image/Chromium.png',
     //                 title: '크로미움 로고',
     //             },
     //             {
-    //                 src: require('@/assets/image/fox.png'),
+    //                 src: '@/assets/image/fox.png',
     //                 title: '파이어폭스 로고',
     //             },
     //         ],
+    //         color: [''],
+    //         fonts: '',
+    //         pc: '',
+    //         review: [],
     //     },
-    // },
-    // {
-    //     id:3,
-    //     title:'할리스커피 메인 퍼블리싱',
-    //     vue:false,
-    //     react:false,
-    //     markup:true,
-    //     time:"2021-12",
-    //     rating:0,
-    //     skills:[
-    //         {src:require("@/assets/image/html5.png") , title:'HTML 로고 아이콘'},
-    //         {src:require("@/assets/image/css3.png") , title:'CSS 로고 아이콘'},
-    //         {src:require("@/assets/image/js.png") , title:'JS 로고 아이콘'}
-    //     ],
-    //     posts:{
-    //         index:3,
-    //         mainImage:require("@/assets/image/hollys.png"),
-    //         title:'할리스 커피',
-    //         subTitle:'웹 사이트 퍼블리싱',
-    //         responsive:'O',
-    //         deploy:'CAFE24',
-    //         sites:[
-    //             {link:'https://www.hollys.co.kr/' , name:"기존사이트"},
-    //             {link:'http://galadriel91.cafe24.com/hollys/index.html' , name:"리뉴얼 사이트"},
-    //             {link:'https://github.com/galadriel91/html-basic/tree/master/02.Hollys' , name:"설명 및 코드"}
-    //         ],
-    //         support:[
-    //             {src:require("@/assets/image/Chromium.png") , title:'크로미움 로고'},
-    //             {src:require("@/assets/image/fox.png") , title:'파이어폭스 로고'}
-    //         ]
-    //     }
-    // },
-    // {
-    //     id:4,
-    //     title:'Vue & React Todo',
-    //     vue:true,
-    //     react:true,
-    //     markup:false,
-    //     time:"2022-01",
-    //     rating:0,
-    //     skills:[
-    //         {src:require("@/assets/image/vue.png") , title:'Vue 로고 아이콘'},
-    //         {src:require("@/assets/image/react.png") , title:'Vue 로고 아이콘'},
-    //         {src:require("@/assets/image/sass.png") , title:'Sass 로고 아이콘'},
-    //     ],
-    //     posts:{
-    //         index:4,
-    //         mainImage:require("@/assets/image/reactvue.png"),
-    //         title:'Vue & React CRUD',
-    //         subTitle:'Vue & React Todo 구현',
-    //         responsive:'O',
-    //         deploy:'CAFE24',
-    //         backend:'JSONPlaceholder',
-    //         sites:[
-    //             {link:'https://galadriel91.cafe24.com/vuetodo/' , name:"Vue 사이트"},
-    //             {link:'https://galadriel91.cafe24.com/reacttodo/' , name:"React 사이트"},
-    //             {link:'https://github.com/galadriel91/vue-basic/tree/master/04.VueTodo/Advance' , name:"설명 및 코드"}
-    //         ],
-    //         support:[
-    //             {src:require("@/assets/image/Chromium.png") , title:'크로미움 로고'},
-    //             {src:require("@/assets/image/fox.png") , title:'파이어폭스 로고'}
-    //         ]
-    //     }
-    // },
-    // {
-    //     id:5,
-    //     title:'Vue CLI & Vue Router',
-    //     vue:true,
-    //     react:false,
-    //     markup:false,
-    //     time:"2022-01",
-    //     rating:0,
-    //     skills:[
-    //         {src:require("@/assets/image/vue.png") , title:'Vue 로고 아이콘'},
-    //         {src:require("@/assets/image/sass.png") , title:'Sass 로고 아이콘'},
-    //     ],
-    //     posts:{
-    //         index:5,
-    //         mainImage:require("@/assets/image/vuemain.png"),
-    //         title:'Vue CLI',
-    //         subTitle:'Vue CLI & Vue Router',
-    //         responsive:'O',
-    //         deploy:'Netlify',
-    //         backend:'Hacker Api',
-    //         sites:[
-    //             {link:'https://news.ycombinator.com/' , name:"기존 사이트"},
-    //             {link:'https://cliadvance.netlify.app' , name:"제작 사이트"},
-    //             {link:'https://github.com/galadriel91/vue-basic/tree/master/05.VueCli/Advance' , name:"설명 및 코드"}
-    //         ],
-    //         support:[
-    //             {src:require("@/assets/image/Chromium.png") , title:'크로미움 로고'},
-    //             {src:require("@/assets/image/fox.png") , title:'파이어폭스 로고'}
-    //         ]
-    //     }
-    // },
-    // {
-    //     id:6,
-    //     title:'Vue FrameWork NuxtJS',
-    //     vue:true,
-    //     react:false,
-    //     markup:false,
-    //     time:"2022-01",
-    //     rating:0,
-    //     skills:[
-    //         {src:require("@/assets/image/vue.png") , title:'Vue 로고 아이콘'},
-    //         {src:require("@/assets/image/sass.png") , title:'Sass 로고 아이콘'},
-    //     ],
-    //     posts:{
-    //         index:6,
-    //         mainImage:require("@/assets/image/vuemain.png"),
-    //         title:'Vue NuxtJS',
-    //         subTitle:'Vue FrameWork NuxtJS',
-    //         responsive:'O',
-    //         deploy:'Netlify',
-    //         backend:'JSONPlaceholder',
-    //         sites:[
-    //             {link:'https://nuxtadvance.netlify.app' , name:"Vue 사이트"},
-    //             {link:'https://github.com/galadriel91/vue-basic/tree/master/06.VueNuxt/Advance' , name:"설명 및 코드"}
-    //         ],
-    //         support:[
-    //             {src:require("@/assets/image/Chromium.png") , title:'크로미움 로고'},
-    //             {src:require("@/assets/image/fox.png") , title:'파이어폭스 로고'}
-    //         ]
-    //     }
     // },
 ];
 
