@@ -103,10 +103,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, type PropType } from 'vue';
+import { defineComponent, onMounted, onUnmounted, type PropType } from 'vue';
 import type { ProjectItem } from '@/store/types';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
+
+declare global {
+    interface Window {
+        fullpage_api: any;
+    }
+}
 
 export default defineComponent({
     props: {
@@ -128,6 +134,15 @@ export default defineComponent({
         const onLoadImage = () => {
             OFF_LOADING();
         };
+
+        onMounted(() => {
+            window.fullpage_api.setLockAnchors(true);
+        });
+
+        onUnmounted(() => {
+            window.fullpage_api.setLockAnchors(false);
+            location.replace('/#projects');
+        });
 
         return {
             onClickClose,
