@@ -22,3 +22,12 @@
         }
     }
 }
+
+@media all and (max-width:760px){
+    .visualWrap{
+        margin: 6rem auto 0; min-height: calc(var(--vh, 1vh) * 100 - 6rem);
+        div{
+            height: 98%; 
+        }
+    }
+}
