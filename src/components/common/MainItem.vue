@@ -62,6 +62,7 @@
                             <span>사용 기술 :</span>
                             <ul>
                                 <li class="vue icon" v-if="item.vue">VUE</li>
+                                <li class="nuxt icon" v-if="item.nuxt">NUXT</li>
                                 <li class="ts icon" v-if="item.vue">TS</li>
                                 <li class="html icon" v-if="item.markup">
                                     HTML

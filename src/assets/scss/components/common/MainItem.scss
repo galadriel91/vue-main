@@ -85,6 +85,9 @@
                                 &.sass{
                                     background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
                                 }   
+                                &.nuxt{
+                                    background: url('@/assets/image/nuxt.png')no-repeat; background-size: cover ;
+                                }  
                             }
                         }
                     }

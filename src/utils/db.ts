@@ -240,54 +240,56 @@ const db: ProjectItem[] = [
             mobile: '/images/hackerMo.png',
         },
     },
-    // {
-    //     id: 5,
-    //     title: 'PORTFOLIO 개선 작업',
-    //     vue: true,
-    //     markup: false,
-    //     time: '2022-03',
-    //     rating: 0,
-    //     skills: [
-    //         {
-    //             src: '@/assets/image/vue.png',
-    //             title: 'Vue 로고 아이콘',
-    //         },
-    //         {
-    //             src: '@/assets/image/sass.png',
-    //             title: 'Sass 로고 아이콘',
-    //         },
-    //     ],
-    //     posts: {
-    //         mainImage: '@/assets/image/vuemain.png',
-    //         title: 'Vue CLI',
-    //         subTitle: 'Vue CLI & Vue Router',
-    //         responsive: 'O',
-    //         deploy: 'Netlify',
-    //         backend: 'Hacker Api',
-    //         sites: [
-    //             { link: 'https://news.ycombinator.com/', name: '기존 사이트' },
-    //             { link: 'https://cliadvance.netlify.app', name: '제작 사이트' },
-    //             {
-    //                 link: 'https://github.com/galadriel91/vue-basic/tree/master/05.VueCli/Advance',
-    //                 name: '설명 및 코드',
-    //             },
-    //         ],
-    //         support: [
-    //             {
-    //                 src: '@/assets/image/Chromium.png',
-    //                 title: '크로미움 로고',
-    //             },
-    //             {
-    //                 src: '@/assets/image/fox.png',
-    //                 title: '파이어폭스 로고',
-    //             },
-    //         ],
-    //         color: [''],
-    //         fonts: '',
-    //         pc: '',
-    //         review: [],
-    //     },
-    // },
+    {
+        id: 5,
+        title: 'PORTFOLIO 개선 작업',
+        vue: true,
+        nuxt: true,
+        markup: false,
+        time: '2022-11',
+        rating: 0,
+        skills: [
+            {
+                src: '@/assets/image/vue.png',
+                title: 'Vue 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/sass.png',
+                title: 'Sass 로고 아이콘',
+            },
+        ],
+        posts: {
+            mainImage: '/images/logo.png',
+            title: 'PORTFOLIO 개선 작업',
+            subTitle: 'PORTFOLIO 개선 작업',
+            responsive: 'O',
+            deploy: 'Netlify',
+            backend: 'X',
+            sites: [
+                { link: 'https://news.ycombinator.com/', name: '기존 사이트' },
+                { link: 'https://cliadvance.netlify.app', name: '개선 사이트' },
+                {
+                    link: 'https://github.com/galadriel91/vue-basic/tree/master/05.VueCli/Advance',
+                    name: '깃허브',
+                },
+            ],
+            support: [
+                {
+                    src: '@/assets/image/Chromium.png',
+                    title: '크로미움 로고',
+                },
+                {
+                    src: '@/assets/image/fox.png',
+                    title: '파이어폭스 로고',
+                },
+            ],
+            color: ['#BCEEF8', '#000000'],
+            fonts: 'ChosunSg',
+            review: [],
+            pc: '/images/portPc.png',
+            mobile: '/images/portMo.png',
+        },
+    },
 ];
 
 export { db };
