@@ -197,7 +197,7 @@ const db: ProjectItem[] = [
         ],
         posts: {
             mainImage: '/images/vueLogo.png',
-            title: 'Vue Hacker News',
+            title: 'Hacker News',
             subTitle: 'Hacker News 클론',
             responsive: 'O',
             deploy: 'Netlify',
@@ -260,8 +260,8 @@ const db: ProjectItem[] = [
         ],
         posts: {
             mainImage: '/images/logo.png',
-            title: 'PORTFOLIO 개선 작업',
-            subTitle: 'PORTFOLIO 개선 작업',
+            title: 'PORTFOLIO',
+            subTitle: 'PORTFOLIO 개선',
             responsive: 'O',
             deploy: 'Netlify',
             backend: 'X',
@@ -287,7 +287,7 @@ const db: ProjectItem[] = [
             fonts: 'ChosunSg',
             review: [
                 '기존에는 Nuxt2와 Vuetify를 이용하여 구성했다.',
-                '백엔드 없이 유사 로그인과 마이 페이지를 구현했었다.',
+                '백엔드 없이 유사 로그인과 마이 페이지를 구현했다.',
                 '이후 Vue3와 TS를 학습 하면서 배운것을',
                 '적용해보고 싶어서, 큰들은 유지한채 개편했다.',
                 'd.ts가 없는 라이브러리 및 window에 없는 객체값',
