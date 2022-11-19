@@ -46,7 +46,7 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#0095e1', '#000000'],
+            color: ['#0095E1', '#000000'],
             fonts: 'Arita-dotum-Medium',
             review: [
                 '처음하는 마크업 작업인 만큼 반응형 보다는',
@@ -103,7 +103,7 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#ed1f2d', '#000000'],
+            color: ['#ED1F2D', '#000000'],
             fonts: 'S-CoreDream-4Regular',
             review: [
                 '처음하는 반응형 작업인 만큼',
@@ -161,7 +161,7 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#cb333b', '#000000'],
+            color: ['#CB333B', '#000000'],
             fonts: 'ChosunGu',
             review: [
                 '최소 360px을 기준으로 반응형으로 작업했다.',
@@ -226,7 +226,7 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#00a19d', '#00000'],
+            color: ['#00A19D', '#00000'],
             fonts: 'ChosunSg',
             review: [
                 'JS의 대표 프레임워크 중 하나인 Vue.js를',
@@ -266,10 +266,10 @@ const db: ProjectItem[] = [
             deploy: 'Netlify',
             backend: 'X',
             sites: [
-                { link: 'https://news.ycombinator.com/', name: '기존 사이트' },
-                { link: 'https://cliadvance.netlify.app', name: '개선 사이트' },
+                { link: 'https://whitewave.netlify.app', name: '기존 사이트' },
+                { link: 'https://whitewave.netlify.app', name: '개선 사이트' },
                 {
-                    link: 'https://github.com/galadriel91/vue-basic/tree/master/05.VueCli/Advance',
+                    link: 'https://github.com/galadriel91/vue-main',
                     name: '깃허브',
                 },
             ],
@@ -285,7 +285,14 @@ const db: ProjectItem[] = [
             ],
             color: ['#BCEEF8', '#000000'],
             fonts: 'ChosunSg',
-            review: [],
+            review: [
+                '기존에는 Nuxt2와 Vuetify를 이용하여 구성했다.',
+                '백엔드 없이 유사 로그인과 마이 페이지를 구현했었다.',
+                '이후 Vue3와 TS를 학습 하면서 배운것을',
+                '적용해보고 싶어서, 큰들은 유지한채 개편했다.',
+                'd.ts가 없는 라이브러리 및 window에 없는 객체값',
+                '같은 문제를 해결하는 방법을 알게 되어서 좋았다.',
+            ],
             pc: '/images/portPc.png',
             mobile: '/images/portMo.png',
         },
