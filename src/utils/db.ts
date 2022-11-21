@@ -267,7 +267,7 @@ const db: ProjectItem[] = [
             backend: 'X',
             sites: [
                 { link: 'https://whitewave.netlify.app', name: '기존 사이트' },
-                { link: 'https://whitewave.netlify.app', name: '개선 사이트' },
+                { link: 'https://whitetree.netlify.app', name: '개선 사이트' },
                 {
                     link: 'https://github.com/galadriel91/vue-main',
                     name: '깃허브',
