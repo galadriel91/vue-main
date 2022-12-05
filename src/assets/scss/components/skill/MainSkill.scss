@@ -1,3 +1,26 @@
+body.dark{
+    h2{
+        color: #fff;
+        &::after{
+            background: #c9c9c9;
+        }
+    }
+    .techWrap{
+        background: #000;
+        & > div{
+            h3{
+                color: #fff;
+            }
+            p{
+                color: #afafaf;
+            }
+        }
+    }
+}
+
+
+
+
 h2{
     position: relative;
     padding-bottom: 2rem; text-align: center;

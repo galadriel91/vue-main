@@ -1,3 +1,23 @@
+body.dark{
+    ul{
+        border-top: 2px solid #fff;
+        li{
+            border-bottom: 1px solid #afafaf;
+            & > div{
+                div{
+                    span{
+                        color: #c9c9c9;
+                    }
+                }
+            }
+        }
+    }
+    button{
+        border: 1px solid #fff;
+        color: #afafaf;
+    }
+}
+
 .list-enter-active, .list-leave-active {
     transition: all 1s;
 }

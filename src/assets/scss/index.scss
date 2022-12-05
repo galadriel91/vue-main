@@ -14,7 +14,7 @@
 }
 
 html{
-    font-size: 10px !important;  height: 100%;
+    font-size: 10px !important; height: 100%;
 }
 
 body{
@@ -22,6 +22,15 @@ body{
     // width: 95%; margin: 0 auto; overflow-x: hidden; 
     font-size: 1rem !important;
     font-family: 'ChosunSg';
+}
+
+body.dark{
+    .fp-overflow{
+        background: #000;
+    }
+    .section{
+        background-color: #000 !important;
+    }
 }
 
 .fp-scroll-mac .fp-overflow::-webkit-scrollbar{

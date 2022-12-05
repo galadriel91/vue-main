@@ -1,3 +1,15 @@
+body.dark{
+    .loadingWrap{
+        background: #000;
+        .lds-facebook{
+            div{
+                background: #fff;
+            }
+        }
+    }
+}
+
+
 .loadingWrap{
     position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;
     background: #f7f7f7; 

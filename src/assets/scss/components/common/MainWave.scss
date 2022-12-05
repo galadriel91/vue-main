@@ -1,3 +1,14 @@
+body.dark{
+    .waveWrap{
+        .wave-bg{
+            background: #fff;
+        }
+        .waveInnerWrap{
+            background: #fff;
+        }
+    }
+}
+
 .waveWrap{
     position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 5;
     @-webkit-keyframes move{

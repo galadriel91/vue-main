@@ -1,3 +1,42 @@
+body.dark{
+    header{
+        background: #000;
+    }
+    .headerWrap{
+        h1{
+            a{
+                color: #fff;
+            }
+        }
+        div{
+            nav{
+                ul{
+                    li{
+                        a{
+                            span{
+                                color: #fff;
+                                &::after{
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dark{
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 header{
     background: #fff;
     position: fixed; left: 2.5%; top: 0;
@@ -48,6 +87,10 @@ header{
                     }
                 }
             }
+        }
+        .dark{
+            margin-left: 3rem; position: relative; top: -.2rem;
+            font-size: 3rem; background: none; color: #000; cursor: pointer;
         }
         .wholeBtn{
             display: none; height: 8rem; width: 8rem ; z-index: 9998; text-align: center;

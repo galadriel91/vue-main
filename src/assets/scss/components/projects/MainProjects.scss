@@ -1,3 +1,18 @@
+body.dark{
+    .projects{
+        &Title{
+            color: #fff;
+            h2{
+                &::after{
+                    background: #afafaf;
+                }
+            }
+        }
+    }
+}
+
+
+
 .list-enter-active, .list-leave-active {
     transition: all 1s;
 }

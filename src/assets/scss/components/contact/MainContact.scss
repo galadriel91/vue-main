@@ -1,3 +1,14 @@
+body.dark{
+    .contact{
+        h1{
+            color: #fff;
+            &::after{
+                background: #afafaf;
+            }
+        }
+    }
+}
+
 .contact{
     h1{
         position: relative;
