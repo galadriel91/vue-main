@@ -1,3 +1,76 @@
+body.dark{
+    .itemWrap{
+        background: #323232;
+        &Inner{
+            &Info{
+                &Image{
+                    & > div{
+                        strong{
+                            color: #fff;
+                        }
+                        span{
+                            color: #fff;
+                        }
+                    }
+                }
+                &Flex{
+                    &Detail{
+                        p{
+                            color: #fff;
+                        }
+                        ul{
+                            li{
+                                color: #afafaf;
+                            }
+                        }
+                    }
+                    &Text{
+                        h3{
+                            color: #fff;
+                        }
+                        &How{
+                            p{
+                                color: #afafaf;
+                            }
+                        }
+                        &Skill{
+                            color: #afafaf;
+                        }
+                        &Color{
+                            p{
+                                color: #afafaf;
+                            }
+                            ul{
+                                li{
+                                    span{
+                                        color: #afafaf;
+                                    }
+                                }
+                            }
+                        }
+                        &Font{
+                            p, span{
+                                color: #afafaf;
+                            }
+                        }
+                        &Link{
+                            p{
+                                color: #afafaf;
+                            }
+                            a{
+                                color: #afafaf;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .closeBtn{
+        color: #fff;
+    }
+}
+
 .itemWrap{
     &::-webkit-scrollbar {
         background-color: transparent;

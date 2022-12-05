@@ -1,6 +1,6 @@
 body.dark{
     header{
-        background: #000;
+        background: #323232;
     }
     .headerWrap{
         h1{
@@ -26,6 +26,17 @@ body.dark{
         }
         .dark{
             color: #fff;
+        }
+        .wholeBtn{
+            span{
+                background: #fff;
+                &::before{
+                    background: #fff;
+                }
+                &::after{
+                    background: #fff;
+                }
+            }
         }
     }
 }
@@ -118,6 +129,20 @@ header{
 }
 
 @media all and (max-width:1080px){
+    body.dark{
+        .headerWrap{
+            div{
+                nav{
+                    background: #323232;
+                    ul{
+                        li{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .headerWrap{
         height: 7rem;
         h1{
@@ -144,6 +169,10 @@ header{
                         }
                     }
                 }
+            }
+            .dark{
+                top: 0.05px;
+                margin-right: .5rem;
             }
             .wholeBtn{
                 position: static; z-index: 10;

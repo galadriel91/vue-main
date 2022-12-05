@@ -3,7 +3,7 @@ body.dark{
         form{
             div{
                 input{
-                    background: #000;
+                    background: #323232;
                     border-bottom: 2px solid #fff;
                     color: #fff;
                     &::placeholder{
@@ -13,7 +13,7 @@ body.dark{
             }
             .inputContentWrap{
                 textarea{
-                    background: #000;
+                    background: #323232;
                     border: 2px solid #fff; color: #fff;
                     &::placeholder{
                         color: #fff;

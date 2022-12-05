@@ -26,10 +26,13 @@ body{
 
 body.dark{
     .fp-overflow{
-        background: #000;
+        background: #323232;
     }
     .section{
-        background-color: #000 !important;
+        background-color: #323232 !important;
+    }
+    .fp-scroll-mac .fp-overflow::-webkit-scrollbar-thumb{
+        background-color: #fff !important;
     }
 }
 
