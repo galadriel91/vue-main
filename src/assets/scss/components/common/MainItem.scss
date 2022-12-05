@@ -59,6 +59,9 @@ body.dark{
                             }
                             a{
                                 color: #afafaf;
+                                &:hover{
+                                    background: #bceef8;; color: #000; 
+                                }
                             }
                         }
                     }
