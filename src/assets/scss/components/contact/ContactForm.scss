@@ -9,6 +9,9 @@ body.dark{
                     &::placeholder{
                         color: #fff;
                     }
+                    &.valid{
+                        border-bottom: 2px solid #51B587;
+                    }
                 }
             }
             .inputContentWrap{
@@ -17,6 +20,9 @@ body.dark{
                     border: 2px solid #fff; color: #fff;
                     &::placeholder{
                         color: #fff;
+                    }
+                    &.valid{
+                        border-bottom: 2px solid #51B587;
                     }
                 }
             }
@@ -38,6 +44,7 @@ body.dark{
             input{
                 width: 100%; height: 5rem; border-bottom: 2px solid #000; font-size: 1.5rem; text-indent: 1rem; font-family: 'ChosunSg';
                 font-size: 1.5rem; font-weight: bold; color: #000; 
+                
                 &::placeholder{
                     color: #000;
                 }
