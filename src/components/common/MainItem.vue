@@ -99,12 +99,25 @@
                 </div>
             </div>
         </div>
-        <button class="closeBtn xi-close-thin" @click="onClickClose"></button>
+        <div class="buttons">
+            <button :class="isDark" class="dark" @click="onClickDark"></button>
+            <button
+                class="closeBtn xi-close-thin"
+                @click="onClickClose"
+            ></button>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted, type PropType } from 'vue';
+import {
+    defineComponent,
+    onMounted,
+    onUnmounted,
+    type PropType,
+    computed,
+    ref,
+} from 'vue';
 import type { ProjectItem } from '@/store/types';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
@@ -123,6 +136,7 @@ export default defineComponent({
         },
     },
     setup() {
+        const dark = ref(false);
         const postStore = usePost();
         const { OFF_MAINITEM } = postStore;
         const commonStore = useCommon();
@@ -136,6 +150,26 @@ export default defineComponent({
             OFF_LOADING();
         };
 
+        const onClickDark = () => {
+            dark.value = !dark.value;
+            localStorage.setItem('dark', JSON.stringify(dark.value));
+            document.body.classList.toggle('dark');
+        };
+        const isDark = computed(() => {
+            return dark.value ? 'xi-sun' : 'xi-moon';
+        });
+
+        const initDark = () => {
+            if (localStorage.dark) {
+                dark.value = JSON.parse(localStorage.dark);
+                if (dark.value == true) {
+                    document.body.classList.add('dark');
+                }
+            }
+        };
+
+        initDark();
+
         onMounted(() => {
             window.fullpage_api.setLockAnchors(true);
         });
@@ -148,6 +182,8 @@ export default defineComponent({
         return {
             onClickClose,
             onLoadImage,
+            isDark,
+            onClickDark,
         };
     },
 });

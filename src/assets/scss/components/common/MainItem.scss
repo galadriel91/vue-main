@@ -69,8 +69,10 @@ body.dark{
             }
         }
     }
-    .closeBtn{
-        color: #fff;
+    .buttons{
+        button{
+            color: #fff;
+        }
     }
 }
 
@@ -243,12 +245,13 @@ body.dark{
         }
     }
 }
-.closeBtn{
-    position: fixed; top: 3rem; right: 5%;
-    font-size: 5rem; background: none; color: #000;
-    cursor: pointer;
+.buttons{
+    position: fixed; top: 2rem; right: 5%;
+    button{
+        font-size: 4.5rem; background: none; color: #000;
+        cursor: pointer;
+    }
 }
-
 
 @media all and (max-width:1300px){
     .itemWrap{
@@ -296,9 +299,10 @@ body.dark{
             }
         }
     }
-    .closeBtn{
-        top: 2rem; right: 5%;
-        font-size: 4.5rem; 
+    .buttons{
+        button{
+            font-size: 4rem;
+        }
     }
 }
 
