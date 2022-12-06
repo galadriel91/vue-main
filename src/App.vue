@@ -33,7 +33,6 @@ export default defineComponent({
 
         const setScreenSize = () => {
             const vh = window.innerHeight * 0.01;
-            console.log(window.innerHeight);
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         };
 
