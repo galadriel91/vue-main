@@ -7,7 +7,11 @@
                 @click="onClickMainItem(index)"
             >
                 <div class="clear">
-                    <span>{{ 10 > item.id ? `0${item.id}` : item.id }}.</span>
+                    <span
+                        >{{
+                            10 > index + 1 ? `0${index + 1}` : index + 1
+                        }}.</span
+                    >
                     <h3>{{ item.title }}</h3>
                     <div>
                         <span>

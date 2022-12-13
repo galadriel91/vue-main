@@ -5,9 +5,6 @@
                 <div class="itemWrapInnerInfoImage">
                     <img :src="item.posts.mainImage" :alt="item.posts.title" />
                     <div>
-                        <strong>{{
-                            10 > item.id ? `0${item.id}` : item.id
-                        }}</strong>
                         <span>{{ item.posts.title }}</span>
                     </div>
                 </div>
@@ -62,17 +59,20 @@
                             <span>사용 기술 :</span>
                             <ul>
                                 <li class="vue icon" v-if="item.vue">VUE</li>
+                                <li class="react icon" v-if="item.react">
+                                    REACT
+                                </li>
                                 <li class="nuxt icon" v-if="item.nuxt">NUXT</li>
-                                <li class="ts icon" v-if="item.vue">TS</li>
+                                <li
+                                    class="ts icon"
+                                    v-if="item.vue || item.react"
+                                >
+                                    TS
+                                </li>
                                 <li class="html icon" v-if="item.markup">
                                     HTML
                                 </li>
-                                <li
-                                    class="sass icon"
-                                    v-if="item.markup || item.vue"
-                                >
-                                    SASS
-                                </li>
+                                <li class="sass icon" v-if="item.sass">SASS</li>
                                 <li class="js icon" v-if="item.markup">JS</li>
                             </ul>
                         </div>

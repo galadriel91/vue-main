@@ -5,9 +5,6 @@ body.dark{
             &Info{
                 &Image{
                     & > div{
-                        strong{
-                            color: #fff;
-                        }
                         span{
                             color: #fff;
                         }
@@ -98,13 +95,10 @@ body.dark{
         &Info{
             width: 65rem; margin: 10rem 0 0;
             &Image{
-                margin-bottom: 4rem; text-align: center;
+                margin-bottom: 3rem; text-align: center;
                 & > div{
-                    strong{
-                        margin-right: 1rem;
-                        font-size: 3rem; color: #000; 
-                    }
                     span{
+                        margin-top: .5rem;
                         vertical-align: .3rem;
                         font-size: 2rem; font-weight: bold; color: #000;
                     }
@@ -159,6 +153,9 @@ body.dark{
                                 }
                                 &.vue{
                                     background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
+                                }
+                                &.react{
+                                    background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
                                 }
                                 &.sass{
                                     background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
@@ -223,7 +220,7 @@ body.dark{
             
         }
         &Image{
-            width: 125rem; padding: 5rem 0;
+            width: 125rem; padding: 4rem 0 5rem;
             position: relative; 
             .pcShadow{
                 position: relative; max-width: 100rem; width: 80%; margin: 0 auto; overflow-y: hidden;

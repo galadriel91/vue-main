@@ -27,6 +27,8 @@ interface PostItem {
 interface ProjectItem {
     id: number;
     vue: boolean;
+    sass: boolean;
+    react?: boolean;
     nuxt?: boolean;
     markup: boolean;
     title: string;

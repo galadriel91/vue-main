@@ -3,36 +3,45 @@ import type { ProjectItem } from '@/store/types';
 const db: ProjectItem[] = [
     {
         id: 1,
+        title: 'Hacker News With React',
         vue: false,
-        markup: true,
-        title: '도미노피자 메인 퍼블리싱',
-        time: '2022-10',
+        markup: false,
+        react: true,
+        sass: true,
+        time: '2022-12',
         rating: 0,
         skills: [
             {
-                src: '@/assets/image/html5.png',
-                title: 'HTML 로고 아이콘',
+                src: '/src/assets/image/react.png',
+                title: '리액트 로고 아이콘',
             },
             {
                 src: '@/assets/image/sass.png',
                 title: 'SCSS 로고 아이콘',
             },
-            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
+            {
+                src: '@/assets/image/ts.png',
+                title: 'TS 로고 아이콘',
+            },
         ],
         posts: {
-            mainImage: '/images/domino.png',
-            title: '도미노피자',
-            subTitle: '웹 사이트 퍼블리싱',
-            responsive: 'X',
-            deploy: 'CAFE24',
+            mainImage: '/images/reactLogo.png',
+            title: 'Hacker News',
+            subTitle: 'Hacker News 클론',
+            responsive: 'O',
+            deploy: 'Netlify',
+            backend: 'Hacker Api',
             sites: [
-                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
                 {
-                    link: 'http://lothlorien91.cafe24.com/domino/',
-                    name: '리뉴얼 사이트',
+                    link: 'https://news.ycombinator.com/',
+                    name: '기존 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/html-basics/tree/master/02.Domino',
+                    link: 'https://react-hacker.netlify.app',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/react-hacker',
                     name: '깃허브',
                 },
             ],
@@ -46,140 +55,26 @@ const db: ProjectItem[] = [
                     title: '파이어폭스 로고',
                 },
             ],
-            color: ['#0095E1', '#000000'],
-            fonts: 'Arita-dotum-Medium',
+            color: ['#5684FD', '#00000'],
+            fonts: 'ChosunSg',
             review: [
-                '처음하는 마크업 작업인 만큼 반응형 보다는',
-                'PC용으로 작업했다. 뚜렷한 디자인 철학은 없으며',
-                '전체적으로 큼직하게 섹션을 분리하고',
-                '간단한 피자 정보를 메인 섹션에 추가해보았다.',
-                'BX 슬라이더를 이용해 보았다',
+                'JS의 대표 프레임워크 중 하나인 React.js를',
+                '사용해서 Hacker News 클론 사이트를 구현했다.',
+                'Vue와 다르게 더 자유롭다는 느낌이 들었다.',
+                'useEffect 부분을 다루는 것이 꽤 힘들었다. ',
+                'v-if나 v-for가 엄청 편하다는 것을 느꼈다.',
             ],
-            pc: '/images/dominoPc.png',
+            pc: '/images/hackerRpc.png',
+            mobile: '/images/hackerRmo.png',
         },
     },
     {
         id: 2,
-        vue: false,
-        markup: true,
-        title: '알파색채 메인 퍼블리싱',
-        time: '2022-10',
-        rating: 0,
-        skills: [
-            {
-                src: '@/assets/image/html5.png',
-                title: 'HTML 로고 아이콘',
-            },
-            {
-                src: '@/assets/image/sass.png',
-                title: 'SCSS 로고 아이콘',
-            },
-            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
-        ],
-        posts: {
-            mainImage: '/images/alpha.png',
-            title: '알파색채',
-            subTitle: '웹 사이트 퍼블리싱',
-            responsive: 'O',
-            deploy: 'CAFE24',
-            sites: [
-                { link: 'http://www.alphacolor.com/', name: '기존사이트' },
-                {
-                    link: 'http://lothlorien91.cafe24.com/alpha/',
-                    name: '리뉴얼 사이트',
-                },
-                {
-                    link: 'https://github.com/galadriel91/html-basics/tree/master/03.AlphaColor',
-                    name: '깃허브',
-                },
-            ],
-            support: [
-                {
-                    src: '/src/assets/image/Chromium.png',
-                    title: '크로미움 로고',
-                },
-                {
-                    src: '/src/assets/image/fox.png',
-                    title: '파이어폭스 로고',
-                },
-            ],
-            color: ['#ED1F2D', '#000000'],
-            fonts: 'S-CoreDream-4Regular',
-            review: [
-                '처음하는 반응형 작업인 만큼',
-                '디자인의 변경 없이 구현하는 것을 목표로 했다.',
-                '헤더를 반응형으로 구현하는 것이 힘들었다.',
-                '최소 360px을 기준으로 작업했다.',
-                'Slick 슬라이더를 이용해 보았다',
-            ],
-            pc: '/images/alphaPc.png',
-            mobile: '/images/alphaMo.png',
-        },
-    },
-    {
-        id: 3,
-        title: '할리스커피 메인 퍼블리싱',
-        vue: false,
-        markup: true,
-        time: '2022-10',
-        rating: 0,
-        skills: [
-            {
-                src: '@/assets/image/html5.png',
-                title: 'HTML 로고 아이콘',
-            },
-            {
-                src: '@/assets/image/sass.png',
-                title: 'SCSS 로고 아이콘',
-            },
-            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
-        ],
-        posts: {
-            mainImage: '/images/hollys.png',
-            title: '할리스 커피',
-            subTitle: '웹 사이트 퍼블리싱',
-            responsive: 'O',
-            deploy: 'CAFE24',
-            sites: [
-                { link: 'https://www.hollys.co.kr/', name: '기존사이트' },
-                {
-                    link: 'http://lothlorien91.cafe24.com/hollys/index.html',
-                    name: '리뉴얼 사이트',
-                },
-                {
-                    link: 'https://github.com/galadriel91/html-basics/tree/master/04.Hollys',
-                    name: '깃허브',
-                },
-            ],
-            support: [
-                {
-                    src: '/src/assets/image/Chromium.png',
-                    title: '크로미움 로고',
-                },
-                {
-                    src: '/src/assets/image/fox.png',
-                    title: '파이어폭스 로고',
-                },
-            ],
-            color: ['#CB333B', '#000000'],
-            fonts: 'ChosunGu',
-            review: [
-                '최소 360px을 기준으로 반응형으로 작업했다.',
-                '기존의 홈페이지가 다른 프랜차이즈에 비해',
-                '옛날 느낌의 인상이 강해서 다른 커피 프랜차이즈',
-                '홈페이지를 참고하여 작업했다.',
-                'Slick과 aos를 이용해 보았다',
-            ],
-            pc: '/images/hollysPc.png',
-            mobile: '/images/hollysMo.png',
-        },
-    },
-    {
-        id: 4,
-        title: 'Hacker News 뷰어 사이트',
+        title: 'Hacker News With Vue',
         vue: true,
         markup: false,
-        time: '2022-10',
+        sass: true,
+        time: '2022-11',
         rating: 0,
         skills: [
             {
@@ -241,11 +136,12 @@ const db: ProjectItem[] = [
         },
     },
     {
-        id: 5,
+        id: 3,
         title: 'PORTFOLIO 개선 작업',
         vue: true,
         nuxt: true,
         markup: false,
+        sass: true,
         time: '2022-11',
         rating: 0,
         skills: [
@@ -295,6 +191,182 @@ const db: ProjectItem[] = [
             ],
             pc: '/images/portPc.png',
             mobile: '/images/portMo.png',
+        },
+    },
+    {
+        id: 4,
+        vue: false,
+        markup: true,
+        sass: true,
+        title: '도미노피자 메인 퍼블리싱',
+        time: '2022-10',
+        rating: 0,
+        skills: [
+            {
+                src: '@/assets/image/html5.png',
+                title: 'HTML 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
+            },
+            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
+        ],
+        posts: {
+            mainImage: '/images/domino.png',
+            title: '도미노피자',
+            subTitle: '웹 사이트 퍼블리싱',
+            responsive: 'X',
+            deploy: 'CAFE24',
+            sites: [
+                { link: 'https://web.dominos.co.kr/main', name: '기존사이트' },
+                {
+                    link: 'http://lothlorien91.cafe24.com/domino/',
+                    name: '리뉴얼 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/02.Domino',
+                    name: '깃허브',
+                },
+            ],
+            support: [
+                {
+                    src: '/src/assets/image/Chromium.png',
+                    title: '크로미움 로고',
+                },
+                {
+                    src: '/src/assets/image/fox.png',
+                    title: '파이어폭스 로고',
+                },
+            ],
+            color: ['#0095E1', '#000000'],
+            fonts: 'Arita-dotum-Medium',
+            review: [
+                '처음하는 마크업 작업인 만큼 반응형 보다는',
+                'PC용으로 작업했다. 뚜렷한 디자인 철학은 없으며',
+                '전체적으로 큼직하게 섹션을 분리하고',
+                '간단한 피자 정보를 메인 섹션에 추가해보았다.',
+                'BX 슬라이더를 이용해 보았다',
+            ],
+            pc: '/images/dominoPc.png',
+        },
+    },
+    {
+        id: 5,
+        vue: false,
+        markup: true,
+        sass: true,
+        title: '알파색채 메인 퍼블리싱',
+        time: '2022-10',
+        rating: 0,
+        skills: [
+            {
+                src: '@/assets/image/html5.png',
+                title: 'HTML 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
+            },
+            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
+        ],
+        posts: {
+            mainImage: '/images/alpha.png',
+            title: '알파색채',
+            subTitle: '웹 사이트 퍼블리싱',
+            responsive: 'O',
+            deploy: 'CAFE24',
+            sites: [
+                { link: 'http://www.alphacolor.com/', name: '기존사이트' },
+                {
+                    link: 'http://lothlorien91.cafe24.com/alpha/',
+                    name: '리뉴얼 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/03.AlphaColor',
+                    name: '깃허브',
+                },
+            ],
+            support: [
+                {
+                    src: '/src/assets/image/Chromium.png',
+                    title: '크로미움 로고',
+                },
+                {
+                    src: '/src/assets/image/fox.png',
+                    title: '파이어폭스 로고',
+                },
+            ],
+            color: ['#ED1F2D', '#000000'],
+            fonts: 'S-CoreDream-4Regular',
+            review: [
+                '처음하는 반응형 작업인 만큼',
+                '디자인의 변경 없이 구현하는 것을 목표로 했다.',
+                '헤더를 반응형으로 구현하는 것이 힘들었다.',
+                '최소 360px을 기준으로 작업했다.',
+                'Slick 슬라이더를 이용해 보았다',
+            ],
+            pc: '/images/alphaPc.png',
+            mobile: '/images/alphaMo.png',
+        },
+    },
+    {
+        id: 6,
+        title: '할리스커피 메인 퍼블리싱',
+        vue: false,
+        markup: true,
+        sass: true,
+        time: '2022-10',
+        rating: 0,
+        skills: [
+            {
+                src: '@/assets/image/html5.png',
+                title: 'HTML 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
+            },
+            { src: '@/assets/image/js.png', title: 'JS 로고 아이콘' },
+        ],
+        posts: {
+            mainImage: '/images/hollys.png',
+            title: '할리스 커피',
+            subTitle: '웹 사이트 퍼블리싱',
+            responsive: 'O',
+            deploy: 'CAFE24',
+            sites: [
+                { link: 'https://www.hollys.co.kr/', name: '기존사이트' },
+                {
+                    link: 'http://lothlorien91.cafe24.com/hollys/index.html',
+                    name: '리뉴얼 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/html-basics/tree/master/04.Hollys',
+                    name: '깃허브',
+                },
+            ],
+            support: [
+                {
+                    src: '/src/assets/image/Chromium.png',
+                    title: '크로미움 로고',
+                },
+                {
+                    src: '/src/assets/image/fox.png',
+                    title: '파이어폭스 로고',
+                },
+            ],
+            color: ['#CB333B', '#000000'],
+            fonts: 'ChosunGu',
+            review: [
+                '최소 360px을 기준으로 반응형으로 작업했다.',
+                '기존의 홈페이지가 다른 프랜차이즈에 비해',
+                '옛날 느낌의 인상이 강해서 다른 커피 프랜차이즈',
+                '홈페이지를 참고하여 작업했다.',
+                'Slick과 aos를 이용해 보았다',
+            ],
+            pc: '/images/hollysPc.png',
+            mobile: '/images/hollysMo.png',
         },
     },
 ];
