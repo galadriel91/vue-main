@@ -15,7 +15,7 @@ body.dark{
 
 
 ul{
-    margin-top: 2rem;
+    font-size: 0; text-align: center;
     li{
         display: inline-block; 
         button{
@@ -29,4 +29,18 @@ ul{
             }
         }
     }
+}
+
+@media all and (max-width:1080px){
+    ul{
+        li{
+            button{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:760px){
+
 }
