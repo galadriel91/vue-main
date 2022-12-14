@@ -1,15 +1,31 @@
+body.dark{
+    ul{
+        li{
+            button{
+                color: #afafaf;
+            }
+            &.active{
+                button{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
 ul{
     margin-top: 2rem;
     li{
         display: inline-block; 
         button{
-            display: block; padding: 0 1.5rem;
+            display: block; padding: 0 1rem;
             background: none; font-size: 2rem; color: #000;
             cursor: pointer;
         }
         &.active{
             button{
-                font-weight: bold; 
+                font-weight: bold;
             }
         }
     }

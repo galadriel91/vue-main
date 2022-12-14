@@ -18,7 +18,7 @@ import { storeToRefs } from 'pinia';
 export default defineComponent({
     setup() {
         const post = usePost();
-        const { projectsList, pageNum, showNum } = storeToRefs(post);
+        const { projectsList, pageNum } = storeToRefs(post);
         const { SET_PAGENUM, SET_SHOWNUM } = post;
 
         const pageIndex: ComputedRef<number> = computed(() => {

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <transition-group name="list" tag="ul">
+        <ul>
             <li
                 v-for="(item, index) in projectsList.slice(showNum, showLimits)"
                 :key="item.id"
@@ -16,8 +16,7 @@
                     </div>
                 </div>
             </li>
-        </transition-group>
-        <!-- <button v-if="hasMorePost" @click="onClickMorePost">더보기</button> -->
+        </ul>
     </div>
 </template>
 
