@@ -1,0 +1,16 @@
+ul{
+    margin-top: 2rem;
+    li{
+        display: inline-block; 
+        button{
+            display: block; padding: 0 1.5rem;
+            background: none; font-size: 2rem; color: #000;
+            cursor: pointer;
+        }
+        &.active{
+            button{
+                font-weight: bold; 
+            }
+        }
+    }
+}

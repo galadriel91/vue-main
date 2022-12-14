@@ -9,6 +9,8 @@ export const usePost = defineStore('post', {
         showLimits: 3,
         isMain: false,
         itemIndex: 0,
+        pageNum: 1,
+        showNum: 0,
     }),
     actions: {
         MORE_POST() {
@@ -22,6 +24,18 @@ export const usePost = defineStore('post', {
         },
         SET_INDEX(value: number) {
             this.itemIndex = value;
+        },
+        SET_PAGENUM(value: number) {
+            this.pageNum = value;
+        },
+        SET_SHOWNUM(value: number) {
+            if (value === 0) {
+                this.showNum = 0;
+                this.showLimits = 3;
+            } else {
+                this.showNum = this.showLimits * (value - 1);
+                this.showLimits = 3 * value;
+            }
         },
         ON_MAINITEM() {
             this.isMain = true;

@@ -2,16 +2,12 @@
     <div>
         <transition-group name="list" tag="ul">
             <li
-                v-for="(item, index) in projectsList.slice(0, showLimits)"
+                v-for="(item, index) in projectsList.slice(showNum, showLimits)"
                 :key="item.id"
                 @click="onClickMainItem(index)"
             >
                 <div class="clear">
-                    <span
-                        >{{
-                            10 > index + 1 ? `0${index + 1}` : index + 1
-                        }}.</span
-                    >
+                    <span>{{ 10 > item.id ? `0${item.id}` : item.id }}.</span>
                     <h3>{{ item.title }}</h3>
                     <div>
                         <span>
@@ -21,7 +17,7 @@
                 </div>
             </li>
         </transition-group>
-        <button v-if="hasMorePost" @click="onClickMorePost">더보기</button>
+        <!-- <button v-if="hasMorePost" @click="onClickMorePost">더보기</button> -->
     </div>
 </template>
 
@@ -36,7 +32,7 @@ export default defineComponent({
         const postStore = usePost();
         const commonStore = useCommon();
         const { ON_LOADING } = commonStore;
-        const { projectsList, showLimits, hasMorePost } =
+        const { projectsList, showLimits, hasMorePost, showNum } =
             storeToRefs(postStore);
         const { MORE_POST, ON_MAINITEM, SET_INDEX } = postStore;
         const onClickMorePost = () => {
@@ -49,6 +45,7 @@ export default defineComponent({
         };
 
         return {
+            showNum,
             onClickMorePost,
             hasMorePost,
             projectsList,
