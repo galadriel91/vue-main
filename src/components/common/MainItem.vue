@@ -15,7 +15,7 @@
                             <p v-if="item.markup">
                                 W3C Validator : <span>O</span>
                             </p>
-                            <p v-if="item.vue">
+                            <p v-if="item.vue || item.react">
                                 Backend : <span>{{ item.posts.backend }}</span>
                             </p>
                             <p>

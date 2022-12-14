@@ -276,12 +276,15 @@ body.dark{
             &Info{
                 &Image{
                     width: 34rem; margin: 0 auto;
+                    div{
+                        margin-bottom: 1rem;
+                    }
                 }
                 width: 100%; margin-top: 3rem;
                 &Flex{
                     flex-direction: column; align-items: center;
                     &Detail{
-                        width: 34rem; margin: 3rem auto 0;
+                        width: 34rem; margin: 2rem auto 0;
                     }
                     &Text{
                         width: 34rem; margin: 0 auto;
