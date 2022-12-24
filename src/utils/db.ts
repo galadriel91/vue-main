@@ -69,6 +69,74 @@ const db: ProjectItem[] = [
         },
     },
     {
+        id: 7,
+        title: 'Vue Simple Note',
+        vue: true,
+        markup: false,
+        react: false,
+        sass: true,
+        time: '2022-12',
+        rating: 0,
+        skills: [
+            {
+                src: '/src/assets/image/vue.png',
+                title: '뷰 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/sass.png',
+                title: 'SCSS 로고 아이콘',
+            },
+            {
+                src: '@/assets/image/ts.png',
+                title: 'TS 로고 아이콘',
+            },
+        ],
+        posts: {
+            mainImage: '/images/note.png',
+            title: 'Vue Simple Note',
+            subTitle: 'Vue Simple Note',
+            responsive: 'O',
+            deploy: 'Netlify',
+            backend: 'AWS EC2',
+            sites: [
+                {
+                    link: 'https://github.com/joshua1988/vue-til-server',
+                    name: '참고 API',
+                },
+                {
+                    link: 'https://note-vue.netlify.app',
+                    name: '제작 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/vue-note',
+                    name: '깃허브',
+                },
+            ],
+            support: [
+                {
+                    src: '/src/assets/image/Chromium.png',
+                    title: '크로미움 로고',
+                },
+                {
+                    src: '/src/assets/image/fox.png',
+                    title: '파이어폭스 로고',
+                },
+            ],
+            color: ['#1D9BF0', '#00000'],
+            fonts: 'ChosunSg',
+            review: [
+                '참고한 API를 AWS EC2 + 도메인을 연결하여 배포했다.',
+                '로컬 스토리지가 아닌 몽고DB를 연결했다.',
+                '아직 API를 직접 정의하지는 못하기 때문에',
+                '생각했던 모든 기능을 구현하는 것은 힘들었다.',
+                '서버쪽 학습을 하면서, 다음에는 파이어베이스를',
+                '사용해서 다른 프로젝트를 진행 해봐야겠다. ',
+            ],
+            pc: '/images/hackerRpc.png',
+            mobile: '/images/hackerRmo.png',
+        },
+    },
+    {
         id: 2,
         title: 'Hacker News With Vue',
         vue: true,
