@@ -92,10 +92,19 @@
             </div>
             <div class="itemWrapInnerImage">
                 <div class="pcShadow">
-                    <img :src="item.posts.pc" alt="" @load="onLoadImage" />
+                    <img
+                        :src="item.posts.pc"
+                        alt="포트폴리오 PC 이미지"
+                        :class="{ isHeight: item.isHeight }"
+                        @load="onLoadImage"
+                    />
                 </div>
                 <div class="mobileShadow" v-if="item.posts.responsive !== 'X'">
-                    <img :src="item.posts.mobile" alt="" />
+                    <img
+                        :src="item.posts.mobile"
+                        :class="{ isHeight: item.isHeight }"
+                        alt="포트폴리오 모바일 이미지"
+                    />
                 </div>
             </div>
         </div>

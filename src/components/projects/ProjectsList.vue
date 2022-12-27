@@ -4,7 +4,7 @@
             <li
                 v-for="(item, index) in projectsList.slice(showNum, showLimits)"
                 :key="item.id"
-                @click="onClickMainItem(index)"
+                @click="onClickMainItem(index + showNum)"
             >
                 <div class="clear">
                     <span

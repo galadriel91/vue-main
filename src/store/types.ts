@@ -34,6 +34,7 @@ interface ProjectItem {
     title: string;
     time: string;
     rating: number;
+    isHeight?: boolean;
     skills: SkillsItem[];
     posts: PostItem;
 }
