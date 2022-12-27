@@ -132,8 +132,8 @@ const db: ProjectItem[] = [
                 '서버쪽 학습을 하면서, 다음에는 파이어베이스를',
                 '사용해서 다른 프로젝트를 진행 해봐야겠다. ',
             ],
-            pc: '/images/hackerRpc.png',
-            mobile: '/images/hackerRmo.png',
+            pc: '/images/notePc.png',
+            mobile: '/images/noteMo.png',
         },
     },
     {

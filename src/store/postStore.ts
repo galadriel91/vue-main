@@ -29,12 +29,14 @@ export const usePost = defineStore('post', {
             this.pageNum = value;
         },
         SET_SHOWNUM(value: number) {
-            if (value === 0) {
-                this.showNum = 0;
+            if (value === 1) {
                 this.showLimits = 3;
+                this.showNum = 0;
             } else {
-                this.showNum = this.showLimits * (value - 1);
+                this.showLimits = 3;
+                this.showNum = 0;
                 this.showLimits = 3 * value;
+                this.showNum = this.showLimits - 3;
             }
         },
         ON_MAINITEM() {
