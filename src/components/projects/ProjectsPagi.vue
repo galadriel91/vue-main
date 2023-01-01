@@ -1,11 +1,27 @@
 <template>
     <ul>
-        <li
-            v-for="item in pageIndex"
-            :key="item"
-            :class="{ active: item === pageNum }"
-        >
-            <button @click="onClickPagi(item)">{{ item }}</button>
+        <li>
+            <button
+                class="material-symbols-outlined"
+                :class="{ disable: pageNum === 1 }"
+                :disabled="pageNum === 1"
+                @click="onMovePagi(pageNum - 1)"
+            >
+                keyboard_arrow_left
+            </button>
+        </li>
+        <li>
+            <span>{{ pageNum }}</span>
+        </li>
+        <li>
+            <button
+                class="material-symbols-outlined"
+                :class="{ disable: pageIndex === pageNum }"
+                :disabled="pageIndex === pageNum"
+                @click="onMovePagi(pageNum + 1)"
+            >
+                keyboard_arrow_right
+            </button>
         </li>
     </ul>
 </template>
@@ -25,7 +41,7 @@ export default defineComponent({
             return Math.ceil(projectsList.value.length / 3);
         });
 
-        const onClickPagi = (index: number) => {
+        const onMovePagi = (index: number) => {
             SET_PAGENUM(index);
             SET_SHOWNUM(index);
         };
@@ -33,7 +49,7 @@ export default defineComponent({
         return {
             pageIndex,
             pageNum,
-            onClickPagi,
+            onMovePagi,
         };
     },
 });

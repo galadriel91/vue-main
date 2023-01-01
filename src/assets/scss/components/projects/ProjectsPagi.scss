@@ -1,12 +1,13 @@
 body.dark{
     ul{
         li{
-            button{
-                color: #afafaf;
+            span{
+                color: #fff;
             }
-            &.active{
-                button{
-                    color: #fff;
+            button{
+                color: #fff;
+                &.disable{
+                    color: #afafaf;
                 }
             }
         }
@@ -15,32 +16,18 @@ body.dark{
 
 
 ul{
-    font-size: 0; text-align: center;
+    font-size: 0; text-align: center; display: flex; align-items: center; justify-content: center;
     li{
-        display: inline-block; 
+        span{
+            font-size: 1.8rem; color: #000; font-weight: bold;
+        }
         button{
             display: block; padding: 0 1rem;
-            background: none; font-size: 2rem; color: #000;
+            background: none; font-size: 2.5rem; color: #000;
             cursor: pointer;
-        }
-        &.active{
-            button{
-                font-weight: bold;
+            &.disable{
+                color: #afafaf;
             }
         }
     }
-}
-
-@media all and (max-width:1080px){
-    ul{
-        li{
-            button{
-                font-size: 1.6rem;
-            }
-        }
-    }
-}
-
-@media all and (max-width:760px){
-
 }
