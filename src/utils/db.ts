@@ -127,11 +127,11 @@ const db: ProjectItem[] = [
             fonts: 'ChosunSg',
             review: [
                 '참고한 API를 AWS EC2 + 도메인을 연결하여 배포했다.',
-                '로컬 스토리지가 아닌 몽고DB를 연결했다.',
                 '아직 API를 직접 정의하지는 못하기 때문에',
                 '생각했던 모든 기능을 구현하는 것은 힘들었다.',
                 '서버쪽 학습을 하면서, 다음에는 파이어베이스를',
                 '사용해서 다른 프로젝트를 진행 해봐야겠다. ',
+                'test@test.com / test123 <테스트 계정>',
             ],
             pc: '/images/notePc.png',
             mobile: '/images/noteMo.png',
