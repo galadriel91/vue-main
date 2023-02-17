@@ -1,11 +1,12 @@
-interface SkillsItem {
-    src: string;
-    title: string;
-}
-
 interface SitesItem {
     link: string;
     name: string;
+}
+
+interface ImagesItem {
+    pc?: string;
+    mobile?: string;
+    alt: string;
 }
 
 interface PostItem {
@@ -17,11 +18,10 @@ interface PostItem {
     color: string[];
     review: string[];
     fonts: string;
-    pc: string;
     backend?: string;
-    mobile?: string;
+    pages: number;
     sites: SitesItem[];
-    support: SkillsItem[];
+    images: ImagesItem[];
 }
 
 interface ProjectItem {
@@ -32,10 +32,7 @@ interface ProjectItem {
     nuxt?: boolean;
     markup: boolean;
     title: string;
-    time: string;
-    rating: number;
     isHeight?: boolean;
-    skills: SkillsItem[];
     posts: PostItem;
 }
 
