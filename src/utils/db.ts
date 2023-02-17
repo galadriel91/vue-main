@@ -4,22 +4,13 @@ const db: ProjectItem[] = [
     {
         id: 1,
         title: 'Hacker News',
+        design: true,
+        markup: true,
         vue: true,
-        markup: false,
-        react: true,
-        sass: true,
         posts: {
             mainImage: '/images/reactLogo.png',
-            title: 'Hacker News',
-            subTitle: 'Hacker News 클론',
-            responsive: 'O',
-            deploy: 'Netlify',
-            backend: 'Hacker Api',
+            subtitle: 'Hacker News',
             sites: [
-                {
-                    link: 'https://news.ycombinator.com/',
-                    name: '기존 사이트',
-                },
                 {
                     link: 'https://react-hacker.netlify.app',
                     name: '클론 사이트',
@@ -29,16 +20,6 @@ const db: ProjectItem[] = [
                     name: '깃허브',
                 },
             ],
-            color: ['#5684FD', '#00000'],
-            fonts: 'ChosunSg',
-            review: [
-                'JS의 대표 프레임워크 중 하나인 React.js를',
-                '사용해서 Hacker News 클론 사이트를 구현했다.',
-                'Vue와 다르게 더 자유롭다는 느낌이 들었다.',
-                'useEffect 부분을 다루는 것이 꽤 힘들었다. ',
-                'v-if나 v-for가 엄청 편하다는 것을 느꼈다.',
-            ],
-            pages: 2,
             images: [
                 {
                     pc: '/images/hackerRpc.png',
@@ -51,75 +32,37 @@ const db: ProjectItem[] = [
             ],
         },
     },
-    // {
-    //     id: 7,
-    //     title: 'Vue Simple Note',
-    //     vue: true,
-    //     isHeight: true,
-    //     markup: false,
-    //     react: false,
-    //     sass: true,
-    //     time: '2022-12',
-    //     rating: 0,
-    //     skills: [
-    //         {
-    //             src: '/src/assets/image/vue.png',
-    //             title: '뷰 로고 아이콘',
-    //         },
-    //         {
-    //             src: '@/assets/image/sass.png',
-    //             title: 'SCSS 로고 아이콘',
-    //         },
-    //         {
-    //             src: '@/assets/image/ts.png',
-    //             title: 'TS 로고 아이콘',
-    //         },
-    //     ],
-    //     posts: {
-    //         mainImage: '/images/note.png',
-    //         title: 'Vue Simple Note',
-    //         subTitle: 'Vue Simple Note',
-    //         responsive: 'O',
-    //         deploy: 'Netlify',
-    //         backend: 'AWS EC2',
-    //         sites: [
-    //             {
-    //                 link: 'https://github.com/joshua1988/vue-til-server',
-    //                 name: '참고 API',
-    //             },
-    //             {
-    //                 link: 'https://note-vue.netlify.app',
-    //                 name: '제작 사이트',
-    //             },
-    //             {
-    //                 link: 'https://github.com/galadriel91/vue-note',
-    //                 name: '깃허브',
-    //             },
-    //         ],
-    //         support: [
-    //             {
-    //                 src: '/src/assets/image/Chromium.png',
-    //                 title: '크로미움 로고',
-    //             },
-    //             {
-    //                 src: '/src/assets/image/fox.png',
-    //                 title: '파이어폭스 로고',
-    //             },
-    //         ],
-    //         color: ['#1D9BF0', '#00000'],
-    //         fonts: 'ChosunSg',
-    //         review: [
-    //             '참고한 API를 AWS EC2 + 도메인을 연결하여 배포했다.',
-    //             '아직 API를 직접 정의하지는 못하기 때문에',
-    //             '생각했던 모든 기능을 구현하는 것은 힘들었다.',
-    //             '서버쪽 학습을 하면서, 다음에는 파이어베이스를',
-    //             '사용해서 다른 프로젝트를 진행 해봐야겠다. ',
-    //             'test@test.com / test123 <테스트 계정>',
-    //         ],
-    //         pc: '/images/notePc.png',
-    //         mobile: '/images/noteMo.png',
-    //     },
-    // },
+    {
+        id: 7,
+        title: 'Vue Simple Note',
+        design: true,
+        vue: true,
+        markup: false,
+        posts: {
+            mainImage: '/images/note.png',
+            subtitle: 'Vue Simple Note',
+            sites: [
+                {
+                    link: 'https://note-vue.netlify.app',
+                    name: '제작 사이트',
+                },
+                {
+                    link: 'https://github.com/galadriel91/vue-note',
+                    name: '깃허브',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/notePc.png',
+                    alt: '데스크탑 이미지',
+                },
+                {
+                    mobile: '/images/noteMo.png',
+                    alt: '모바일 이미지',
+                },
+            ],
+        },
+    },
     // {
     //     id: 2,
     //     title: 'Hacker News With Vue',

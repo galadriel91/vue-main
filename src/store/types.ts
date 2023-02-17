@@ -11,28 +11,17 @@ interface ImagesItem {
 
 interface PostItem {
     mainImage: string;
-    title: string;
-    subTitle: string;
-    responsive: string;
-    deploy: string;
-    color: string[];
-    review: string[];
-    fonts: string;
-    backend?: string;
-    pages: number;
+    subtitle: string;
     sites: SitesItem[];
     images: ImagesItem[];
 }
 
 interface ProjectItem {
     id: number;
-    vue: boolean;
-    sass: boolean;
-    react?: boolean;
-    nuxt?: boolean;
-    markup: boolean;
     title: string;
-    isHeight?: boolean;
+    design: boolean;
+    markup: boolean;
+    vue: boolean;
     posts: PostItem;
 }
 

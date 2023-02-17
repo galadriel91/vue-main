@@ -32,18 +32,22 @@ ul{
         &:hover a , &:focus a{
             background: #eee;
         }
-        & > div{
-            display: flex; height: 100%;  align-items: center; transition: all 1s; cursor: pointer;
-            & > span{
-                display: block; width: 6rem; font-size: 1.8rem; font-weight: bold;text-align: center;
-            }
-            h3{
-                font-size: 2rem;
-            }
-            div{
-                margin-left: auto;
+        .listWrap{
+            display: flex; height: 100%;  align-items: center; justify-content: space-between;
+            transition: all 1s; cursor: pointer;
+            .indexWrap{
+                display: flex;
                 span{
-                    margin-right: 2rem ; font-size: 1.6rem; color: #000; font-weight: bold;
+                    display: block; width: 6rem; font-size: 1.8rem; font-weight: bold; text-align: center;
+                }
+                h3{
+                    font-size: 2rem;
+                }
+            }
+            .classWrap{
+                span{
+                    margin: 0 .5rem;
+                    font-size: 1.6rem; color: #000; font-weight: bold;
                 }
             }
         }
@@ -68,16 +72,19 @@ button{
     ul{
         margin: 4rem auto 2rem;
         li{
-            height: 5rem;
-            & > div{
-                & > span{
-                    width: 4rem; font-size: 1.5rem;
-                }
-                h3{
-                    font-size: 1.5rem;
-                }
-                div{
+            height: 6rem;
+            .listWrap{
+                .indexWrap{
                     span{
+                        width: 3rem; font-size: 1.5rem;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+                .classWrap{
+                    span{
+                        margin: 0 .3rem;
                         font-size: 1.4rem;
                     }
                 }

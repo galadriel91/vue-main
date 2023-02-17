@@ -23,7 +23,7 @@ body.dark{
 
 h2{
     position: relative;
-    padding-bottom: 2rem; text-align: center;
+    text-align: center;
     font-size: 4rem; color: #222; 
     &::after{
         content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;

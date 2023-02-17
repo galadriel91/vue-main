@@ -6,19 +6,21 @@
                 :key="item.id"
                 @click="onClickMainItem(index + showNum)"
             >
-                <div class="clear">
-                    <span
-                        >{{
-                            10 > showNum
-                                ? `0${showNum + index + 1}`
-                                : showNum + index + 1
-                        }}.</span
-                    >
-                    <h3>{{ item.title }}</h3>
-                    <div>
-                        <span>
-                            {{ item.time }}
-                        </span>
+                <div class="listWrap">
+                    <div class="indexWrap">
+                        <span
+                            >{{
+                                10 > showNum
+                                    ? `0${showNum + index + 1}`
+                                    : showNum + index + 1
+                            }}.</span
+                        >
+                        <h3>{{ item.title }}</h3>
+                    </div>
+                    <div class="classWrap">
+                        <span v-if="item.design">Design,</span>
+                        <span v-if="item.markup">MarkUp,</span>
+                        <span v-if="item.vue">Vue</span>
                     </div>
                 </div>
             </li>
