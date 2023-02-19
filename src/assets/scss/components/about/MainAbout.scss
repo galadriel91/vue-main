@@ -128,9 +128,6 @@ body.dark{
         .introWrap{
             h3{
                 font-size: 3rem;
-                &::after{
-                    bottom: 0;
-                }
             }
             &Profile{
                 .myInfo{

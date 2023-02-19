@@ -11,7 +11,7 @@ interface ImagesItem {
 
 interface PostItem {
     mainImage: string;
-    subtitle: string;
+    subtitle: string[];
     sites: SitesItem[];
     images: ImagesItem[];
 }

@@ -96,9 +96,6 @@ h2{
     }
     h2{
         font-size: 3.5rem;
-        &::after{
-            bottom: -1.5rem;
-        }
     }
     .techWrap{
         flex-direction: column; align-items: center;
@@ -122,16 +119,14 @@ h2{
 @media all and (max-width: 760px) {
     .allTechWrap{
         padding: 6rem 0 1rem;
+        margin: 0;
         height: 70rem;
     }
     h2{
         font-size: 3rem;
-        &::after{
-            bottom: 0;
-        }
     }
     .techWrap{
-        margin: 0;
+        margin: 2rem auto;
         flex-direction: column; align-items: center;
         & > div{
             h3{

@@ -6,59 +6,18 @@ body.dark{
                 &Image{
                     & > div{
                         span{
-                            color: #fff;
+                            color: #c4c4c4;
                         }
                     }
                 }
                 &Flex{
-                    &Detail{
-                        p{
-                            color: #fff;
-                        }
-                        ul{
-                            li{
-                                color: #afafaf;
-                            }
-                        }
-                    }
                     &Text{
-                        h3{
-                            color: #fff;
+                        p{
+                            color: #c4c4c4;
                         }
-                        &How{
-                            p{
-                                color: #afafaf;
-                            }
-                        }
-                        &Skill{
-                            color: #afafaf;
-                        }
-                        &Color{
-                            p{
-                                color: #afafaf;
-                            }
-                            ul{
-                                li{
-                                    span{
-                                        color: #afafaf;
-                                    }
-                                }
-                            }
-                        }
-                        &Font{
-                            p, span{
-                                color: #afafaf;
-                            }
-                        }
-                        &Link{
-                            p{
-                                color: #afafaf;
-                            }
+                        .linkWrap{
                             a{
-                                color: #afafaf;
-                                &:hover{
-                                    background: #bceef8;; color: #000; 
-                                }
+                                color: #c4c4c4;
                             }
                         }
                     }
@@ -93,125 +52,40 @@ body.dark{
         width: 100%; min-height: 100% !important; overflow-y: auto ;
         display: flex; justify-content: center; align-items: center; flex-direction: column;
         &Info{
-            width: 65rem; margin: 10rem 0 0;
+            width: 65rem;
             &Image{
+                margin-top: 4rem;
                 margin-bottom: 3rem; text-align: center;
                 & > div{
+                    margin-top: 4rem;
                     span{
-                        margin-top: .5rem;
-                        vertical-align: .3rem;
-                        font-size: 2rem; font-weight: bold; color: #000;
+                        font-size: 2.5rem; color: #000;
                     }
                 }
             }
             &Flex{
-                display: flex; justify-content: space-between;
-                &Detail{
-                    p{
-                        font-size: 1.8rem; color: #000; font-weight: bold;
-                    }
-                    ul{
-                        li{
-                            margin-top: 1rem;
-                            font-size: 1.5rem; color: #555; font-weight: bold;
-                        }
-                    }
-                }
+                text-align: center;
                 &Text{
-                    h3{
-                        font-size: 1.8rem; margin-bottom: 1rem; color: #000;
+                    margin-top: 3rem; 
+                    p{
+                        font-size: 1.8rem; color: #000; margin-top: 1.5rem;
                     }
-                    &How{
-                        display: flex;
-                        p{
-                            margin-right: 1.5rem;
-                            font-size: 1.5rem; font-weight: bold; color: #000; 
-                        }
-                    }
-                    &Skill{
-                        margin-top: .5rem;
-                        display: flex; align-items: center;
-                        font-size: 1.5rem; font-weight: bold; color: #000;
-                        ul{
-                            display: flex; font-size: 0;
-                            li{
-                                margin-left: 1rem;
-                                &.icon{
-                                    width: 3rem; height: 3rem;
-                                }
-                                &.html{
-                                    background: url('@/assets/image/html5.png')no-repeat; background-size: cover ;
-                                }
-                                &.css{
-                                    background: url('@/assets/image/css3.png')no-repeat; background-size: cover ;
-                                }
-                                &.js{
-                                    background: url('@/assets/image/js.png')no-repeat; background-size: cover ;
-                                }
-                                &.ts{
-                                    background: url('@/assets/image/ts.png')no-repeat; background-size: cover ;
-                                }
-                                &.vue{
-                                    background: url('@/assets/image/vue.png')no-repeat; background-size: cover ;
-                                }
-                                &.react{
-                                    background: url('@/assets/image/react.png')no-repeat; background-size: cover ;
-                                }
-                                &.sass{
-                                    background: url('@/assets/image/sass.png')no-repeat; background-size: cover ;
-                                }   
-                                &.nuxt{
-                                    background: url('@/assets/image/nuxt.png')no-repeat; background-size: cover ;
-                                }  
-                            }
-                        }
-                    }
-                    &Color{
-                        margin-top: 1rem;
-                        display: flex; align-items: center;
-                        p{
-                            font-size: 1.5rem; color: #000; font-weight: bold;
-                        }
-                        ul{
-                            font-size: 0; display: flex;
-                            li{
-                                margin-left: 1rem;
-                                span{
-                                    display: inline-block; vertical-align: middle;
-                                    font-size: 1.5rem; color: #000; font-weight: bold;
-                                    &.color{
-                                        width: 2rem; height: 2rem; margin-right: 1rem; border-radius: .5rem;
-                                        background: #000; font-size: 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    &Font{
-                        margin-top: 1rem;
-                        display: flex; align-items: center;
-                        p , span{
-                            font-size: 1.5rem; color: #000; font-weight: bold;
-                        }
-                        p{
-                            margin-right: 1rem;
-                        }
-                    }
-                    &Link{
-                        margin-top: 1rem; font-size: 0;
-                        p{
-                            margin-right: 1rem; display: inline-block;
-                            font-size: 1.5rem; color: #000; font-weight: bold;
-                        }
+                    .linkWrap{
+                        margin-top: 2.5rem;
                         a{
                             position: relative;
-                            display: inline-block; border-radius: 1rem; font-family: 'ChosunSg';
-                            font-size: 1.5rem; color: #000; text-align: center; transition: all .5s; font-weight: bold;
-                            &:hover{
-                                background: #bceef8;; color: #000; 
+                            font-size: 1.8rem; margin-right: 6rem;
+                            &::after{
+                                content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 1rem; background: rgba(188, 238, 248 , .3);
+                                transition: all .5s;
                             }
-                            &:nth-of-type(2){
-                                margin: 0 1rem;
+                            &:hover{
+                                &::after{
+                                    left: 0; width: 100%;
+                                }
+                            }
+                            &:last-child{
+                                margin-right: 0;
                             }
                         }
                     }
@@ -220,30 +94,10 @@ body.dark{
             
         }
         &Image{
-            width: 125rem; padding: 4rem 0 5rem;
-            position: relative; 
-            .pcShadow{
-                position: relative; max-width: 100rem; width: 80%; margin: 0 auto; overflow-y: hidden;
-                border: 10px solid #000; border-radius :3rem;
-                padding: 20% 0;
-                img{
-                    position: absolute; left: 0; top: 0;
-                    width: 100%; 
-                    &.isHeight{
-                        height: 100%;
-                    }
-                }
-            }
-            .mobileShadow{
-                position: absolute; left: 1rem; bottom: 5rem; overflow-y: hidden;
-                width: 24rem; padding: 17% 0; background: #fff;
-                border: 10px solid #000; border-radius :3rem;
-                img{
-                    position: absolute; width: 100%; left: 0; top: 0;
-                    &.isHeight{
-                        height: 100%;
-                    }
-                }
+            width: 125rem; margin: 5rem auto 0;
+            img{
+                width: 100%; margin-bottom: 4rem; border-radius: 1rem;
+                filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
             }
         }
     }

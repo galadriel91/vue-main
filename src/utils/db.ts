@@ -8,21 +8,24 @@ const db: ProjectItem[] = [
         markup: true,
         vue: true,
         posts: {
-            mainImage: '/images/reactLogo.png',
-            subtitle: 'Hacker News',
+            mainImage: '/images/vueLogo.png',
+            subtitle: [
+                'JS의 대표적인 프레임워크 중 하나인 Vue.js를 사용하여',
+                'Hacker News 클론사이트를 마크업 하였습니다.',
+            ],
             sites: [
                 {
-                    link: 'https://react-hacker.netlify.app',
+                    link: 'https://vue-hacker.netlify.app',
                     name: '클론 사이트',
                 },
                 {
-                    link: 'https://github.com/galadriel91/react-hacker',
+                    link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=zEK0YVBwLKFI0Je5-1',
                     name: '깃허브',
                 },
             ],
             images: [
                 {
-                    pc: '/images/hackerRpc.png',
+                    pc: '/images/hackerPc.png',
                     alt: '데스크탑 이미지',
                 },
                 {
@@ -34,13 +37,16 @@ const db: ProjectItem[] = [
     },
     {
         id: 7,
-        title: 'Vue Simple Note',
+        title: 'Hollys Coffee',
         design: true,
-        vue: true,
-        markup: false,
+        vue: false,
+        markup: true,
         posts: {
             mainImage: '/images/note.png',
-            subtitle: 'Vue Simple Note',
+            subtitle: [
+                'JS의 대표적인 프레임워크 중 하나인 Vue.js를 사용하여',
+                'Hacker News 클론사이트를 마크업 하였습니다.',
+            ],
             sites: [
                 {
                     link: 'https://note-vue.netlify.app',
