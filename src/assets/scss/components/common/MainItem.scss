@@ -114,15 +114,9 @@ body.dark{
     .itemWrap{
         &Inner{
             &Image{
-                width: 100%;
-                .pcShadow{
-                    border-radius: 2rem;
-                    border: 5px solid #000; 
-                }
-                .mobileShadow{
-                    width: 20%;
-                    border-radius: 2rem;
-                    border: 5px solid #000;
+                width: 95%;
+                img{
+                    border-radius: 1rem;
                 }
             }
         }
@@ -135,26 +129,16 @@ body.dark{
         &Inner{
             &Info{
                 &Image{
-                    width: 34rem; margin: 0 auto;
+                    width: 34rem; margin: 4rem auto 0;
                     div{
                         margin-bottom: 1rem;
                     }
                 }
                 width: 100%; margin-top: 3rem;
                 &Flex{
-                    flex-direction: column; align-items: center;
-                    &Detail{
-                        width: 34rem; margin: 2rem auto 0;
+                    p{
+
                     }
-                    &Text{
-                        width: 34rem; margin: 0 auto;
-                    }
-                }
-            }
-            &Image{
-                padding: 3rem 0;
-                .mobileShadow{
-                    bottom: 3rem;
                 }
             }
         }
@@ -166,28 +150,29 @@ body.dark{
     }
 }
 
-@media all and (max-width:500px){
+@media all and (max-width:490px){
     .itemWrap{
         &Inner{
-            height: 125vh;
             &Info{
-                margin-top: 0;
+                &Image{
+                    & > div{
+                        span{
+                            font-size: 2.2rem;
+                        }
+                    }
+                }
                 &Flex{
-                    &Detail{
-                        padding-left: 1rem; box-sizing: border-box;
-                    }
                     &Text{
-                        padding-left: 1rem; box-sizing: border-box;
+                        p{
+                            font-size: 1.6rem; margin-top: 1.2rem;
+                        }
+                        .linkWrap{
+                            margin-top: 2rem;
+                            a{
+                                font-size: 1.6rem; margin-right: 5rem;
+                            }
+                        }
                     }
-                }
-            }
-            &Image{
-                .pcShadow{
-                    border-radius: 1.5rem;
-                    padding: 25% 0;
-                }
-                .mobileShadow{
-                    border-radius: 1.5rem;
                 }
             }
         }
