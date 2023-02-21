@@ -6,18 +6,18 @@ body.dark{
                 &Image{
                     & > div{
                         span{
-                            color: #c4c4c4;
+                            color: #e0e0e0;
                         }
                     }
                 }
                 &Flex{
                     &Text{
                         p{
-                            color: #c4c4c4;
+                            color: #e0e0e0;
                         }
                         .linkWrap{
                             a{
-                                color: #c4c4c4;
+                                color: #e0e0e0;
                             }
                         }
                     }
@@ -27,7 +27,7 @@ body.dark{
     }
     .buttons{
         button{
-            color: #fff;
+            color: #e0e0e0;
         }
     }
 }

@@ -2,11 +2,19 @@ body.dark{
     ul{
         border-top: 2px solid #fff;
         li{
-            border-bottom: 1px solid #afafaf;
-            & > div{
-                div{
+            border-bottom: 1px solid #fefefe;
+            .listWrap{
+                .indexWrap{
                     span{
-                        color: #c9c9c9;
+                        color: #e0e0e0;
+                    }
+                    h3{
+                        color: #e0e0e0;
+                    }
+                }
+                .classWrap{
+                    span{
+                        color: #e0e0e0;
                     }
                 }
             }

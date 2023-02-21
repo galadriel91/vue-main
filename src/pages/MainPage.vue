@@ -58,7 +58,7 @@ export default defineComponent({
         MainSlide,
     },
     setup() {
-        const isResponsive = ref(0);
+        const isResponsive = ref(1920);
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
@@ -72,6 +72,7 @@ export default defineComponent({
             return new Date().getFullYear();
         });
         onMounted(() => {
+            isResponsive.value = window.innerWidth;
             window.addEventListener('resize', () => {
                 isResponsive.value = window.innerWidth;
             });

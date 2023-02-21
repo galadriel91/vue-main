@@ -1,6 +1,6 @@
 body.dark{
     h2{
-        color: #fff;
+        color: #e0e0e0;
         &::after{
             background: #c9c9c9;
         }
@@ -9,10 +9,10 @@ body.dark{
         background: #323232;
         & > div{
             h3{
-                color: #fff;
+                color: #e0e0e0;
             }
             p{
-                color: #afafaf;
+                color: #e0e0e0;
             }
         }
     }
