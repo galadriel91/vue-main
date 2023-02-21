@@ -3,11 +3,7 @@
         <div class="itemWrapInner">
             <div class="itemWrapInnerInfo">
                 <div class="itemWrapInnerInfoImage">
-                    <img
-                        :src="item.posts.mainImage"
-                        :alt="item.title"
-                        @load="onLoadImage"
-                    />
+                    <img :src="item.posts.mainImage" :alt="item.title" />
                     <div>
                         <span>{{ item.title }}</span>
                     </div>
@@ -34,6 +30,7 @@
                 <img
                     :src="item.posts.images[0].pc"
                     :alt="item.posts.images[0].alt"
+                    @load="onLoadImage"
                 />
             </div>
         </div>
