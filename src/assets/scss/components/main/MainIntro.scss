@@ -1,0 +1,186 @@
+@keyframes animationName{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes scroll{
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes stick{
+    0%{ height: 0; opacity:0;}
+	15%{ height: 0; opacity:0;}
+	40%{height: 4rem; opacity:1;}
+	70%{height: 4rem; opacity:1;}
+	100%{height: 4rem; opacity:0;}
+}
+
+
+.visualWrap{
+    position: relative; z-index: 10;
+    border: 1.5rem solid #fff; box-sizing: border-box;
+    width: 100%; margin: 0 auto; min-height: calc(var(--vh, 1vh) * 100);
+    background: linear-gradient(135deg, rgba(69,231,255,1) 0%,rgba(69,231,255,1) 17%,rgba(66,62,231,1) 33%,rgba(136,72,223,1) 50%,rgba(251,174,174,1) 67%,rgba(249,251,174,1) 83%,rgba(114,243,130,1) 100%);
+    background-size: 1000% 1000%;
+    animation: animationName 35s ease infinite;
+    .intro{
+        position: absolute; top: 50%; transform: translateY(-50%); left: 2rem;
+        font-family: 'Fredericka the Great'; color: #fff;
+        p{
+            font-size: 15rem;
+            br{
+                display: none;
+            }
+        }
+        span{
+            font-size: 10rem;
+        }
+    }
+    .scroll{
+        position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%);
+        p{
+            font-size: 1.6rem; color: #fff;
+            position: relative;
+            animation: scroll 3s ease infinite;
+        }
+        &::after{
+            content: ''; position: absolute; top: 2rem; left: 50%; transform: translateX(-50%);
+            width: 1px; height: 4rem; background: #fff;
+            animation: stick 3s ease infinite;
+        }
+    }
+}
+
+@media all and (max-width:1470px){
+    .visualWrap{
+        .intro{
+            p{
+                br{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:1080px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 12rem;
+            }
+            span{
+                font-size: 8rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:870px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 10rem;
+            }
+            span{
+                font-size: 7rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:730px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 8rem;
+            }
+            span{
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:600px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 6.5rem;
+            }
+            span{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:500px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 6.5rem;
+            }
+            span{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:490px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 5.5rem;
+            }
+            span{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:430px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 5rem;
+            }
+            span{
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width:390px){
+    .visualWrap{
+        .intro{
+            p{
+                font-size: 4.5rem;
+            }
+            span{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

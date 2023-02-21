@@ -2,7 +2,8 @@
     <div>
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
-                <MainSlide />
+                <!-- <MainSlide /> -->
+                <MainIntro />
             </div>
             <div class="section">
                 <MainAbout />
@@ -47,6 +48,7 @@ import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSkill from '@/components/skills/MainSkill.vue';
 import MainWave from '@/components/common/MainWave.vue';
 import MainSlide from '@/components/main/MainSlide.vue';
+import MainIntro from '@/components/main/MainIntro.vue';
 
 export default defineComponent({
     components: {
@@ -55,7 +57,7 @@ export default defineComponent({
         MainProjects,
         MainSkill,
         MainWave,
-        MainSlide,
+        MainIntro,
     },
     setup() {
         const isResponsive = ref(1920);
