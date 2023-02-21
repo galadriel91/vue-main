@@ -1,6 +1,6 @@
 <template>
     <div>
-        <MainHeader v-if="name !== 'HOME'" />
+        <MainHeader v-show="name !== 'HOME'" />
         <RouterView />
         <MainLoading />
         <MainModal :isModal="isModal">

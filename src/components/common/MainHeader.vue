@@ -3,7 +3,7 @@
         <div class="headerWrap">
             <h1><a href="#home">WHITE TREE</a></h1>
             <div>
-                <nav :class="{ showing: isActive }">
+                <nav :class="{ showing: isActive }" class="nav">
                     <ul id="menu">
                         <li data-menuanchor="home" @click="onClickRemove">
                             <a href="#home"><span>Home</span></a>
