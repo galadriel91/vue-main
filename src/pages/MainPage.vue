@@ -24,7 +24,7 @@
             </div>
             <div class="section">
                 <MainContact />
-                <MainWave>
+                <MainWave v-if="isResponsive > 960">
                     <template #waveMessage>© {{ YEAR }} LEE MOON SEOB</template>
                 </MainWave>
             </div>
@@ -33,7 +33,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, computed, type ComputedRef } from 'vue';
+import {
+    defineComponent,
+    ref,
+    reactive,
+    computed,
+    onMounted,
+    type ComputedRef,
+} from 'vue';
 import MainAbout from '@/components/about/MainAbout.vue';
 import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
@@ -51,6 +58,7 @@ export default defineComponent({
         MainSlide,
     },
     setup() {
+        const isResponsive = ref(0);
         const options = reactive({
             licenseKey: import.meta.env.VITE_APP_FULLPAGE_KEY,
             menu: '#menu',
@@ -63,9 +71,15 @@ export default defineComponent({
         const YEAR: ComputedRef<number> = computed(() => {
             return new Date().getFullYear();
         });
+        onMounted(() => {
+            window.addEventListener('resize', () => {
+                isResponsive.value = window.innerWidth;
+            });
+        });
         return {
             YEAR,
             options,
+            isResponsive,
         };
     },
 });

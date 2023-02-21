@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="headerWrap">
-            <h1><a href="#home">PORTFOLIO</a></h1>
+            <h1><a href="#home">WHITE TREE</a></h1>
             <div>
                 <nav :class="{ showing: isActive }">
                     <ul id="menu">
