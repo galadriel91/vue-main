@@ -2,7 +2,6 @@
     <div>
         <FullPage ref="fullpage" :options="options" id="fullpage">
             <div class="section">
-                <!-- <MainSlide /> -->
                 <MainIntro />
             </div>
             <div class="section">
@@ -20,7 +19,7 @@
             <div class="section">
                 <MainProjects />
                 <MainWave>
-                    <template #waveMessage>PORTFOLIO</template>
+                    <template #waveMessage>PROJECTS</template>
                 </MainWave>
             </div>
             <div class="section">
@@ -47,7 +46,6 @@ import MainContact from '@/components/contact/MainContact.vue';
 import MainProjects from '@/components/projects/MainProjects.vue';
 import MainSkill from '@/components/skills/MainSkill.vue';
 import MainWave from '@/components/common/MainWave.vue';
-import MainSlide from '@/components/main/MainSlide.vue';
 import MainIntro from '@/components/main/MainIntro.vue';
 
 export default defineComponent({

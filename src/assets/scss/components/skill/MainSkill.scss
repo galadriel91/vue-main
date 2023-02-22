@@ -24,7 +24,7 @@ body.dark{
 h2{
     position: relative;
     text-align: center;
-    font-size: 4rem; color: #222; 
+    font-size: 4rem; color: #222; font-weight: normal;
     &::after{
         content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;
     }
@@ -42,7 +42,7 @@ h2{
         padding: 0 2rem; text-align: center;
         h3{
             padding: 2rem 0;
-            color: #000; font-size: 2.5rem;
+            color: #000; font-size: 2.5rem; font-weight: normal;
         }
         p{
             padding: 1.5rem 0 2rem;
