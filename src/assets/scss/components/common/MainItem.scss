@@ -94,9 +94,9 @@ body.dark{
             
         }
         &Image{
-            width: 125rem; margin: 5rem auto 0;
+            width: 125rem; margin: 5rem auto; 
             img{
-                width: 100%; margin-bottom: 4rem; border-radius: 1rem;
+                width: 100%; border-radius: 1rem;
                 filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
             }
         }
@@ -129,7 +129,7 @@ body.dark{
         &Inner{
             &Info{
                 &Image{
-                    width: 34rem; margin: 4rem auto 0;
+                    width: 34rem; margin: 2.5rem auto 0;
                     div{
                         margin-bottom: 1rem;
                     }
@@ -169,6 +169,9 @@ body.dark{
                         }
                     }
                 }
+            }
+            &Image{
+                margin: 3rem auto; padding-bottom: 5rem;
             }
         }
     }
