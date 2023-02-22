@@ -30,7 +30,7 @@ export default defineComponent({
     },
     setup() {
         const route = useRoute();
-        const name = ref('');
+        const name = ref('HOME');
         const setScreenSize = () => {
             const vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
