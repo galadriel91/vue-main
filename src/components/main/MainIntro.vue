@@ -1,9 +1,17 @@
 <template>
     <div class="visualWrap">
-        <div class="intro">
-            <p>WEB <br class="responsiove" />DEVELOPER</p>
-            <span>LEE MOON SEOB</span>
-        </div>
+        <img
+            class="intro window"
+            src="@/assets/image/word.png"
+            alt="word"
+            @load="onLoadImage"
+        />
+        <img
+            class="intro mobile"
+            src="@/assets/image/word1.png"
+            alt="word"
+            @load="onLoadImage"
+        />
         <nav :class="{ showing: isActive }" class="nav">
             <ul id="menu">
                 <li data-menuanchor="home" @click="onClickRemove">
@@ -34,7 +42,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { useCommon } from '@/store/commonStore';
 
 export default defineComponent({
@@ -55,14 +63,11 @@ export default defineComponent({
             OFF_LOADING();
         };
 
-        onMounted(() => {
-            onLoadImage();
-        });
-
         return {
             isActive,
             onToggleActive,
             onClickRemove,
+            onLoadImage,
         };
     },
 });

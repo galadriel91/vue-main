@@ -14,11 +14,11 @@
                             {{ value }}
                         </p>
                         <div class="linkWrap">
-                            <a :href="item.posts.sites[0].link"
+                            <a :href="item.posts.sites[0].link" target="_blank"
                                 >배포사이트
                                 <span class="xi-long-arrow-right"></span
                             ></a>
-                            <a :href="item.posts.sites[1].link"
+                            <a :href="item.posts.sites[1].link" target="_blank"
                                 >상세정보
                                 <span class="xi-long-arrow-right"></span
                             ></a>
