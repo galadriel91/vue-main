@@ -14,14 +14,32 @@
                             {{ value }}
                         </p>
                         <div class="linkWrap">
-                            <a :href="item.posts.sites[0].link" target="_blank"
-                                >배포사이트
-                                <span class="xi-long-arrow-right"></span
-                            ></a>
-                            <a :href="item.posts.sites[1].link" target="_blank"
-                                >상세정보
-                                <span class="xi-long-arrow-right"></span
-                            ></a>
+                            <div>
+                                <img
+                                    src="@/assets/image/chrome.png"
+                                    alt="크롬 로고"
+                                />
+                                <a
+                                    :href="item.posts.sites[0].link"
+                                    target="_blank"
+                                >
+                                    배포사이트
+                                    <span class="xi-long-arrow-right"></span
+                                ></a>
+                            </div>
+                            <div>
+                                <img
+                                    src="@/assets/image/figma.png"
+                                    alt="피그마 로고"
+                                />
+                                <a
+                                    :href="item.posts.sites[1].link"
+                                    target="_blank"
+                                >
+                                    상세정보
+                                    <span class="xi-long-arrow-right"></span
+                                ></a>
+                            </div>
                         </div>
                     </div>
                 </div>

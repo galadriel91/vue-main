@@ -71,21 +71,33 @@ body.dark{
                         font-size: 1.8rem; color: #000; margin-top: 1.5rem;
                     }
                     .linkWrap{
-                        margin-top: 2.5rem;
-                        a{
-                            position: relative;
-                            font-size: 1.8rem; margin-right: 6rem;
-                            &::after{
-                                content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 1rem; background: rgba(188, 238, 248 , .3);
-                                transition: all .5s;
-                            }
-                            &:hover{
-                                &::after{
-                                    left: 0; width: 100%;
+                        margin-top: 2.5rem; display: flex; justify-content: center;
+                        div{
+                            display: flex; align-items: center;
+                            &:first-child{
+                                margin-right: 5rem;
+                                img{
+                                    margin-right: 1rem;
                                 }
                             }
-                            &:last-child{
-                                margin-right: 0;
+                            img{
+                                width: 3rem; margin-right: .5rem;
+                            }
+                            a{
+                                position: relative;
+                                font-size: 1.8rem;
+                                &::after{
+                                    content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 1rem; background: rgba(188, 238, 248 , .3);
+                                    transition: all .5s;
+                                }
+                                &:hover{
+                                    &::after{
+                                        left: 0; width: 100%;
+                                    }
+                                }
+                                &:last-child{
+                                    margin-right: 0;
+                                }
                             }
                         }
                     }
@@ -163,8 +175,13 @@ body.dark{
                         }
                         .linkWrap{
                             margin-top: 2rem;
-                            a{
-                                font-size: 1.6rem; margin-right: 5rem;
+                            div{
+                                &:first-child{
+                                    margin-right: 3rem;
+                                }
+                                a{
+                                    font-size: 1.6rem; 
+                                }
                             }
                         }
                     }
