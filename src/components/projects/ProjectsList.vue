@@ -20,6 +20,7 @@
                     <div class="classWrap">
                         <span v-if="item.design">Design,</span>
                         <span v-if="item.markup">MarkUp,</span>
+                        <span v-if="item.react">React</span>
                         <span v-if="item.vue">Vue</span>
                     </div>
                 </div>

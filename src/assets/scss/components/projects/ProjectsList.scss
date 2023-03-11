@@ -110,3 +110,17 @@ button{
         width: 90%;
     }
 }
+
+@media all and (max-width:500px){
+    ul{
+        li{
+            .listWrap{
+                .classWrap{
+                    span{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

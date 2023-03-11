@@ -2,30 +2,31 @@ import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
     {
-        id: 1,
+        id: 8,
         title: 'Hacker News',
         design: true,
         markup: true,
-        vue: true,
+        react: true,
+        vue: false,
         posts: {
-            mainImage: '/images/vueLogo.png',
+            mainImage: '/images/reactLogo.png',
             subtitle: [
-                'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
+                'JS의 프레임워크 중 하나인 React.js를 사용하여',
                 'Hacker News 클론사이트를 마크업 하였습니다.',
             ],
             sites: [
                 {
-                    link: 'https://vue-hacker.netlify.app',
+                    link: 'https://react-hacker.netlify.app',
                     name: '클론 사이트',
                 },
                 {
-                    link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
+                    link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
                     name: '피그마 상세정보',
                 },
             ],
             images: [
                 {
-                    pc: '/images/hackerPc.png',
+                    pc: '/images/reactPc.png',
                     alt: '데스크탑 이미지',
                 },
                 {
@@ -98,6 +99,40 @@ const db: ProjectItem[] = [
                 },
                 {
                     mobile: '/images/noteMo.png',
+                    alt: '모바일 이미지',
+                },
+            ],
+        },
+    },
+    {
+        id: 1,
+        title: 'Hacker News',
+        design: true,
+        markup: true,
+        vue: true,
+        posts: {
+            mainImage: '/images/vueLogo.png',
+            subtitle: [
+                'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
+                'Hacker News 클론사이트를 마크업 하였습니다.',
+            ],
+            sites: [
+                {
+                    link: 'https://vue-hacker.netlify.app',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/hackerPc.png',
+                    alt: '데스크탑 이미지',
+                },
+                {
+                    mobile: '/images/hackerRmo.png',
                     alt: '모바일 이미지',
                 },
             ],

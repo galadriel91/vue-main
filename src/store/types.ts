@@ -22,6 +22,7 @@ interface ProjectItem {
     design: boolean;
     markup: boolean;
     vue: boolean;
+    react?: boolean;
     posts: PostItem;
 }
 
