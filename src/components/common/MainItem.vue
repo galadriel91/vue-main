@@ -60,12 +60,12 @@
             <div class="itemWrapInnerInfomation" v-show="isShow">
                 <img
                     class="desktop"
-                    :src="item.posts.info"
+                    :src="item.posts.info[0].pc"
                     alt="상세정보 이미지"
                 />
                 <img
                     class="mobile"
-                    :src="item.posts.mobile"
+                    :src="item.posts.info[1].mobile"
                     alt="상세정보 이미지"
                 />
             </div>

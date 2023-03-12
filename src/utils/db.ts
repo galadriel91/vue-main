@@ -10,8 +10,16 @@ const db: ProjectItem[] = [
         vue: false,
         posts: {
             mainImage: '/images/reactLogo.png',
-            info: '/images/newsInfo.png',
-            mobile: '/images/newsMobile.png',
+            info: [
+                {
+                    pc: '/images/newsInfo.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/newsMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
             subtitle: [
                 'JS의 프레임워크 중 하나인 React.js를 사용하여',
                 'Hacker News 클론사이트를 마크업 하였습니다.',
@@ -50,6 +58,16 @@ const db: ProjectItem[] = [
                 'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
                 '포트폴리오 사이트를 제작 하였습니다.',
             ],
+            info: [
+                {
+                    pc: '/images/newsInfo.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/newsMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
             sites: [
                 {
                     link: 'https://whitetree.netlify.app',
@@ -83,6 +101,16 @@ const db: ProjectItem[] = [
             subtitle: [
                 '피그마와 HTML & CSS & JS를 사용하여',
                 '할리스 커피 클론사이트를 마크업 하였습니다.',
+            ],
+            info: [
+                {
+                    pc: '/images/hollysDesk.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/hollysMobile.png',
+                    alt: '모바일 정보',
+                },
             ],
             sites: [
                 {
@@ -118,6 +146,16 @@ const db: ProjectItem[] = [
                 'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
                 'Hacker News 클론사이트를 마크업 하였습니다.',
             ],
+            info: [
+                {
+                    pc: '/images/newsInfo.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/newsMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
             sites: [
                 {
                     link: 'https://vue-hacker.netlify.app',
@@ -151,6 +189,16 @@ const db: ProjectItem[] = [
             subtitle: [
                 '피그마와 HTML & CSS & JS를 사용하여',
                 '알파색채 클론사이트를 마크업 하였습니다.',
+            ],
+            info: [
+                {
+                    pc: '/images/alphaDesk.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/alphaMobile.png',
+                    alt: '모바일 정보',
+                },
             ],
             sites: [
                 {
@@ -186,6 +234,16 @@ const db: ProjectItem[] = [
                 '피그마와 HTML & CSS & JS를 사용하여',
                 '에어부산 클론사이트를 마크업 하였습니다.',
             ],
+            info: [
+                {
+                    pc: '/images/newsInfo.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/newsMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
             sites: [
                 {
                     link: 'https://lothlorien91.cafe24.com/airbusan/index.html',
@@ -219,6 +277,16 @@ const db: ProjectItem[] = [
             subtitle: [
                 '피그마와 VueCDN & HTML & CSS & JS를 사용하여',
                 '도미노피자 클론사이트를 마크업 하였습니다.',
+            ],
+            info: [
+                {
+                    pc: '/images/newsInfo.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/newsMobile.png',
+                    alt: '모바일 정보',
+                },
             ],
             sites: [
                 {
