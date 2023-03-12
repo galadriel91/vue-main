@@ -10,6 +10,8 @@ const db: ProjectItem[] = [
         vue: false,
         posts: {
             mainImage: '/images/reactLogo.png',
+            info: '/images/newsInfo.png',
+            mobile: '/images/newsMobile.png',
             subtitle: [
                 'JS의 프레임워크 중 하나인 React.js를 사용하여',
                 'Hacker News 클론사이트를 마크업 하였습니다.',

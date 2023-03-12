@@ -36,13 +36,38 @@
                                     :href="item.posts.sites[1].link"
                                     target="_blank"
                                 >
-                                    상세정보
+                                    피그마
                                     <span class="xi-long-arrow-right"></span
                                 ></a>
+                            </div>
+                            <div>
+                                <img
+                                    src="@/assets/image/info.png"
+                                    alt="상세정보 로고"
+                                />
+                                <button
+                                    @click="onClickInfo"
+                                    :class="{ on: isShow }"
+                                >
+                                    상세정보
+                                    <span class="xi-long-arrow-right"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="itemWrapInnerInfomation" v-show="isShow">
+                <img
+                    class="desktop"
+                    :src="item.posts.info"
+                    alt="상세정보 이미지"
+                />
+                <img
+                    class="mobile"
+                    :src="item.posts.mobile"
+                    alt="상세정보 이미지"
+                />
             </div>
             <div class="itemWrapInnerImage">
                 <img
@@ -89,6 +114,7 @@ export default defineComponent({
         },
     },
     setup() {
+        const isShow = ref(false);
         const dark = ref(false);
         const postStore = usePost();
         const { OFF_MAINITEM } = postStore;
@@ -121,6 +147,10 @@ export default defineComponent({
             }
         };
 
+        const onClickInfo = () => {
+            isShow.value = !isShow.value;
+        };
+
         initDark();
 
         onMounted(() => {
@@ -137,6 +167,8 @@ export default defineComponent({
             onLoadImage,
             isDark,
             onClickDark,
+            isShow,
+            onClickInfo,
         };
     },
 });
