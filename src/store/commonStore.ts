@@ -5,6 +5,7 @@ export const useCommon = defineStore('common', {
         loading: false,
         isModal: false,
         modalMessage: '',
+        dark: false,
     }),
     actions: {
         ON_LOADING() {

@@ -41,11 +41,14 @@
 
 <script lang="ts">
 import { defineComponent, ref, computed } from 'vue';
+import { useCommon } from '@/store/commonStore';
+import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
+        const common = useCommon();
+        const { dark } = storeToRefs(common);
         const isActive = ref(false);
-        const dark = ref(false);
         const onToggleActive = () => {
             isActive.value = !isActive.value;
         };

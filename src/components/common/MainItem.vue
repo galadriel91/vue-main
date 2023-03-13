@@ -42,7 +42,13 @@
                             </div>
                             <div>
                                 <img
+                                    v-show="!dark"
                                     src="@/assets/image/info.png"
+                                    alt="상세정보 로고"
+                                />
+                                <img
+                                    v-show="dark"
+                                    src="@/assets/image/winfo.png"
                                     alt="상세정보 로고"
                                 />
                                 <button
@@ -99,6 +105,7 @@ import {
 import type { ProjectItem } from '@/store/types';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
+import { storeToRefs } from 'pinia';
 
 declare global {
     interface Window {
@@ -114,11 +121,11 @@ export default defineComponent({
         },
     },
     setup() {
+        const commonStore = useCommon();
+        const { dark } = storeToRefs(commonStore);
         const isShow = ref(false);
-        const dark = ref(false);
         const postStore = usePost();
         const { OFF_MAINITEM } = postStore;
-        const commonStore = useCommon();
         const { OFF_LOADING } = commonStore;
 
         const onClickClose = () => {
@@ -166,6 +173,7 @@ export default defineComponent({
             onClickClose,
             onLoadImage,
             isDark,
+            dark,
             onClickDark,
             isShow,
             onClickInfo,
