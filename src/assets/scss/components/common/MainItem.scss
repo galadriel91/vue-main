@@ -118,10 +118,11 @@ body.dark{
             }
             img{
                 width: 100%; border-radius: 1rem;
+                // filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
             }
         }
         &Image{
-            width: 125rem; margin: 5rem auto; 
+            width: 125rem; margin: 4rem auto 5rem; 
             img{
                 width: 100%; border-radius: 1rem;
                 filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
@@ -149,7 +150,6 @@ body.dark{
         }
     }
 }
-
 
 @media all and (max-width:900px){
     .itemWrap{
@@ -242,6 +242,7 @@ body.dark{
                             font-size: 1.4rem; margin-top: 1.2rem;
                         }
                         .linkWrap{
+                            margin-top: 1.5rem;
                             div{
                                 &:nth-child(2){
                                     margin: 0 1rem;
@@ -256,6 +257,12 @@ body.dark{
                         }
                     }
                 }
+            }
+            &Infomation{
+                margin: 1.5rem auto 0;
+            }
+            &Image{
+                margin: 2rem auto; 
             }
         }
     }

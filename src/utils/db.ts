@@ -12,16 +12,16 @@ const db: ProjectItem[] = [
             mainImage: '/images/reactLogo.png',
             info: [
                 {
-                    pc: '/images/newsInfo.png',
+                    pc: '/images/rekerDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
-                    mobile: '/images/newsMobile.png',
+                    mobile: '/images/rekerMobile.png',
                     alt: '모바일 정보',
                 },
             ],
             subtitle: [
-                'JS의 프레임워크 중 하나인 React.js를 사용하여',
+                'JS의 라이브러리 중 하나인 React.js를 사용하여',
                 'Hacker News 클론사이트를 마크업 하였습니다.',
             ],
             sites: [
@@ -60,11 +60,11 @@ const db: ProjectItem[] = [
             ],
             info: [
                 {
-                    pc: '/images/newsInfo.png',
+                    pc: '/images/portDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
-                    mobile: '/images/newsMobile.png',
+                    mobile: '/images/portMobile.png',
                     alt: '모바일 정보',
                 },
             ],
@@ -148,7 +148,7 @@ const db: ProjectItem[] = [
             ],
             info: [
                 {
-                    pc: '/images/newsInfo.png',
+                    pc: '/images/newsDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
@@ -236,11 +236,11 @@ const db: ProjectItem[] = [
             ],
             info: [
                 {
-                    pc: '/images/newsInfo.png',
+                    pc: '/images/busanDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
-                    mobile: '/images/newsMobile.png',
+                    mobile: '/images/busanMobile.png',
                     alt: '모바일 정보',
                 },
             ],
@@ -280,11 +280,11 @@ const db: ProjectItem[] = [
             ],
             info: [
                 {
-                    pc: '/images/newsInfo.png',
+                    pc: '/images/dominoDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
-                    mobile: '/images/newsMobile.png',
+                    mobile: '/images/dominoMobile.png',
                     alt: '모바일 정보',
                 },
             ],
