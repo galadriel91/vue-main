@@ -7,16 +7,16 @@
                 <ul>
                     <li class="html"></li>
                     <li class="css"></li>
-                    <li class="ts"></li>
+                    <li class="react"></li>
                     <li class="vue"></li>
                 </ul>
                 <p>
                     마크업의 기본이 되는 HTML & CSS<br class="brick" />
                     동적인 부분을 담당하는 JS와 TS<br />
                     실력을 탄탄하게 만들기 위해 노력하고 있습니다<br />
-                    JS의 프레임워크인 Vue.js를 학습하고 있습니다.
+                    JS의 프레임워크 및 라이브러리인 React와
                     <br class="brick" />
-                    추후 React를 학습하여 개발범위를 넓힐 예정입니다.
+                    Vue.js를 메인으로 개발을 하고 있습니다.
                 </p>
             </div>
             <div class="techWrapFuture">
