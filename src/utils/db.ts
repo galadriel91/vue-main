@@ -2,6 +2,51 @@ import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
     {
+        id: 9,
+        title: '신라호텔',
+        design: true,
+        markup: true,
+        react: false,
+        vue: false,
+        posts: {
+            mainImage: '/images/shillaLogo.gif',
+            info: [
+                {
+                    pc: '/images/shillaDesk.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/shillaMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
+            subtitle: [
+                '피그마와 HTML & CSS & JS를 사용하여',
+                '신라호텔 클론사이트를 마크업 하였습니다.',
+            ],
+            sites: [
+                {
+                    link: 'https://lothlorien91.cafe24.com/shilla/index.html',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/VfxhccQfbG2aVegcaS7Yxt/Shilla?node-id=0%3A1&t=Ml5aJL2ch4NlSQgB-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/shillaPc.png',
+                    alt: '데스크탑 이미지',
+                },
+                {
+                    mobile: '/images/hackerRmo.png',
+                    alt: '모바일 이미지',
+                },
+            ],
+        },
+    },
+    {
         id: 8,
         title: 'Hacker News',
         design: true,
