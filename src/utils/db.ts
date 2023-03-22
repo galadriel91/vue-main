@@ -2,9 +2,95 @@ import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
     {
+        id: 6,
+        title: '에어부산',
+        vue: false,
+        markup: true,
+        posts: {
+            mainImage: '/images/air.png',
+            subtitle: [
+                '피그마와 HTML & CSS & JS를 사용하여',
+                '에어부산 클론사이트를 마크업 하였습니다.',
+            ],
+            info: [
+                {
+                    pc: '/images/busanDesk.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/busanMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
+            sites: [
+                {
+                    link: 'https://lothlorien91.cafe24.com/airbusan/index.html',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=9dW3jwecITqwBb97-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/airPc.png',
+                    alt: '데스크탑 이미지',
+                },
+                {
+                    mobile: '/images/noteMo.png',
+                    alt: '모바일 이미지',
+                },
+            ],
+        },
+    },
+    {
+        id: 8,
+        title: '해커뉴스',
+        markup: true,
+        react: true,
+        vue: false,
+        posts: {
+            mainImage: '/images/reactLogo.png',
+            info: [
+                {
+                    pc: '/images/rekerDesk.png',
+                    alt: '데스크탑 정보',
+                },
+                {
+                    mobile: '/images/rekerMobile.png',
+                    alt: '모바일 정보',
+                },
+            ],
+            subtitle: [
+                'JS의 라이브러리 중 하나인 React.js를 사용하여',
+                '해커뉴스 클론사이트를 마크업 하였습니다.',
+            ],
+            sites: [
+                {
+                    link: 'https://react-hacker.netlify.app',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/reactPc.png',
+                    alt: '데스크탑 이미지',
+                },
+                {
+                    mobile: '/images/hackerRmo.png',
+                    alt: '모바일 이미지',
+                },
+            ],
+        },
+    },
+    {
         id: 9,
         title: '신라호텔',
-        design: true,
         markup: true,
         react: false,
         vue: false,
@@ -47,54 +133,8 @@ const db: ProjectItem[] = [
         },
     },
     {
-        id: 8,
-        title: 'Hacker News',
-        design: true,
-        markup: true,
-        react: true,
-        vue: false,
-        posts: {
-            mainImage: '/images/reactLogo.png',
-            info: [
-                {
-                    pc: '/images/rekerDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/rekerMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            subtitle: [
-                'JS의 라이브러리 중 하나인 React.js를 사용하여',
-                'Hacker News 클론사이트를 마크업 하였습니다.',
-            ],
-            sites: [
-                {
-                    link: 'https://react-hacker.netlify.app',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/reactPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/hackerRmo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
         id: 5,
         title: '포트폴리오',
-        design: true,
         vue: true,
         markup: true,
         posts: {
@@ -138,7 +178,6 @@ const db: ProjectItem[] = [
     {
         id: 7,
         title: '할리스 커피',
-        design: true,
         vue: false,
         markup: true,
         posts: {
@@ -181,15 +220,14 @@ const db: ProjectItem[] = [
     },
     {
         id: 1,
-        title: 'Hacker News',
-        design: true,
+        title: '해커뉴스',
         markup: true,
         vue: true,
         posts: {
             mainImage: '/images/vueLogo.png',
             subtitle: [
                 'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
-                'Hacker News 클론사이트를 마크업 하였습니다.',
+                '해커뉴스 클론사이트를 마크업 하였습니다.',
             ],
             info: [
                 {
@@ -226,7 +264,6 @@ const db: ProjectItem[] = [
     {
         id: 3,
         title: '알파색채',
-        design: false,
         vue: false,
         markup: true,
         posts: {
@@ -268,53 +305,8 @@ const db: ProjectItem[] = [
         },
     },
     {
-        id: 6,
-        title: '에어부산',
-        design: true,
-        vue: false,
-        markup: true,
-        posts: {
-            mainImage: '/images/air.png',
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '에어부산 클론사이트를 마크업 하였습니다.',
-            ],
-            info: [
-                {
-                    pc: '/images/busanDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/busanMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            sites: [
-                {
-                    link: 'https://lothlorien91.cafe24.com/airbusan/index.html',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=9dW3jwecITqwBb97-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/airPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
         id: 4,
         title: '도미노 피자',
-        design: true,
         vue: true,
         markup: true,
         posts: {

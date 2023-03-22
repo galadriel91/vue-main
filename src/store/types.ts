@@ -20,7 +20,6 @@ interface PostItem {
 interface ProjectItem {
     id: number;
     title: string;
-    design: boolean;
     markup: boolean;
     vue: boolean;
     react?: boolean;
