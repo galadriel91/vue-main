@@ -231,11 +231,11 @@ const db: ProjectItem[] = [
             ],
             info: [
                 {
-                    pc: '/images/newsDesk.png',
+                    pc: '/images/vuekerDesk.png',
                     alt: '데스크탑 정보',
                 },
                 {
-                    mobile: '/images/newsMobile.png',
+                    mobile: '/images/vuekerMobile.png',
                     alt: '모바일 정보',
                 },
             ],
