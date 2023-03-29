@@ -6,7 +6,7 @@ body.dark{
         background: #323232;
         h1{
             a{
-                color: #fff;
+                color: #e0e0e0;
             }
         }
         div{
@@ -15,9 +15,9 @@ body.dark{
                     li{
                         a{
                             span{
-                                color: #fff;
+                                color: #e0e0e0;
                                 &::after{
-                                    background: #fff;
+                                    background: #e0e0e0;
                                 }
                             }
                         }
@@ -26,16 +26,16 @@ body.dark{
             }
         }
         .dark{
-            color: #fff;
+            color: #e0e0e0;
         }
         .wholeBtn{
             span{
-                background: #fff;
+                background: #e0e0e0;
                 &::before{
-                    background: #fff;
+                    background: #e0e0e0;
                 }
                 &::after{
-                    background: #fff;
+                    background: #e0e0e0;
                 }
             }
         }

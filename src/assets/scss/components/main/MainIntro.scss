@@ -1,3 +1,30 @@
+body.dark{
+    .visualWrap{
+        .wholeBtn{
+            span{
+                &.active{
+                    &::after , &::before{
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        nav{
+            background: #323232;
+            a{
+                span{
+                    color: #fff;
+                    &::after{
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 @keyframes animationName{
     0% {
         background-position: 0% 50%;
@@ -69,7 +96,7 @@
         &.showing{
             left: 0; visibility: visible;
         }
-        position: absolute;  left: -100vw;  top: 0; width: 100%; z-index: 4000; min-height: calc(var(--vh, 1vh) * 100 - 2rem); background: #fff;
+        position: absolute;  left: -100vw;  top: 0; width: 100%; z-index: 4000; min-height: calc(var(--vh, 1vh) * 100 - 3rem); background: #fff;
         visibility: hidden;
         transition: all .5s;
         ul{
