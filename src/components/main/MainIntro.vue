@@ -8,7 +8,7 @@
         />
         <img
             class="intro mobile"
-            src="@/assets/image/word1.png"
+            src="@/assets/image/word2.svg"
             alt="word"
             @load="onLoadImage"
         />
