@@ -1,18 +1,29 @@
 body.dark{
     .visualWrap{
-        //  background: linear-gradient(
-        // 135deg, 
-        // #45e7ff 0%,#45e7ff 17%,
-        // #423ee7 33%,
-        // #8848df 50%,
-        // #fbaeae 67%,
-        // #f9fbae 83%,
-        // #72f382 100%);    
+        border: 2rem solid #323232;
+        background: linear-gradient(
+            135deg, 
+            #0E8388 0%,#0E8388 17%,
+            #2C74B3 33%,
+            #576CBC 50%,
+            #205295 67%,
+            #282A3A 83%,
+            #03001C 100%);    
+        background-size: 1000% 1000%;
+        animation: animationName 35s ease infinite;    
         .wholeBtn{
             span{
+                background: #e0e0e0;
+                &::before{
+                    background: #e0e0e0;
+                }
+                &::after{
+                    background: #e0e0e0;
+                }
                 &.active{
+                    background: transparent;
                     &::after , &::before{
-                        background: #fff;
+                        background: #e0e0e0;
                     }
                 }
             }
@@ -26,6 +37,14 @@ body.dark{
                         background: #fff;
                     }
                 }
+            }
+        }
+        .scroll{
+            p{
+                color: #e0e0e0;
+            }
+            &::after{
+                background: #e0e0e0;
             }
         }
     }
@@ -73,14 +92,6 @@ body.dark{
     position: relative; z-index: 10;
     border: 2rem solid #fff; box-sizing: border-box;
     width: 100%; margin: 0 auto; min-height: calc(var(--vh, 1vh) * 100);
-    // background: linear-gradient(
-    //     135deg, 
-    //     #F9EFE7 0%,#F9EFE7 17%,
-    //     #fff1ad 33%,
-    //     #D7E0FF 50%,
-    //     #FADEE0 67%,
-    //     #b4beff 83%,
-    //     #d3d8fa 100%);
     background: linear-gradient(
         135deg, 
         #bbf9fd 0%,#bbf9fd 17%,
@@ -198,6 +209,11 @@ body.dark{
 }
 
 @media all and (max-width:600px){
+    body.dark{
+        .visualWrap{
+            border: 1.5rem solid #323232;
+        }
+    }
     .visualWrap{
         border: 1.5rem solid #fff;
         nav{

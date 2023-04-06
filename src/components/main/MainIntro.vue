@@ -1,17 +1,33 @@
 <template>
     <div class="visualWrap">
-        <img
-            class="intro window"
-            src="@/assets/image/wordark.png"
-            alt="word"
-            @load="onLoadImage"
-        />
-        <img
-            class="intro mobile"
-            src="@/assets/image/wordark1.svg"
-            alt="word"
-            @load="onLoadImage"
-        />
+        <div v-show="dark">
+            <img
+                class="intro window"
+                src="@/assets/image/word.png"
+                alt="word"
+                @load="onLoadImage"
+            />
+            <img
+                class="intro mobile"
+                src="@/assets/image/word1.svg"
+                alt="word"
+                @load="onLoadImage"
+            />
+        </div>
+        <div v-show="!dark">
+            <img
+                class="intro window"
+                src="@/assets/image/wordark.png"
+                alt="word"
+                @load="onLoadImage"
+            />
+            <img
+                class="intro mobile"
+                src="@/assets/image/wordark1.svg"
+                alt="word"
+                @load="onLoadImage"
+            />
+        </div>
         <nav :class="{ showing: isActive }" class="nav">
             <ul id="menu">
                 <li data-menuanchor="home" @click="onClickRemove">
@@ -44,12 +60,14 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { useCommon } from '@/store/commonStore';
+import { storeToRefs } from 'pinia';
 
 export default defineComponent({
     setup() {
         const isActive = ref(false);
         const commonStore = useCommon();
         const { OFF_LOADING } = commonStore;
+        const { dark } = storeToRefs(commonStore);
 
         const onToggleActive = () => {
             isActive.value = !isActive.value;
@@ -68,6 +86,7 @@ export default defineComponent({
             onToggleActive,
             onClickRemove,
             onLoadImage,
+            dark,
         };
     },
 });
