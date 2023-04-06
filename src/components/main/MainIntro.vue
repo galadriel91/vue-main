@@ -2,13 +2,13 @@
     <div class="visualWrap">
         <img
             class="intro window"
-            src="@/assets/image/word.png"
+            src="@/assets/image/wordark.png"
             alt="word"
             @load="onLoadImage"
         />
         <img
             class="intro mobile"
-            src="@/assets/image/word2.svg"
+            src="@/assets/image/wordark1.svg"
             alt="word"
             @load="onLoadImage"
         />

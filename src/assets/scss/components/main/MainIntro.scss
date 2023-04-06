@@ -1,5 +1,13 @@
 body.dark{
     .visualWrap{
+        //  background: linear-gradient(
+        // 135deg, 
+        // #45e7ff 0%,#45e7ff 17%,
+        // #423ee7 33%,
+        // #8848df 50%,
+        // #fbaeae 67%,
+        // #f9fbae 83%,
+        // #72f382 100%);    
         .wholeBtn{
             span{
                 &.active{
@@ -63,31 +71,44 @@ body.dark{
 
 .visualWrap{
     position: relative; z-index: 10;
-    border: 1.5rem solid #fff; box-sizing: border-box;
+    border: 2rem solid #fff; box-sizing: border-box;
     width: 100%; margin: 0 auto; min-height: calc(var(--vh, 1vh) * 100);
+    // background: linear-gradient(
+    //     135deg, 
+    //     #F9EFE7 0%,#F9EFE7 17%,
+    //     #fff1ad 33%,
+    //     #D7E0FF 50%,
+    //     #FADEE0 67%,
+    //     #b4beff 83%,
+    //     #d3d8fa 100%);
     background: linear-gradient(
-        135deg, rgba(69,231,255,1) 0%,rgba(69,231,255,1) 17%,
-        rgba(66,62,231,1) 33%,rgba(136,72,223,1) 50%,rgba(251,174,174,1) 67%,rgba(249,251,174,1) 83%,rgba(114,243,130,1) 100%);
+        135deg, 
+        #bbf9fd 0%,#bbf9fd 17%,
+        #FFF3E2 33%,
+        #D7E9B9 50%,
+        #fff2b9 67%,
+        #FEBE8C 83%,
+        #FF9F9F 100%);    
     background-size: 1000% 1000%;
     animation: animationName 35s ease infinite;
     .wholeBtn{
         position: absolute; top: 2rem; right: 3rem; z-index: 9998; text-align: center; padding: 1.5rem 0;
         span{
             position: relative;
-            display: inline-block; width: 4rem; height: .2rem; background: #fff; transition: all .5s;
+            display: inline-block; width: 4rem; height: .2rem; background: #222; transition: all .5s;
             &::before{
-                content: ''; position: absolute; top: -1.1rem; left: 0; width: 100%; height: .2rem; background: #fff; transition: all .5s;
+                content: ''; position: absolute; top: -1.1rem; left: 0; width: 100%; height: .2rem; background: #222; transition: all .5s;
             }
             &::after{
-                content: ''; position: absolute; top: 1.1rem; left: 0; width: 100%; height: .2rem; background: #fff; transition: all .5s;
+                content: ''; position: absolute; top: 1.1rem; left: 0; width: 100%; height: .2rem; background: #222; transition: all .5s;
             }
             &.active{
                 background: transparent;
                 &::after{
-                    top: 0; transform: rotate(45deg); background: #000;
+                    top: 0; transform: rotate(45deg); background: #222;
                 }
                 &::before{
-                    top: 0; transform: rotate(-45deg); background: #000;
+                    top: 0; transform: rotate(-45deg); background: #222;
                 }
             }
         }
@@ -96,7 +117,7 @@ body.dark{
         &.showing{
             left: 0; visibility: visible;
         }
-        position: absolute;  left: -100vw;  top: 0; width: 100%; z-index: 4000; min-height: calc(var(--vh, 1vh) * 100 - 3rem); background: #fff;
+        position: absolute;  left: -100vw;  top: 0; width: 100%; z-index: 4000; min-height: calc(var(--vh, 1vh) * 100 - 4rem); background: #fff;
         visibility: hidden;
         transition: all .5s;
         ul{
@@ -128,7 +149,7 @@ body.dark{
         }
     }
     .intro{
-        position: absolute; top: 50%; transform: translateY(-50%); left: .5rem;
+        position: absolute; top: 50%; transform: translateY(-50%); left: 1rem;
     }
     .mobile{
         display: none;
@@ -136,13 +157,13 @@ body.dark{
     .scroll{
         position: absolute; bottom: 6rem; left: 50%; transform: translateX(-50%);
         p{
-            font-size: 1.6rem; color: #fff;
+            font-size: 1.6rem; color: #222; font-weight: bold;
             position: relative;
             animation: scroll 3s ease infinite;
         }
         &::after{
             content: ''; position: absolute; top: 2rem; left: 50%; transform: translateX(-50%);
-            width: 1px; height: 4rem; background: #fff;
+            width: 1px; height: 4rem; background: #222;
             animation: stick 3s ease infinite;
         }
     }
@@ -151,7 +172,7 @@ body.dark{
 @media all and (max-width:1320px){
     .visualWrap{
         .intro{
-            width: 90%;
+            width: 80%;
         }
         .window{
             display: none;
@@ -178,6 +199,9 @@ body.dark{
 
 @media all and (max-width:600px){
     .visualWrap{
-        border: 1rem solid #fff;
+        border: 1.5rem solid #fff;
+        nav{
+            min-height: calc(var(--vh, 1vh) * 100 - 3rem);
+        }
     }
 }
