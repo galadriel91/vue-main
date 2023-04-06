@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="headerWrap">
-            <h1><a href="#home">WHITE TREE</a></h1>
+            <h1><a href="#home">Moon</a></h1>
             <div>
                 <nav :class="{ showing: isActive }" class="nav">
                     <ul id="menu">
@@ -61,7 +61,7 @@ export default defineComponent({
             document.body.classList.toggle('dark');
         };
         const isDark = computed(() => {
-            return dark.value ? 'xi-sun' : 'xi-moon';
+            return dark.value ? 'xi-sun' : 'xi-night';
         });
         const initDark = () => {
             if (localStorage.dark) {

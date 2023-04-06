@@ -58,7 +58,7 @@ export default defineComponent({
                 return route.hash;
             },
             () => {
-                document.title = `WHITE TREE | ${editHeaderName(route.hash)}`;
+                document.title = `MOON SEOB | ${editHeaderName(route.hash)}`;
             },
         );
 
