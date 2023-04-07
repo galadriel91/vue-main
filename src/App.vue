@@ -15,7 +15,7 @@ import { defineComponent, onMounted, watch, ref } from 'vue';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
 import { storeToRefs } from 'pinia';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import MainHeader from '@/components/common/MainHeader.vue';
 import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
@@ -30,12 +30,12 @@ export default defineComponent({
     },
     setup() {
         const route = useRoute();
+        const router = useRouter();
         const name = ref('HOME');
         const setScreenSize = () => {
             const vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
         };
-
         onMounted(() => {
             setScreenSize();
             window.addEventListener('resize', () => setScreenSize());
@@ -55,13 +55,27 @@ export default defineComponent({
         };
         watch(
             () => {
+                const hashes = [
+                    '#home',
+                    '#about',
+                    '#skill',
+                    '#projects',
+                    '#contact',
+                ];
+                console.log(route.hash);
+                if (!hashes.includes(route.hash)) {
+                    console.log(route.hash);
+                    router.push('/#home');
+                }
                 return route.hash;
             },
             () => {
                 document.title = `MOON SEOB | ${editHeaderName(route.hash)}`;
             },
+            {
+                immediate: true,
+            },
         );
-
         return {
             isModal,
             modalMessage,

@@ -1,5 +1,5 @@
 <template>
-    <div class="visualWrap">
+    <div class="visualWrap" data-pos="mainHome">
         <div v-show="dark">
             <img
                 class="intro window"
