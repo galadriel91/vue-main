@@ -70,7 +70,11 @@ export default defineComponent({
                 return route.hash;
             },
             () => {
-                document.title = `MOON SEOB | ${editHeaderName(route.hash)}`;
+                document.title = `MOON SEOB | ${
+                    editHeaderName(route.hash)
+                        ? editHeaderName(route.hash)
+                        : 'HOME'
+                }`;
             },
             {
                 immediate: true,
