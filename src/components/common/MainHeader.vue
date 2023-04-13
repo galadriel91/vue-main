@@ -1,7 +1,9 @@
 <template>
     <header>
         <div class="headerWrap">
-            <h1><a href="#home">Moon</a></h1>
+            <h1>
+                <a href="#home">Moon<span>。</span></a>
+            </h1>
             <div>
                 <nav :class="{ showing: isActive }" class="nav">
                     <ul id="menu">
