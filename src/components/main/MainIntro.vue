@@ -28,6 +28,14 @@
                 @load="onLoadImage"
             />
         </div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="star star3"></div>
+        <div class="star star4"></div>
+        <div class="star star5"></div>
+        <div class="star star6"></div>
+        <div class="star star7"></div>
+        <div class="star star8"></div>
         <nav :class="{ showing: isActive }" class="nav">
             <ul id="menu">
                 <li data-menuanchor="home" @click="onClickRemove">
