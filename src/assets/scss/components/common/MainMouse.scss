@@ -1,11 +1,47 @@
+body.dark{
+    div{
+        background: linear-gradient(
+        135deg, 
+        #bbf9fd 0%,#bbf9fd 17%,
+        #FFF3E2 33%,
+        #D7E9B9 50%,
+        #fff2b9 67%,
+        #FEBE8C 83%,
+        #FF9F9F 100%); 
+        background-size: 1000% 1000%;
+    } 
+}
+
 div{
     position: absolute; left: -1rem; top: -1rem; z-index: 9999;
     width: 2rem; height: 2rem;
-    background: dodgerblue;
+    background: linear-gradient(
+        135deg, 
+        #0E8388 0%,#0E8388 17%,
+        #2C74B3 33%,
+        #576CBC 50%,
+        #205295 67%,
+        #282A3A 83%,
+        #03001C 100%);    
+    background-size: 1000% 1000%;
     border-radius: 50%; 
     pointer-events: none;
     opacity: .5;
+    animation: animationName 5s ease infinite;
 }
+
+@keyframes animationName{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 @media all and (max-width: 760px) {
     div{
