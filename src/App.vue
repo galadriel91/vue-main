@@ -7,6 +7,7 @@
             <template #alertMessage>{{ modalMessage }}</template>
         </MainModal>
         <MainItem v-if="isMain" :item="projectsList[itemIndex]" />
+        <MainDark />
     </div>
 </template>
 
@@ -20,6 +21,7 @@ import MainHeader from '@/components/common/MainHeader.vue';
 import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
 import MainItem from './components/common/MainItem.vue';
+import MainDark from './components/common/MainDark.vue';
 
 export default defineComponent({
     components: {
@@ -27,6 +29,7 @@ export default defineComponent({
         MainLoading,
         MainModal,
         MainItem,
+        MainDark,
     },
     setup() {
         const route = useRoute();

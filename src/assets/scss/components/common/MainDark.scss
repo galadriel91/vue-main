@@ -1,0 +1,19 @@
+body.dark{
+    button{
+        background: #e0e0e0;
+        box-shadow: 0px 0px 1rem #e0e0e0;
+        color: #fc4a4a;
+    }
+}
+
+button{
+    position: fixed; right: 2%; bottom: 5%;
+    width: 5rem; height: 5rem; 
+    display: flex; justify-content: center; align-items: center;
+    background: #323232;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1rem #323232;
+    font-size: 3rem; color: #ffae00;
+    cursor: pointer;
+    transition:  all .5s;
+}

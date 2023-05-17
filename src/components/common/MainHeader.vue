@@ -24,11 +24,6 @@
                         </li>
                     </ul>
                 </nav>
-                <button
-                    :class="isDark"
-                    @click="onClickDark"
-                    class="dark"
-                ></button>
                 <a
                     href="javascript:void(0)"
                     class="wholeBtn"
@@ -42,14 +37,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from 'vue';
-import { useCommon } from '@/store/commonStore';
-import { storeToRefs } from 'pinia';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
     setup() {
-        const common = useCommon();
-        const { dark } = storeToRefs(common);
         const isActive = ref(false);
         const onToggleActive = () => {
             isActive.value = !isActive.value;
@@ -57,30 +48,11 @@ export default defineComponent({
         const onClickRemove = () => {
             isActive.value = false;
         };
-        const onClickDark = () => {
-            dark.value = !dark.value;
-            localStorage.setItem('dark', JSON.stringify(dark.value));
-            document.body.classList.toggle('dark');
-        };
-        const isDark = computed(() => {
-            return dark.value ? 'xi-sun' : 'xi-night';
-        });
-        const initDark = () => {
-            if (localStorage.dark) {
-                dark.value = JSON.parse(localStorage.dark);
-                if (dark.value == true) {
-                    document.body.classList.add('dark');
-                }
-            }
-        };
-        initDark();
 
         return {
             isActive,
             onToggleActive,
             onClickRemove,
-            onClickDark,
-            isDark,
         };
     },
 });
