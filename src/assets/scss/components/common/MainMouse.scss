@@ -1,0 +1,14 @@
+div{
+    position: absolute; left: -1rem; top: -1rem; z-index: 9999;
+    width: 2rem; height: 2rem;
+    background: dodgerblue;
+    border-radius: 50%; 
+    pointer-events: none;
+    opacity: .5;
+}
+
+@media all and (max-width: 760px) {
+    div{
+        display: none;
+    }
+}

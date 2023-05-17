@@ -8,6 +8,7 @@
         </MainModal>
         <MainItem v-if="isMain" :item="projectsList[itemIndex]" />
         <MainDark />
+        <MainMouse />
     </div>
 </template>
 
@@ -22,6 +23,7 @@ import MainLoading from './components/common/MainLoading.vue';
 import MainModal from '@/components/common/MainModal.vue';
 import MainItem from './components/common/MainItem.vue';
 import MainDark from './components/common/MainDark.vue';
+import MainMouse from './components/common/MainMouse.vue';
 
 export default defineComponent({
     components: {
@@ -30,6 +32,7 @@ export default defineComponent({
         MainModal,
         MainItem,
         MainDark,
+        MainMouse,
     },
     setup() {
         const route = useRoute();
