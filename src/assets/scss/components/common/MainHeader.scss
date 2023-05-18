@@ -7,6 +7,9 @@ body.dark{
         h1{
             a{
                 color: #e0e0e0;
+                span{
+                    color: #ffae00;
+                }
             }
         }
         div{
@@ -54,10 +57,13 @@ header{
     height: 8rem;
     h1{
         a{
-            font-family: 'ChosunSg';
+            // font-family: 'ChosunSg';
             letter-spacing: -.1rem;
             display: block;
             font-size: 4rem; font-weight: normal; color: #000; line-height: 8rem;
+            span{
+                color: #fc4a4a;
+            }
         }
     }
     div{
