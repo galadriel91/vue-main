@@ -10,7 +10,8 @@ body.dark{
 }
 
 .waveWrap{
-    position: absolute; left: 0; right: 0; bottom: 0; width: 100%; z-index: 5;
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 5;
+    width: 100%; 
     @-webkit-keyframes move{
         from{-webkit-mask-position:0 top;mask-position:0 top}
         to{-webkit-mask-position:-150rem top;mask-position:-150rem top}
@@ -29,11 +30,12 @@ body.dark{
         background: #bceef8;
     }
     .waveInnerWrap{
-        text-align: center; background: rgb(188, 238, 248);
+        background: rgb(188, 238, 248);
+        text-align: center; 
         & > div{
             height: 8rem;
             h2{
-                font-size: 2rem; color: #000;
+                font-size: 2rem; color: #222;
             }
             a{
                 img{

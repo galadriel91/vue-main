@@ -1,8 +1,8 @@
 body.dark{
     ul{
-        border-top: 2px solid #fff;
+        border-top: 1px solid #e0e0e0;
         li{
-            border-bottom: 1px solid #fefefe;
+            border-bottom: 1px solid #e0e0e0;
             .listWrap{
                 &:hover{
                     .indexWrap{
@@ -35,30 +35,20 @@ body.dark{
             }
         }
     }
-    button{
-        border: 1px solid #fff;
-        color: #fff;
-    }
 }
 
-.list-enter-active, .list-leave-active {
-    transition: all 1s;
-}
-.list-enter-from, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
-    opacity: 0;
-    transform: translateX(30px);
-}
 ul{
-    margin: 5rem auto 3rem; width: 50%; border-top: 2px solid #000;
+    margin: 5rem auto 3rem; 
+    width: 50%; 
+    border-top: 1px solid #222;
     li{
-        height: 7rem; border-bottom: 1px solid #000;
-        &:hover a , &:focus a{
-            background: #eee;
-        }
+        height: 7rem; 
+        border-bottom: 1px solid #222;
         .listWrap{
-            display: flex; height: 100%;  align-items: center; justify-content: space-between;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 100%;  
             cursor: pointer;
-            &:hover{
+            &:hover, &:focus{
                 background: #f1f1f1;
                 .indexWrap{
                     transform: translateX(1.5rem);
@@ -84,29 +74,24 @@ ul{
                 position: relative;
                 transition: all .3s; 
                 span{
-                    position: relative; display: inline-block;
+                    position: relative; 
+                    display: inline-block;
                     &:last-child{
                         &::after{
                             display: none;
                         }
                     }
                     &::after{
-                        content: ','; position: absolute; right: 0; top: 0; font-size: 1.6rem;
+                        content: ','; 
+                        position: absolute; right: 0; top: 0; 
+                        font-size: 1.6rem;
                     }
                     padding: 0 .5rem;
-                    font-size: 1.6rem; color: #222; font-weight: bold;
+                    font-size: 1.6rem; 
+                    font-weight: bold; color: #222;
                 }
             }
         }
-    }
-}
-button{
-    margin: 0 auto; width: 25rem; height: 5rem; background: none; display: block;
-    text-align: center; line-height: 3rem; font-size: 1.8rem; color: #000; font-family: 'ChosunSg'; font-weight: bold; 
-    border: 1px solid #000; cursor: pointer; border-radius: 5px; 
-    transition: all 1s;
-    &:hover , &:focus{
-        background: #eee;
     }
 }
 
@@ -123,7 +108,8 @@ button{
             .listWrap{
                 .indexWrap{
                     span{
-                        width: 3rem; font-size: 1.5rem;
+                        width: 3rem; 
+                        font-size: 1.5rem;
                     }
                     h3{
                         font-size: 1.5rem;
@@ -140,10 +126,6 @@ button{
                 }
             }
         }
-    }
-    button{
-        margin: 0 auto; width: 15rem; height: 4rem; 
-        line-height: 4rem; font-size: 1.5rem;
     }
 }
 

@@ -10,14 +10,15 @@ body.dark{
                         color: #e0e0e0;
                     }
                     &.valid{
-                        border-bottom: 2px solid #51B587;
+                        border: 2px solid #51B587;
                     }
                 }
             }
             .inputContentWrap{
                 textarea{
                     background: #323232;
-                    border: 2px solid #e0e0e0; color: #e0e0e0;
+                    border: 2px solid #e0e0e0; 
+                    color: #e0e0e0;
                     &::placeholder{
                         color: #e0e0e0;
                     }
@@ -28,27 +29,29 @@ body.dark{
             }
             button{
                 background: #e0e0e0;
-                color: #000; font-weight: bold;
+                font-weight: bold; color: #222;
             }
         }
     }
 }
 
 .contactForm{
-    width: 100%; margin: 5rem auto 8rem;
+    margin: 5rem auto 8rem;
     display: flex; align-items: center; justify-content: center;
+    width: 100%; 
     form{
         width: 50rem;
         div{
             width: 100%;
             input{
-                width: 100%; height: 5rem; border-bottom: 2px solid #000; font-size: 1.5rem; text-indent: 1rem; font-family: 'ChosunSg';
-                font-size: 1.5rem; font-weight: bold; color: #000; 
-                
-                &::placeholder{
-                    color: #000;
-                }
+                width: 100%; height: 5rem; 
+                border-bottom: 2px solid #222; 
+                text-indent: 1rem; 
+                font-size: 1.5rem; font-weight: bold; color: #222; 
                 outline: none;
+                &::placeholder{
+                    color: #222;
+                }
                 &.valid{
                     border-bottom: 2px solid #51B587;
                 }
@@ -57,15 +60,14 @@ body.dark{
         .inputContentWrap{
             width: 100%;
             textarea{
-                margin-top: 2rem;
-                padding: 2rem 0; width: 100%; height:15rem; 
-                resize: none; 
-                border: 2px solid #000;  
-                text-indent: 1rem; box-sizing: border-box; 
-                font-size: 1.5rem; font-weight: bold; color: #000;
-                outline: none;
+                margin-top: 2rem; padding: 2rem 0; box-sizing: border-box;
+                width: 100%; height:15rem; 
+                border: 2px solid #222;  
+                text-indent: 1rem; 
+                font-size: 1.5rem; font-weight: bold; color: #222;
+                resize: none; outline: none;
                 &::placeholder{
-                    color: #000;
+                    color: #222;
                 }
                 &.valid{
                     border: 2px solid #51B587;
@@ -73,10 +75,11 @@ body.dark{
             }
         }
         button{
-            display: block; margin: 2rem auto 0; 
+            margin: 2rem auto 0; 
+            display: block; 
             width: 100%; height: 5rem;
-            background: #000; 
-            font-size: 1.5rem;  color: #fff; font-family: 'ChosunSg'; 
+            background: #222; 
+            font-size: 1.5rem; color: #fff;  
             cursor: pointer; transition: all .5s; 
         }
     }

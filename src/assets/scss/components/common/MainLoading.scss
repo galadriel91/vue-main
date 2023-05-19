@@ -1,27 +1,27 @@
 body.dark{
     .loadingWrap{
-        background: #000;
+        background: #222;
         .lds-facebook{
             div{
-                background: #fff;
+                background: #e0e0e0;
             }
         }
     }
 }
 
-
 .loadingWrap{
-    position: absolute; left: 0; top: 0; width: 100vw; height: 100vh;
-    background: #f7f7f7; 
-    z-index: 9999; 
+    position: absolute; left: 0; top: 0; z-index: 9999; 
+    width: 100vw; min-height: 100vh;
+    background: #fff; 
     .lds-facebook{
-        position: fixed; width: 64px; height: 64px;
-        top: 50%; left: 51%; display: inline-block;
-        z-index: 9999;
+        position: fixed; top: 50%; left: 51%; z-index: 9999;
+        width: 64px; height: 64px;
+        display: inline-block;
         transform: translate(-50% , -50%);
         div{
-            position: absolute; width: 6px; height: 13px;
+            position: absolute; 
             display: inline-block;
+            width: 6px; height: 13px;
             background: rgb(135, 216, 247);
             animation: lds-facebook 1.2s cubic-bezier(0, .5 , .5 ,1) infinite;
             &:nth-child(1){

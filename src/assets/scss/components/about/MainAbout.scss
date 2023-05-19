@@ -4,7 +4,7 @@ body.dark{
             h3{
                 color: #e0e0e0;
                 &::after{
-                    background: #afafaf;
+                    background: #e0e0e0;
                 }
             }
             &Profile{
@@ -12,7 +12,7 @@ body.dark{
                     div{
                         ul{
                             li{
-                                color: #afafaf;
+                                color: #e0e0e0;
                                 span{
                                     color: #e0e0e0;
                                 }
@@ -25,21 +25,26 @@ body.dark{
     }
 }
 
-
 .aboutWrap{
-    width: 95%; margin: 0 auto ;
+    margin: 0 auto ;
+    width: 95%; 
     .mobile{
         display: none;
     }
     .introWrap{
-        width: 110rem; margin: 3rem auto; border-radius: 1rem;
-        padding: 2rem 0 1rem;
+        margin: 3rem auto; padding: 2rem 0 1rem;
+        width: 110rem; 
+        border-radius: 1rem;
         h3{
             position: relative;
             text-align: center;
-            font-size: 4rem; color: #222; font-weight: normal;
+            font-size: 4rem; font-weight: normal; color: #222;
             &::after{
-                content: ''; position: absolute; left: 50%; transform: translateX(-50%);bottom: -2rem; width: 5rem; height: 2px; background: #777;
+                content: ''; 
+                position: absolute; left: 50%; bottom: -2rem; 
+                width: 5rem; height: 2px; 
+                background: #222;
+                transform: translateX(-50%);
             }
         }
         & > div{
@@ -52,13 +57,18 @@ body.dark{
                 div{
                     position: relative;
                     .profilePic{
-                        width: 18rem; height: 18rem; border-radius: 50%;
+                        width: 18rem; height: 18rem; 
+                        border-radius: 50%;
                     }
                     ul{
                         li{
-                            margin: 1.5rem 0; font-size: 1.8rem; color: #323232;
+                            margin: 1.5rem 0; 
+                            font-size: 1.8rem; color: #323232;
                             span{
-                                display: inline-block; width: 10rem; margin-right: 1rem; font-size: 1.8rem; font-weight: bold; color: #000;
+                                margin-right: 1rem; 
+                                display: inline-block; 
+                                width: 10rem; 
+                                font-size: 1.8rem; font-weight: bold; color: #222;
                             }
                         }
                     }

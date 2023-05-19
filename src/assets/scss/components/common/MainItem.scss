@@ -41,7 +41,7 @@ body.dark{
         width: 6px;
     }
     &::-webkit-scrollbar-thumb{
-        background-color: #0006;
+        background-color: #222;
         border-radius: 16px;
         border: 4px solid transparent;
     }
@@ -49,20 +49,23 @@ body.dark{
         background-color: transparent
     }
     
-    position: absolute; left: 0; top: 0rem; width: 100vw; height: 100vh !important; overflow-y: auto; 
-    background: #f7f7f7; z-index: 9990; 
+    overflow-y: auto;
+    position: absolute; left: 0; top: 0rem; z-index: 9990;
+    width: 100vw; height: 100vh !important; 
+    background: #f7f7f7;  
     &Inner{
-        width: 100%; min-height: 100% !important; overflow-y: auto ;
+        overflow-y: auto ;
         display: flex; justify-content: center; align-items: center; flex-direction: column;
+        width: 100%; min-height: 100% !important; 
         &Info{
             width: 65rem;
             &Image{
-                margin-top: 4rem;
-                margin-bottom: 3rem; text-align: center;
+                margin-top: 4rem; margin-bottom: 3rem; 
+                text-align: center;
                 & > div{
                     margin-top: 4rem;
                     span{
-                        font-size: 2.5rem; color: #000;
+                        font-size: 2.5rem; color: #222;
                     }
                 }
             }
@@ -71,26 +74,34 @@ body.dark{
                 &Text{
                     margin-top: 3rem; 
                     p{
-                        font-size: 1.8rem; color: #000; margin-top: 1.5rem;
+                        margin-top: 1.5rem;
+                        font-size: 1.8rem; color: #222; 
                     }
                     .linkWrap{
-                        margin-top: 2.5rem; display: flex; justify-content: center;
+                        margin-top: 2.5rem; 
+                        display: flex; justify-content: center;
                         div{
                             display: flex; align-items: center;
                             &:nth-child(2){
                                 margin: 0 3rem;
                             }
                             img{
-                                width: 3rem; margin-right: .5rem;
+                                margin-right: .5rem;
+                                width: 3rem; 
                             }
                             button{
-                                background: none; cursor: pointer; color: #000;
+                                background: none; 
+                                color: #222;
+                                cursor: pointer; 
                             }
                             a, button{
                                 position: relative;
                                 font-size: 1.8rem;
                                 &::after{
-                                    content: ''; position: absolute; bottom: 0; left: 50%; width: 0; height: 1rem; background: rgba(188, 238, 248 , .3);
+                                    content: ''; 
+                                    position: absolute; bottom: 0; left: 50%; 
+                                    width: 0; height: 1rem; 
+                                    background: rgba(188, 238, 248 , .3);
                                     transition: all .5s;
                                 }
                                 &.on{
@@ -115,19 +126,22 @@ body.dark{
         }
         &Infomation{
             margin: 3rem auto 2rem;
-            background: none; text-align: center;
+            background: none; 
+            text-align: center;
             .mobile{
                 display: none;
             }
             img{
-                width: 100%; border-radius: 1rem;
-                // filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+                width: 100%; 
+                border-radius: 1rem;
             }
         }
         &Image{
-            width: 125rem; margin: 4rem auto 5rem; 
+            margin: 4rem auto 5rem; 
+            width: 125rem; 
             img{
-                width: 100%; border-radius: 1rem;
+                width: 100%;
+                border-radius: 1rem;
                 filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
             }
         }
@@ -136,7 +150,8 @@ body.dark{
 .buttons{
     position: fixed; top: 2rem; right: 5%;
     button{
-        font-size: 4.5rem; background: none; color: #000;
+        background: none; 
+        font-size: 4.5rem; color: #222;
         cursor: pointer;
     }
 }
@@ -159,12 +174,14 @@ body.dark{
         &Inner{
             &Info{
                 &Image{
-                    width: 34rem; margin: 2.5rem auto 0;
+                    margin: 2.5rem auto 0;
+                    width: 34rem;
                     div{
                         margin-bottom: 1rem;
                     }
                 }
-                width: 100%; margin-top: 3rem;
+                margin-top: 3rem;
+                width: 100%; 
             }
         }
     }
@@ -174,7 +191,6 @@ body.dark{
         }
     }
 }
-
 
 @media all and (max-width:800px){
     .itemWrap{
@@ -218,7 +234,8 @@ body.dark{
                 &Flex{
                     &Text{
                         p{
-                            font-size: 1.6rem; margin-top: 1.2rem;
+                            margin-top: 1.2rem;
+                            font-size: 1.6rem; 
                         }
                         .linkWrap{
                             margin-top: 2rem;
@@ -242,7 +259,7 @@ body.dark{
                 &Flex{
                     &Text{
                         p{
-                            font-size: 1.4rem; margin-top: 1.2rem;
+                            font-size: 1.4rem; 
                         }
                         .linkWrap{
                             margin-top: 1.5rem;
