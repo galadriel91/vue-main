@@ -18,9 +18,9 @@
                         <h3>{{ item.title }}</h3>
                     </div>
                     <div class="classWrap">
-                        <span v-if="item.markup">MarkUp</span>
-                        <span v-if="item.react">React</span>
-                        <span v-if="item.vue">Vue</span>
+                        <span v-if="item.markup">#Web</span>
+                        <span v-if="item.react">#React</span>
+                        <span v-if="item.vue">#Vue</span>
                     </div>
                 </div>
             </li>

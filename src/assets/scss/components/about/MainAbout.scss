@@ -113,6 +113,13 @@ body.dark{
                     div{
                         &:nth-child(2){
                             margin-top: 1rem;
+                            ul{
+                                li{
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

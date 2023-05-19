@@ -32,12 +32,12 @@
                                 <li><span>Favorite</span>반지의 제왕</li>
                                 <li><span>Education</span>경상대학교</li>
                                 <li><span></span>생물학과 3학년 중퇴</li>
+                                <li><span></span>~ 학점은행제 진행중</li>
                                 <li class="licenseInfo">
                                     <span>자격증</span>정보처리산업기사(필기)
                                 </li>
                                 <li><span></span>워드프로세서</li>
                                 <li><span></span>MOS Master</li>
-                                <li><span></span>2종보통운전면허</li>
                                 <li><span></span>한국사능력검정1급</li>
                             </ul>
                         </div>

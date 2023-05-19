@@ -4,6 +4,21 @@ body.dark{
         li{
             border-bottom: 1px solid #fefefe;
             .listWrap{
+                &:hover{
+                    .indexWrap{
+                        span{
+                            color: #323232;
+                        }
+                        h3{
+                            color: #323232;
+                        }
+                    }
+                    .classWrap{
+                        span{
+                            color: #323232;
+                        }
+                    }
+                }
                 .indexWrap{
                     span{
                         color: #e0e0e0;
@@ -42,17 +57,32 @@ ul{
         }
         .listWrap{
             display: flex; height: 100%;  align-items: center; justify-content: space-between;
-            transition: all 1s; cursor: pointer;
+            cursor: pointer;
+            &:hover{
+                background: #f1f1f1;
+                .indexWrap{
+                    transform: translateX(1.5rem);
+                }
+                .classWrap{
+                    transform: translateX(-1.5rem);
+                }
+            }
             .indexWrap{
                 display: flex;
+                transition: all .3s;
                 span{
-                    display: block; width: 6rem; font-size: 1.8rem; font-weight: bold; text-align: center;
+                    display: block; 
+                    width: 6rem; 
+                    font-size: 1.8rem; font-weight: bold; 
+                    text-align: center;
                 }
                 h3{
                     font-size: 2rem;
                 }
             }
             .classWrap{
+                position: relative;
+                transition: all .3s; 
                 span{
                     position: relative; display: inline-block;
                     &:last-child{
@@ -64,7 +94,7 @@ ul{
                         content: ','; position: absolute; right: 0; top: 0; font-size: 1.6rem;
                     }
                     padding: 0 .5rem;
-                    font-size: 1.6rem; color: #000; font-weight: bold;
+                    font-size: 1.6rem; color: #222; font-weight: bold;
                 }
             }
         }
