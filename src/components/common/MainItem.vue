@@ -8,11 +8,9 @@
                         <span>{{ item.title }}</span>
                     </div>
                 </div>
+                <MainItemInfo :item="item" />
                 <div class="itemWrapInnerInfoFlex">
                     <div class="itemWrapInnerInfoFlexText">
-                        <p v-for="(value, i) in item.posts.subtitle" :key="i">
-                            {{ value }}
-                        </p>
                         <div class="linkWrap">
                             <div>
                                 <img
@@ -23,7 +21,7 @@
                                     :href="item.posts.sites[0].link"
                                     target="_blank"
                                 >
-                                    배포사이트
+                                    사이트
                                     <span class="xi-long-arrow-right"></span
                                 ></a>
                             </div>
@@ -40,31 +38,12 @@
                                     <span class="xi-long-arrow-right"></span
                                 ></a>
                             </div>
-                            <div>
-                                <img
-                                    v-show="!dark"
-                                    src="@/assets/image/info.png"
-                                    alt="상세정보 로고"
-                                />
-                                <img
-                                    v-show="dark"
-                                    src="@/assets/image/winfo.png"
-                                    alt="상세정보 로고"
-                                />
-                                <button
-                                    @click="onClickInfo"
-                                    :class="{ on: isShow }"
-                                >
-                                    상세정보
-                                    <span class="xi-long-arrow-right"></span>
-                                </button>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="itemWrapInnerInfomation" v-show="isShow">
-                <img
+                <!-- <img
                     class="desktop"
                     :src="item.posts.info[0].pc"
                     alt="상세정보 이미지"
@@ -73,7 +52,7 @@
                     class="mobile"
                     :src="item.posts.info[1].mobile"
                     alt="상세정보 이미지"
-                />
+                /> -->
             </div>
             <div class="itemWrapInnerImage">
                 <img
@@ -94,19 +73,13 @@
 </template>
 
 <script lang="ts">
-import {
-    defineComponent,
-    onMounted,
-    onUnmounted,
-    type PropType,
-    computed,
-    ref,
-} from 'vue';
 import type { ProjectItem } from '@/store/types';
+import { defineComponent, type PropType, computed, ref } from 'vue';
+import { onMounted, onUnmounted } from 'vue';
 import { useCommon } from '@/store/commonStore';
 import { usePost } from '@/store/postStore';
 import { storeToRefs } from 'pinia';
-
+import MainItemInfo from './MainItemInfo.vue';
 declare global {
     interface Window {
         fullpage_api: any;
@@ -114,6 +87,9 @@ declare global {
 }
 
 export default defineComponent({
+    components: {
+        MainItemInfo,
+    },
     props: {
         item: {
             type: Object as PropType<ProjectItem>,

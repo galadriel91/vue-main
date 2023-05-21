@@ -1,136 +1,223 @@
 import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
-    {
-        id: 1,
-        title: '해커뉴스',
-        markup: true,
-        react: true,
-        vue: false,
-        posts: {
-            mainImage: '/images/reactLogo.png',
-            info: [
-                {
-                    pc: '/images/rekerDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/rekerMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            subtitle: [
-                'JS의 라이브러리 중 하나인 React.js를 사용하여',
-                '해커뉴스 클론사이트를 마크업 하였습니다.',
-            ],
-            sites: [
-                {
-                    link: 'https://react-hacker.netlify.app',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/reactPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/hackerRmo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
-        id: 2,
-        title: '포트폴리오',
-        vue: true,
-        markup: true,
-        posts: {
-            mainImage: '/images/logo.png',
-            subtitle: [
-                'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
-                '포트폴리오 사이트를 제작 하였습니다.',
-            ],
-            info: [
-                {
-                    pc: '/images/portDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/portMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            sites: [
-                {
-                    link: 'https://whitetree.netlify.app',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/oH7FG7EQBigCOKb9iUfaCj/Portfolio?node-id=1%3A1155&t=uuCKI9cPTFSTzbSK-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/portPc.jpg',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
-        id: 3,
-        title: '해커뉴스',
-        markup: true,
-        vue: true,
-        posts: {
-            mainImage: '/images/vueLogo.png',
-            subtitle: [
-                'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
-                '해커뉴스 클론사이트를 마크업 하였습니다.',
-            ],
-            info: [
-                {
-                    pc: '/images/vuekerDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/vuekerMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            sites: [
-                {
-                    link: 'https://vue-hacker.netlify.app',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/hackerPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/hackerRmo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
+    // {
+    //     id: 1,
+    //     title: '해커뉴스',
+    //     markup: true,
+    //     react: true,
+    //     vue: false,
+    //     posts: {
+    //         mainImage: '/images/reactLogo.png',
+    //         info: [
+    //             {
+    //                 pc: '/images/rekerDesk.png',
+    //                 alt: '데스크탑 정보',
+    //             },
+    //             {
+    //                 mobile: '/images/rekerMobile.png',
+    //                 alt: '모바일 정보',
+    //             },
+    //         ],
+    //         subtitle: [
+    //             'JS의 라이브러리 중 하나인 React.js를 사용하여',
+    //             '해커뉴스 클론사이트를 마크업 하였습니다.',
+    //         ],
+    //         sites: [
+    //             {
+    //                 link: 'https://react-hacker.netlify.app',
+    //                 name: '클론 사이트',
+    //             },
+    //             {
+    //                 link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
+    //                 name: '피그마 상세정보',
+    //             },
+    //         ],
+    //         images: [
+    //             {
+    //                 pc: '/images/reactPc.png',
+    //                 alt: '데스크탑 이미지',
+    //             },
+    //             {
+    //                 mobile: '/images/hackerRmo.png',
+    //                 alt: '모바일 이미지',
+    //             },
+    //         ],
+    //     },
+    // },
+    // {
+    //     id: 2,
+    //     title: '포트폴리오',
+    //     vue: true,
+    //     markup: true,
+    //     posts: {
+    //         mainImage: '/images/logo.png',
+    //         subtitle: [
+    //             'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
+    //             '포트폴리오 사이트를 제작 하였습니다.',
+    //         ],
+    //         info: [
+    //             {
+    //                 pc: '/images/portDesk.png',
+    //                 alt: '데스크탑 정보',
+    //             },
+    //             {
+    //                 mobile: '/images/portMobile.png',
+    //                 alt: '모바일 정보',
+    //             },
+    //         ],
+    //         sites: [
+    //             {
+    //                 link: 'https://whitetree.netlify.app',
+    //                 name: '클론 사이트',
+    //             },
+    //             {
+    //                 link: 'https://www.figma.com/file/oH7FG7EQBigCOKb9iUfaCj/Portfolio?node-id=1%3A1155&t=uuCKI9cPTFSTzbSK-1',
+    //                 name: '피그마 상세정보',
+    //             },
+    //         ],
+    //         images: [
+    //             {
+    //                 pc: '/images/portPc.jpg',
+    //                 alt: '데스크탑 이미지',
+    //             },
+    //             {
+    //                 mobile: '/images/noteMo.png',
+    //                 alt: '모바일 이미지',
+    //             },
+    //         ],
+    //     },
+    // },
+    // {
+    //     id: 3,
+    //     title: '해커뉴스',
+    //     markup: true,
+    //     vue: true,
+    //     posts: {
+    //         mainImage: '/images/vueLogo.png',
+    //         subtitle: [
+    //             'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
+    //             '해커뉴스 클론사이트를 마크업 하였습니다.',
+    //         ],
+    //         info: [
+    //             {
+    //                 pc: '/images/vuekerDesk.png',
+    //                 alt: '데스크탑 정보',
+    //             },
+    //             {
+    //                 mobile: '/images/vuekerMobile.png',
+    //                 alt: '모바일 정보',
+    //             },
+    //         ],
+    //         sites: [
+    //             {
+    //                 link: 'https://vue-hacker.netlify.app',
+    //                 name: '클론 사이트',
+    //             },
+    //             {
+    //                 link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
+    //                 name: '피그마 상세정보',
+    //             },
+    //         ],
+    //         images: [
+    //             {
+    //                 pc: '/images/hackerPc.png',
+    //                 alt: '데스크탑 이미지',
+    //             },
+    //             {
+    //                 mobile: '/images/hackerRmo.png',
+    //                 alt: '모바일 이미지',
+    //             },
+    //         ],
+    //     },
+    // },
+    // {
+    //     id: 5,
+    //     title: '신라호텔',
+    //     markup: true,
+    //     react: false,
+    //     vue: false,
+    //     posts: {
+    //         mainImage: '/images/shillaLogo.gif',
+    //         info: [
+    //             {
+    //                 pc: '/images/shillaDesk.png',
+    //                 alt: '데스크탑 정보',
+    //             },
+    //             {
+    //                 mobile: '/images/shillaMobile.png',
+    //                 alt: '모바일 정보',
+    //             },
+    //         ],
+    //         subtitle: [
+    //             '피그마와 HTML & CSS & JS를 사용하여',
+    //             '신라호텔 클론사이트를 마크업 하였습니다.',
+    //         ],
+    //         sites: [
+    //             {
+    //                 link: 'https://lothlorien91.cafe24.com/shilla/index.html',
+    //                 name: '클론 사이트',
+    //             },
+    //             {
+    //                 link: 'https://www.figma.com/file/VfxhccQfbG2aVegcaS7Yxt/Shilla?node-id=0%3A1&t=Ml5aJL2ch4NlSQgB-1',
+    //                 name: '피그마 상세정보',
+    //             },
+    //         ],
+    //         images: [
+    //             {
+    //                 pc: '/images/shillaPc.png',
+    //                 alt: '데스크탑 이미지',
+    //             },
+    //             {
+    //                 mobile: '/images/hackerRmo.png',
+    //                 alt: '모바일 이미지',
+    //             },
+    //         ],
+    //     },
+    // },
+    // {
+    //     id: 6,
+    //     title: '에어부산',
+    //     vue: false,
+    //     markup: true,
+    //     posts: {
+    //         mainImage: '/images/air.png',
+    //         subtitle: [
+    //             '피그마와 HTML & CSS & JS를 사용하여',
+    //             '에어부산 클론사이트를 마크업 하였습니다.',
+    //         ],
+    //         info: [
+    //             {
+    //                 pc: '/images/busanDesk.png',
+    //                 alt: '데스크탑 정보',
+    //             },
+    //             {
+    //                 mobile: '/images/busanMobile.png',
+    //                 alt: '모바일 정보',
+    //             },
+    //         ],
+    //         sites: [
+    //             {
+    //                 link: 'https://lothlorien91.cafe24.com/airbusan/index.html',
+    //                 name: '클론 사이트',
+    //             },
+    //             {
+    //                 link: 'https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=9dW3jwecITqwBb97-1',
+    //                 name: '피그마 상세정보',
+    //             },
+    //         ],
+    //         images: [
+    //             {
+    //                 pc: '/images/airPc.png',
+    //                 alt: '데스크탑 이미지',
+    //             },
+    //             {
+    //                 mobile: '/images/noteMo.png',
+    //                 alt: '모바일 이미지',
+    //             },
+    //         ],
+    //     },
+    // },
     {
         id: 4,
         title: '할리스 커피',
@@ -138,18 +225,27 @@ const db: ProjectItem[] = [
         markup: true,
         posts: {
             mainImage: '/images/hollys.png',
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '할리스 커피 클론사이트를 마크업 하였습니다.',
+            description: [
+                'HTML & CSS & JS를 사용하여 할리스 커피',
+                '메인 페이지를 퍼블리싱 하였습니다.',
             ],
-            info: [
+            skill: ['html', 'css', 'js', 'scss'],
+            subInfo: [
                 {
-                    pc: '/images/hollysDesk.png',
-                    alt: '데스크탑 정보',
+                    title: '반응형',
+                    content: 'O',
                 },
                 {
-                    mobile: '/images/hollysMobile.png',
-                    alt: '모바일 정보',
+                    title: '배포',
+                    content: '카페24',
+                },
+                {
+                    title: '라이브러리',
+                    content: 'Slick, AOS',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인페이지 (1)',
                 },
             ],
             sites: [
@@ -167,97 +263,6 @@ const db: ProjectItem[] = [
                     pc: '/images/hollysPc.png',
                     alt: '데스크탑 이미지',
                 },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
-        id: 5,
-        title: '신라호텔',
-        markup: true,
-        react: false,
-        vue: false,
-        posts: {
-            mainImage: '/images/shillaLogo.gif',
-            info: [
-                {
-                    pc: '/images/shillaDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/shillaMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '신라호텔 클론사이트를 마크업 하였습니다.',
-            ],
-            sites: [
-                {
-                    link: 'https://lothlorien91.cafe24.com/shilla/index.html',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/VfxhccQfbG2aVegcaS7Yxt/Shilla?node-id=0%3A1&t=Ml5aJL2ch4NlSQgB-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/shillaPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/hackerRmo.png',
-                    alt: '모바일 이미지',
-                },
-            ],
-        },
-    },
-    {
-        id: 6,
-        title: '에어부산',
-        vue: false,
-        markup: true,
-        posts: {
-            mainImage: '/images/air.png',
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '에어부산 클론사이트를 마크업 하였습니다.',
-            ],
-            info: [
-                {
-                    pc: '/images/busanDesk.png',
-                    alt: '데스크탑 정보',
-                },
-                {
-                    mobile: '/images/busanMobile.png',
-                    alt: '모바일 정보',
-                },
-            ],
-            sites: [
-                {
-                    link: 'https://lothlorien91.cafe24.com/airbusan/index.html',
-                    name: '클론 사이트',
-                },
-                {
-                    link: 'https://www.figma.com/file/qrrQeB2b7JCWGIjw88oFm5/AirBusan?node-id=1%3A2285&t=9dW3jwecITqwBb97-1',
-                    name: '피그마 상세정보',
-                },
-            ],
-            images: [
-                {
-                    pc: '/images/airPc.png',
-                    alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
-                },
             ],
         },
     },
@@ -268,18 +273,27 @@ const db: ProjectItem[] = [
         markup: true,
         posts: {
             mainImage: '/images/alpha.png',
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '알파색채 클론사이트를 마크업 하였습니다.',
+            description: [
+                'HTML & CSS & JS를 사용하여 알파색채',
+                '메인 페이지를 퍼블리싱 하였습니다.',
             ],
-            info: [
+            skill: ['html', 'css', 'js', 'scss'],
+            subInfo: [
                 {
-                    pc: '/images/alphaDesk.png',
-                    alt: '데스크탑 정보',
+                    title: '반응형',
+                    content: 'O',
                 },
                 {
-                    mobile: '/images/alphaMobile.png',
-                    alt: '모바일 정보',
+                    title: '배포',
+                    content: '카페24',
+                },
+                {
+                    title: '라이브러리',
+                    content: 'Slick',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인페이지 (1)',
                 },
             ],
             sites: [
@@ -297,10 +311,6 @@ const db: ProjectItem[] = [
                     pc: '/images/alphaPc.png',
                     alt: '데스크탑 이미지',
                 },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
-                },
             ],
         },
     },
@@ -311,18 +321,27 @@ const db: ProjectItem[] = [
         markup: true,
         posts: {
             mainImage: '/images/domino.png',
-            subtitle: [
-                '피그마와 HTML & CSS & JS를 사용하여',
-                '도미노피자 클론사이트를 마크업 하였습니다.',
+            description: [
+                'HTML & CSS & JS를 사용하여 도미노피자',
+                '메인 페이지를 퍼블리싱 하였습니다.',
             ],
-            info: [
+            skill: ['html', 'css', 'js', 'scss'],
+            subInfo: [
                 {
-                    pc: '/images/dominoDesk.png',
-                    alt: '데스크탑 정보',
+                    title: '반응형',
+                    content: 'X',
                 },
                 {
-                    mobile: '/images/dominoMobile.png',
-                    alt: '모바일 정보',
+                    title: '배포',
+                    content: '카페24',
+                },
+                {
+                    title: '라이브러리',
+                    content: 'Slick',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인페이지 (1)',
                 },
             ],
             sites: [
@@ -339,10 +358,6 @@ const db: ProjectItem[] = [
                 {
                     pc: '/images/dominoPc.png',
                     alt: '데스크탑 이미지',
-                },
-                {
-                    mobile: '/images/noteMo.png',
-                    alt: '모바일 이미지',
                 },
             ],
         },

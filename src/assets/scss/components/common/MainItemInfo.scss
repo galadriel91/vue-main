@@ -1,0 +1,92 @@
+body.dark{
+    p{
+        span{
+            color: #e0e0e0;
+        }
+    }
+    .infoDesc{
+        p{
+            color: #e0e0e0;
+        }
+    }
+    
+    .infoThird{
+        h2{
+            color: #e0e0e0;
+        }
+    }
+}
+
+
+p{
+    font-size: 1.8rem; color: #8d8d8d;
+    span{
+        color: #222;
+    }
+}
+
+
+.infoDesc{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    p{
+        margin-top: 1.5rem;
+        color: #222; 
+    }
+}
+
+.infoFirst{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute; left: 50%; top: 0;
+        width: 70%; height: 1px; 
+        background: #ddd; 
+        transform: translateX(-50%);
+    }
+    padding-top: 1.5rem;
+    display: flex; justify-content: center;
+    p{
+        &:nth-child(2){
+            margin: 0 2rem;
+        }
+    }
+}
+.infoSecond{
+    margin-top: 1.5rem; text-align: center;
+}
+
+.infoThird{
+    margin-top: 1.5rem; text-align: center;
+    h2{
+        font-size: 1.8rem; font-weight: normal; color: #222;
+    }
+}
+
+ul{
+    margin-top: 1rem;
+    display: flex; justify-content: center;
+    .html{
+        background: url('@/assets/image/html5.png')no-repeat center center; background-size: 80% ; 
+    }
+    .css{
+        background: url('@/assets/image/css3.png')no-repeat center center; background-size: 80%
+    }
+    .scss{
+        background: url('@/assets/image/sass.png')no-repeat center center; background-size: 80%
+    }
+    .js{
+        background: url('@/assets/image/js.png')no-repeat center center; background-size: 80%
+    }
+    .react{
+        background: url('@/assets/image/react.png')no-repeat center center; background-size: 80%
+    }
+    .vue{
+        background: url('@/assets/image/vue.png')no-repeat center center; background-size: 80%
+    }
+    li{
+        margin: 0 .5rem;
+        width: 4rem; height: 4rem; 
+        border-radius: 50%;
+    }
+}

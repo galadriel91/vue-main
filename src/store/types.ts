@@ -3,6 +3,11 @@ interface SitesItem {
     name: string;
 }
 
+interface OtherInfo {
+    title: string;
+    content: string;
+}
+
 interface ImagesItem {
     pc?: string;
     mobile?: string;
@@ -11,8 +16,9 @@ interface ImagesItem {
 
 interface PostItem {
     mainImage: string;
-    info: ImagesItem[];
-    subtitle: string[];
+    skill: string[];
+    subInfo: OtherInfo[];
+    description: string[];
     sites: SitesItem[];
     images: ImagesItem[];
 }
