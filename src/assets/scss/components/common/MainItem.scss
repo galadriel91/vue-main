@@ -51,7 +51,7 @@ body.dark{
     
     overflow-y: auto;
     position: absolute; left: 0; top: 0rem; z-index: 9990;
-    width: 100vw; height: 100vh !important; 
+    width: 100vw; height: calc(var(--vh, 1vh) * 100); 
     background: #f7f7f7;  
     &Inner{
         overflow-y: auto ;
@@ -60,65 +60,18 @@ body.dark{
         &Info{
             width: 65rem;
             &Image{
-                margin-top: 4rem; margin-bottom: 3rem; 
+                margin: 4rem 0 0; 
                 text-align: center;
                 & > div{
-                    margin-top: 4rem;
+                    margin-top: 3rem;
                     span{
                         font-size: 2.5rem; color: #222;
                     }
                 }
             }
-            &Flex{
-                text-align: center;
-                &Text{
-                    .linkWrap{
-                        margin-top: 1.5rem; 
-                        display: flex; justify-content: center;
-                        div{
-                            display: flex; align-items: center;
-                            margin: 0 1.5rem;
-                            img{
-                                margin-right: 1rem;
-                                width: 3rem; 
-                            }
-                            button{
-                                background: none; 
-                                color: #222;
-                                cursor: pointer; 
-                            }
-                            a, button{
-                                position: relative;
-                                font-size: 1.8rem;
-                                &::after{
-                                    content: ''; 
-                                    position: absolute; bottom: 0; left: 50%; 
-                                    width: 0; height: 1rem; 
-                                    background: rgba(188, 238, 248 , .3);
-                                    transition: all .5s;
-                                }
-                                &.on{
-                                    &::after{
-                                        left: 0; width: 100%;
-                                    }
-                                }
-                                &:hover{
-                                    &::after{
-                                        left: 0; width: 100%;
-                                    }
-                                }
-                                &:last-child{
-                                    margin-right: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            
         }
         &Image{
-            margin: 4rem auto 5rem; 
+            margin: 2.5rem auto 5rem; 
             width: 125rem; 
             img{
                 width: 100%;
@@ -151,21 +104,6 @@ body.dark{
 }
 
 @media all and (max-width:900px){
-    .itemWrap{
-        &Inner{
-            &Info{
-                &Image{
-                    margin: 2.5rem auto 0;
-                    width: 34rem;
-                    div{
-                        margin-bottom: 1rem;
-                    }
-                }
-                margin-top: 3rem;
-                width: 100%; 
-            }
-        }
-    }
     .buttons{
         button{
             font-size: 4rem;
@@ -183,19 +121,14 @@ body.dark{
     }
 }
 
-@media all and (max-width:600px){
+@media all and (max-width:660px){
     .itemWrap{
         &Inner{
-            &Infomation{
-                .desktop{
-                    display: none;
-                }
-                .mobile{
-                    display: block;
-                }
+            &Info{
+                width: 95%;
             }
             &Image{
-                margin: 2.5rem auto; padding-bottom: 6rem;
+                margin: 2rem auto 5rem; 
             }
         }
     }
@@ -209,22 +142,6 @@ body.dark{
                     & > div{
                         span{
                             font-size: 2.2rem;
-                        }
-                    }
-                }
-                &Flex{
-                    &Text{
-                        p{
-                            margin-top: 1.2rem;
-                            font-size: 1.6rem; 
-                        }
-                        .linkWrap{
-                            margin-top: 2rem;
-                            div{
-                                a, button{
-                                    font-size: 1.6rem; 
-                                }
-                            }
                         }
                     }
                 }

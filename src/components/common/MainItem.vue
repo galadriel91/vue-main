@@ -9,50 +9,6 @@
                     </div>
                 </div>
                 <MainItemInfo :item="item" />
-                <div class="itemWrapInnerInfoFlex">
-                    <div class="itemWrapInnerInfoFlexText">
-                        <div class="linkWrap">
-                            <div>
-                                <img
-                                    src="@/assets/image/chrome.png"
-                                    alt="크롬 로고"
-                                />
-                                <a
-                                    :href="item.posts.sites[0].link"
-                                    target="_blank"
-                                >
-                                    사이트
-                                    <span class="xi-long-arrow-right"></span
-                                ></a>
-                            </div>
-                            <div>
-                                <img
-                                    src="@/assets/image/figma.png"
-                                    alt="피그마 로고"
-                                />
-                                <a
-                                    :href="item.posts.sites[1].link"
-                                    target="_blank"
-                                >
-                                    피그마
-                                    <span class="xi-long-arrow-right"></span
-                                ></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="itemWrapInnerInfomation" v-show="isShow">
-                <!-- <img
-                    class="desktop"
-                    :src="item.posts.info[0].pc"
-                    alt="상세정보 이미지"
-                />
-                <img
-                    class="mobile"
-                    :src="item.posts.info[1].mobile"
-                    alt="상세정보 이미지"
-                /> -->
             </div>
             <div class="itemWrapInnerImage">
                 <img

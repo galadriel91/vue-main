@@ -89,49 +89,6 @@ const db: ProjectItem[] = [
     //     },
     // },
     // {
-    //     id: 3,
-    //     title: '해커뉴스',
-    //     markup: true,
-    //     vue: true,
-    //     posts: {
-    //         mainImage: '/images/vueLogo.png',
-    //         subtitle: [
-    //             'JS의 프레임워크 중 하나인 Vue.js를 사용하여',
-    //             '해커뉴스 클론사이트를 마크업 하였습니다.',
-    //         ],
-    //         info: [
-    //             {
-    //                 pc: '/images/vuekerDesk.png',
-    //                 alt: '데스크탑 정보',
-    //             },
-    //             {
-    //                 mobile: '/images/vuekerMobile.png',
-    //                 alt: '모바일 정보',
-    //             },
-    //         ],
-    //         sites: [
-    //             {
-    //                 link: 'https://vue-hacker.netlify.app',
-    //                 name: '클론 사이트',
-    //             },
-    //             {
-    //                 link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
-    //                 name: '피그마 상세정보',
-    //             },
-    //         ],
-    //         images: [
-    //             {
-    //                 pc: '/images/hackerPc.png',
-    //                 alt: '데스크탑 이미지',
-    //             },
-    //             {
-    //                 mobile: '/images/hackerRmo.png',
-    //                 alt: '모바일 이미지',
-    //             },
-    //         ],
-    //     },
-    // },
-    // {
     //     id: 5,
     //     title: '신라호텔',
     //     markup: true,
@@ -218,6 +175,54 @@ const db: ProjectItem[] = [
     //         ],
     //     },
     // },
+    {
+        id: 3,
+        title: '해커뉴스',
+        markup: true,
+        vue: true,
+        posts: {
+            mainImage: '/images/vueLogo.png',
+            description: [
+                'Vue.js와 Pinia & VueRouter를 사용하여',
+                '해커뉴스 뷰어사이트를 클론코딩 하였습니다.',
+            ],
+            skill: ['html', 'scss', 'ts', 'vue'],
+            subInfo: [
+                {
+                    title: '반응형',
+                    content: 'O',
+                },
+                {
+                    title: '배포',
+                    content: 'Netlify',
+                },
+                {
+                    title: 'Backend',
+                    content: 'Hacker Api',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인페이지 (1), 서브페이지(4)',
+                },
+            ],
+            sites: [
+                {
+                    link: 'https://vue-hacker.netlify.app',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/5KmFKNmJrWTqBPMozrtyvS/Hacker-News?node-id=0%3A1&t=xRryeQKA9ZA0WLnE-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/hackerPc.png',
+                    alt: '데스크탑 이미지',
+                },
+            ],
+        },
+    },
     {
         id: 4,
         title: '할리스 커피',

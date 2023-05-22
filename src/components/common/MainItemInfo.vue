@@ -5,6 +5,22 @@
                 {{ value }}
             </p>
         </div>
+        <div class="infoLink">
+            <div>
+                <img src="@/assets/image/chrome.png" alt="크롬 로고" />
+                <a :href="item.posts.sites[0].link" target="_blank">
+                    사이트
+                    <span class="xi-long-arrow-right"></span
+                ></a>
+            </div>
+            <div>
+                <img src="@/assets/image/figma.png" alt="피그마 로고" />
+                <a :href="item.posts.sites[1].link" target="_blank">
+                    피그마
+                    <span class="xi-long-arrow-right"></span
+                ></a>
+            </div>
+        </div>
         <div class="infoFirst">
             <p v-for="(info, key) in item.posts.subInfo.slice(0, 3)" :key="key">
                 <span class="title">{{ info.title }}</span> :
