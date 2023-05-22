@@ -17,14 +17,12 @@ body.dark{
     }
 }
 
-
 p{
     font-size: 1.8rem; color: #8d8d8d;
     span{
         color: #222;
     }
 }
-
 
 .infoDesc{
     margin-bottom: 1.5rem;
@@ -151,6 +149,11 @@ ul{
             a, button{
                 font-size: 1.6rem;
             }
+        }
+    }
+    .infoSecond{
+        p{
+            font-size: 1.6rem;
         }
     }
     .infoFirst{

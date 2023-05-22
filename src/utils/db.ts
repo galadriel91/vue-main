@@ -202,7 +202,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     title: '총페이지',
-                    content: '메인페이지 (1), 서브페이지(4)',
+                    content: '메인 (1), 서브 (4)',
                 },
             ],
             sites: [
@@ -250,7 +250,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     title: '총페이지',
-                    content: '메인페이지 (1)',
+                    content: '메인 (1)',
                 },
             ],
             sites: [
@@ -298,7 +298,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     title: '총페이지',
-                    content: '메인페이지 (1)',
+                    content: '메인 (1)',
                 },
             ],
             sites: [
@@ -346,7 +346,7 @@ const db: ProjectItem[] = [
                 },
                 {
                     title: '총페이지',
-                    content: '메인페이지 (1)',
+                    content: '메인 (1)',
                 },
             ],
             sites: [

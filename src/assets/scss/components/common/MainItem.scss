@@ -153,32 +153,6 @@ body.dark{
 @media all and (max-width:450px){
     .itemWrap{
         &Inner{
-            &Info{
-                &Flex{
-                    &Text{
-                        p{
-                            font-size: 1.4rem; 
-                        }
-                        .linkWrap{
-                            margin-top: 1.5rem;
-                            div{
-                                &:nth-child(2){
-                                    margin: 0 1rem;
-                                }
-                                img{
-                                    width: 2.5rem;
-                                }
-                                a, button{
-                                    font-size: 1.4rem; 
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            &Infomation{
-                margin: 1.5rem auto 0;
-            }
             &Image{
                 margin: 2rem auto; 
             }
