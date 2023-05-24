@@ -136,7 +136,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/shillaPc.png',
+                    pc: '/images/shilla.jpg',
                     alt: '데스크탑 이미지',
                 },
             ],
