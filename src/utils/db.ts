@@ -1,50 +1,55 @@
 import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
-    // {
-    //     id: 1,
-    //     title: '해커뉴스',
-    //     markup: true,
-    //     react: true,
-    //     vue: false,
-    //     posts: {
-    //         mainImage: '/images/reactLogo.png',
-    //         info: [
-    //             {
-    //                 pc: '/images/rekerDesk.png',
-    //                 alt: '데스크탑 정보',
-    //             },
-    //             {
-    //                 mobile: '/images/rekerMobile.png',
-    //                 alt: '모바일 정보',
-    //             },
-    //         ],
-    //         subtitle: [
-    //             'JS의 라이브러리 중 하나인 React.js를 사용하여',
-    //             '해커뉴스 클론사이트를 마크업 하였습니다.',
-    //         ],
-    //         sites: [
-    //             {
-    //                 link: 'https://react-hacker.netlify.app',
-    //                 name: '클론 사이트',
-    //             },
-    //             {
-    //                 link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
-    //                 name: '피그마 상세정보',
-    //             },
-    //         ],
-    //         images: [
-    //             {
-    //                 pc: '/images/reactPc.png',
-    //                 alt: '데스크탑 이미지',
-    //             },
-    //             {
-    //                 mobile: '/images/hackerRmo.png',
-    //                 alt: '모바일 이미지',
-    //             },
-    //         ],
-    //     },
-    // },
+    {
+        id: 1,
+        title: '해커뉴스',
+        markup: true,
+        react: true,
+        vue: false,
+        posts: {
+            mainImage: '/images/reactLogo.png',
+            skill: ['html', 'scss', 'ts', 'react'],
+            subInfo: [
+                {
+                    title: '반응형',
+                    content: 'O',
+                },
+                {
+                    title: '배포',
+                    content: 'Netlify',
+                },
+                {
+                    title: 'Backend',
+                    content: 'Hacker Api',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인 (1), 서브 (4)',
+                },
+            ],
+            description: [
+                'React.js와 Redux & ReactRouter를 사용하여',
+                '해커뉴스 뷰어사이트를 클론코딩 하였습니다.',
+            ],
+            sites: [
+                {
+                    link: 'https://react-hacker.netlify.app',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/vkSspbfQFhY420nR4kKrQw/React-News?node-id=0%3A1&t=xeRfQPoyenfO9ZD6-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/reactPc.jpg',
+                    alt: '데스크탑 이미지',
+                },
+            ],
+        },
+    },
     {
         id: 2,
         title: '포트폴리오',
