@@ -17,10 +17,17 @@ button{
     cursor: pointer; transition:  all .5s;
 }
 
-@media all and (max-width:600px){
+@media all and (max-width:730px){
     button{
-        right: 2.5rem; bottom: 2.5rem;
+        right: 3rem; bottom: 3rem;
         width: 4.5rem; height: 4.5rem;
         font-size: 2.5rem;
+    }
+}
+
+@media all and (max-width:600px){
+    button{
+        right: 2.3rem; bottom: 2.5rem;
+        width: 4rem; height: 4rem;
     }
 }

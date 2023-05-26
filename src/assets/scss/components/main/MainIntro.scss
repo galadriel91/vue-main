@@ -102,7 +102,7 @@ body.dark{
     background-size: 1000% 1000%;
     animation: animationName 35s ease infinite;
     .wholeBtn{
-        position: absolute; top: 2rem; right: 3rem; z-index: 9998; text-align: center; padding: 1.5rem 0;
+        position: absolute; top: 2.9rem; right: 2rem; z-index: 9998; text-align: center; 
         span{
             position: relative;
             display: inline-block; width: 4rem; height: .2rem; background: #222; transition: all .5s;
@@ -256,7 +256,7 @@ body.dark{
             width: 95%;
         }
         .wholeBtn{
-            top: 2rem; right: 2rem;
+            top: 2.5rem; right: 1.2rem;
             span{
                 width: 3rem;
             }
@@ -274,6 +274,16 @@ body.dark{
         border: 1.5rem solid #fff;
         nav{
             min-height: calc(var(--vh, 1vh) * 100 - 3rem);
+        }
+        .wholeBtn{
+            span{
+                &::before{
+                    top: -1rem;
+                }
+                &::after{
+                    top: 1rem;
+                }
+            }
         }
     }
 }

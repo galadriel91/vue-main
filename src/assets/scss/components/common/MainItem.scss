@@ -69,7 +69,7 @@ body.dark{
             }
         }
         .closeBtn{
-            position: absolute; top: 4.5rem; right: 0;
+            position: fixed; top: 4.5rem; left: calc(50% + 58rem); 
             background: none; 
             font-size: 4.5rem; color: #222;
             cursor: pointer;
@@ -89,7 +89,7 @@ body.dark{
                 }
             }
             .closeBtn{
-                top: 4rem; right: 2%;
+                top: 4rem; left: calc(100% - 7.5rem);
             }
         }
     }
@@ -99,6 +99,7 @@ body.dark{
     .itemWrap{
         &Inner{
             .closeBtn{
+                left: calc(100% - 7rem);
                 font-size: 4rem;
             }
         }
@@ -127,6 +128,19 @@ body.dark{
         }
     }
 }
+
+@media all and (max-width:900px){
+    .itemWrap{
+        &Inner{
+            .closeBtn{
+                left: calc(100% - 6rem);
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+
 
 @media all and (max-width:490px){
     .itemWrap{
