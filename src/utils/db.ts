@@ -105,7 +105,7 @@ const db: ProjectItem[] = [
         react: false,
         vue: false,
         posts: {
-            mainImage: '/images/shillaLogo.gif',
+            mainImage: '/images/shilla.png',
             subInfo: [
                 {
                     title: '반응형',

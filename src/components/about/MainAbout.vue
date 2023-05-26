@@ -16,20 +16,18 @@
                             <ul>
                                 <li><span>Name</span>이문섭</li>
                                 <li><span>Birth</span>1991. 12. 11</li>
-                                <li>
-                                    <span>Address</span>경상남도 진주시 평거동
-                                </li>
                                 <li class="emailInfo">
                                     <span>E-Mail</span>g_ala@naver.com
                                 </li>
                                 <li><span>Cell Phone</span>010-6660-8915</li>
                                 <li><span>Hobby</span>포토샵 인물보정</li>
-                                <li><span></span>축구, 영화 시청</li>
+                                <li><span></span>축구·영화 시청, 게임</li>
+                                <li><span>Favorite</span>반지의 제왕</li>
+                                <li><span></span>처음가는 카페 방문</li>
                             </ul>
                         </div>
                         <div>
                             <ul>
-                                <li><span>Favorite</span>반지의 제왕</li>
                                 <li><span>Education</span>경상대학교</li>
                                 <li><span></span>생물학과 3학년 중퇴</li>
                                 <li><span></span>~ 학점은행제 진행중</li>

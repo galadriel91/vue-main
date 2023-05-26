@@ -68,9 +68,7 @@ export default defineComponent({
                     '#projects',
                     '#contact',
                 ];
-                console.log(route.hash);
                 if (!hashes.includes(route.hash)) {
-                    console.log(route.hash);
                     router.push('/#home');
                 }
                 return route.hash;

@@ -10,21 +10,6 @@ body.dark{
                         }
                     }
                 }
-                &Flex{
-                    &Text{
-                        p{
-                            color: #e0e0e0;
-                        }
-                        .linkWrap{
-                            a{
-                                color: #e0e0e0;
-                            }
-                            button{
-                                color: #e0e0e0;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -82,7 +67,7 @@ body.dark{
     }
 }
 .buttons{
-    position: fixed; top: 2rem; right: 5%;
+    position: fixed; top: 2.5rem; right: 3%;
     button{
         background: none; 
         font-size: 4.5rem; color: #222;
@@ -130,6 +115,15 @@ body.dark{
             &Image{
                 margin: 2rem auto 5rem; 
             }
+        }
+    }
+}
+
+@media all and (max-width:600px){
+    .buttons{
+        top: 1.5rem;
+        button{
+            font-size: 4rem; 
         }
     }
 }
