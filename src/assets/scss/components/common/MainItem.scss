@@ -4,6 +4,9 @@ body.dark{
         &Inner{
             &Info{
                 &Image{
+                    img{
+                        mix-blend-mode: screen;
+                    }
                     & > div{
                         span{
                             color: #e0e0e0;
@@ -13,10 +16,8 @@ body.dark{
             }
         }
     }
-    .buttons{
-        button{
-            color: #e0e0e0;
-        }
+    .closeBtn{
+        color: #e0e0e0;
     }
 }
 
