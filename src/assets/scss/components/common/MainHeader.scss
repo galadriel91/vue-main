@@ -162,6 +162,9 @@ header{
             }
         }
     }
+    header{
+        height: 7rem;
+    }
     .headerWrap{
         height: 7rem;
         h1{
@@ -212,6 +215,9 @@ header{
 }
 
 @media all and (max-width:760px){
+    header{
+        height: 6rem;
+    }
     .headerWrap{
         height: 6rem;
         h1{

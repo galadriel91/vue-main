@@ -17,8 +17,6 @@
                     @load="onLoadImage"
                 />
             </div>
-        </div>
-        <div class="buttons">
             <button
                 class="closeBtn xi-close-thin"
                 @click="onClickClose"

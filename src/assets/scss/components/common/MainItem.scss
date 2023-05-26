@@ -40,8 +40,10 @@ body.dark{
     background: #f7f7f7;  
     &Inner{
         overflow-y: auto ;
+        position: relative;
+        margin: 0 auto;
         display: flex; justify-content: center; align-items: center; flex-direction: column;
-        width: 100%; min-height: 100% !important; 
+        width: 125rem; min-height: 100% !important; 
         &Info{
             width: 65rem;
             &Image{
@@ -56,42 +58,48 @@ body.dark{
             }
         }
         &Image{
+            position: relative;
             margin: 2.5rem auto 5rem; 
-            width: 125rem; 
+            width: 100%; 
             img{
                 width: 100%;
                 border-radius: 1rem;
                 filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.1));
             }
         }
+        .closeBtn{
+            position: absolute; top: 4.5rem; right: 0;
+            background: none; 
+            font-size: 4.5rem; color: #222;
+            cursor: pointer;
+        }
     }
 }
-.buttons{
-    position: fixed; top: 2.5rem; right: 3%;
-    button{
-        background: none; 
-        font-size: 4.5rem; color: #222;
-        cursor: pointer;
-    }
-}
+
 
 @media all and (max-width:1300px){
     .itemWrap{
         &Inner{
+            width: 100%;
             &Image{
                 width: 95%;
                 img{
                     border-radius: 1rem;
                 }
             }
+            .closeBtn{
+                top: 4rem; right: 2%;
+            }
         }
     }
 }
 
 @media all and (max-width:900px){
-    .buttons{
-        button{
-            font-size: 4rem;
+    .itemWrap{
+        &Inner{
+            .closeBtn{
+                font-size: 4rem;
+            }
         }
     }
 }
@@ -115,15 +123,6 @@ body.dark{
             &Image{
                 margin: 2rem auto 5rem; 
             }
-        }
-    }
-}
-
-@media all and (max-width:600px){
-    .buttons{
-        top: 1.5rem;
-        button{
-            font-size: 4rem; 
         }
     }
 }
