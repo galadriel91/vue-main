@@ -40,13 +40,18 @@ export const usePost = defineStore('post', {
             }
         },
         ON_MAINITEM() {
+            // 메인 아이템 인포 토글 on
             this.isMain = true;
         },
         OFF_MAINITEM() {
+            // 메인 아이템 인포 토글 off
             this.isMain = false;
         },
         INIT_POST() {
             this.projectsList = db as ProjectItem[];
+            this.showLimits = 3;
+            this.pageNum = 1;
+            this.showNum = 0;
         },
     },
 });
