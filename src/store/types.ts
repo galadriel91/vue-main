@@ -30,6 +30,7 @@ interface ProjectItem {
     vue: boolean;
     react?: boolean;
     posts: PostItem;
+    web?: boolean;
 }
 
 export type { ProjectItem };

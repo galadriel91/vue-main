@@ -104,6 +104,7 @@ const db: ProjectItem[] = [
         markup: true,
         react: false,
         vue: false,
+        web: true,
         posts: {
             mainImage: '/images/shilla.png',
             subInfo: [
@@ -200,6 +201,7 @@ const db: ProjectItem[] = [
         title: '할리스 커피',
         vue: false,
         markup: true,
+        web: true,
         posts: {
             mainImage: '/images/hollys.png',
             description: [
@@ -248,6 +250,7 @@ const db: ProjectItem[] = [
         title: '알파색채',
         vue: false,
         markup: true,
+        web: true,
         posts: {
             mainImage: '/images/alpha.png',
             description: [
@@ -296,6 +299,7 @@ const db: ProjectItem[] = [
         title: '에어부산',
         vue: false,
         markup: true,
+        web: true,
         posts: {
             mainImage: '/images/air.png',
             description: [
@@ -344,6 +348,7 @@ const db: ProjectItem[] = [
         title: '도미노 피자',
         vue: false,
         markup: true,
+        web: true,
         posts: {
             mainImage: '/images/domino.png',
             description: [

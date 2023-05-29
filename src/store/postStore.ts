@@ -45,5 +45,8 @@ export const usePost = defineStore('post', {
         OFF_MAINITEM() {
             this.isMain = false;
         },
+        INIT_POST() {
+            this.projectsList = db as ProjectItem[];
+        },
     },
 });

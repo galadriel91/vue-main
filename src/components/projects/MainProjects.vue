@@ -2,6 +2,7 @@
     <div class="projects">
         <div class="projectsTitle">
             <h2>PROJECTS</h2>
+            <ProjectFilter />
             <ProjectsList />
             <ProjectsPagi />
         </div>
@@ -12,11 +13,13 @@
 import { defineComponent } from 'vue';
 import ProjectsList from '@/components/projects/ProjectsList.vue';
 import ProjectsPagi from './ProjectsPagi.vue';
+import ProjectFilter from './ProjectFilter.vue';
 
 export default defineComponent({
     components: {
         ProjectsList,
         ProjectsPagi,
+        ProjectFilter,
     },
 
     setup() {

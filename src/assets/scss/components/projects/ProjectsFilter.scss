@@ -1,0 +1,19 @@
+.btnWrap{
+    margin-top: 5rem;
+    button{
+        box-sizing: border-box;
+        width: 6.5rem; height: 3.5rem; 
+        background: none; 
+        border: 1px solid #222; border-radius: 5rem;
+        color: #222; font-size: 1.4rem; font-weight: bold;
+        letter-spacing: .1rem;
+        cursor: pointer;
+        &:nth-child(2){
+            margin: 0 1.5rem;
+        }
+        &.active{
+            color: #fff;
+            background: #222;
+        }
+    }
+}
