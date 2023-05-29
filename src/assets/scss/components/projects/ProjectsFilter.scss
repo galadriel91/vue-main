@@ -15,7 +15,6 @@ body.dark{
     }
 }
 
-
 .btnWrap{
     margin-top: 5rem;
     button{
@@ -37,5 +36,11 @@ body.dark{
             background: #222;
             color: #fff;
         }
+    }
+}
+
+@media all and (max-width:1080px){
+    .btnWrap{
+        margin-top: 4rem;
     }
 }
