@@ -29,8 +29,22 @@ ul{
             font-size: 2.5rem; color: #222;
             cursor: pointer;
             &.disable{
-                color: #afafaf;
+                color: #c2c2c2;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media all and (max-width:650px){
+    ul{
+        li{
+            span{
+                font-size: 1.6rem;
+            }
+            button{
+                padding: 0 .8rem;
+                font-size: 2.2rem;
             }
         }
     }
