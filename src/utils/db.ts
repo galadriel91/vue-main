@@ -2,6 +2,56 @@ import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
     {
+        id: 9,
+        title: '폴라초이스',
+        markup: true,
+        react: false,
+        vue: false,
+        web: true,
+        posts: {
+            mainImage: '/images/paula.png',
+            subInfo: [
+                {
+                    title: '반응형',
+                    content: 'O',
+                },
+                {
+                    title: '배포',
+                    content: '카페24',
+                },
+                {
+                    title: '라이브러리',
+                    content: 'Slick',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인 (1)',
+                },
+            ],
+            skill: ['html', 'css', 'js', 'scss'],
+            description: [
+                'HTML & CSS & JS를 사용하여 폴라초이스',
+                '메인 페이지를 퍼블리싱 하였습니다.',
+            ],
+            sites: [
+                {
+                    link: 'https://lothlorien91.cafe24.com/paula/index.html',
+                    name: '클론 사이트',
+                },
+                {
+                    link: 'https://www.figma.com/file/B6rcAYbO12WWZRF9JeaVCX/Paula?type=design&node-id=4%3A1155&t=OT02otz5XAzaS3ga-1',
+                    name: '피그마 상세정보',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/paulaMain.jpg',
+                    alt: '데스크탑 이미지',
+                },
+            ],
+        },
+    },
+    {
         id: 1,
         title: '해커뉴스',
         markup: true,
