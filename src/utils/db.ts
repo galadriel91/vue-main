@@ -2,6 +2,53 @@ import type { ProjectItem } from '@/store/types';
 
 const db: ProjectItem[] = [
     {
+        id: 1,
+        title: '심플노트',
+        markup: true,
+        react: false,
+        vue: true,
+        posts: {
+            mainImage: '/images/note.png',
+            skill: ['html', 'scss', 'ts', 'vue'],
+            subInfo: [
+                {
+                    title: '반응형',
+                    content: 'O',
+                },
+                {
+                    title: '배포',
+                    content: 'Netlify',
+                },
+                {
+                    title: 'Backend',
+                    content: 'Note Api',
+                },
+                {
+                    title: '총페이지',
+                    content: '메인 (1), 서브 (6)',
+                },
+            ],
+            description: [
+                'Vue.js와 Pinia & VueRouter 그리고',
+                'Node Api를 Aws의 ec2에 배포하여',
+                '심플노트 사이트를 만들었습니다. 테스트용↓',
+                '아이디: test@test.com, 비밀번호: test1234',
+            ],
+            sites: [
+                {
+                    link: 'https://note-vue.netlify.app',
+                    name: '제작 사이트',
+                },
+            ],
+            images: [
+                {
+                    pc: '/images/simple.png',
+                    alt: '데스크탑 이미지',
+                },
+            ],
+        },
+    },
+    {
         id: 9,
         title: '폴라초이스',
         markup: true,

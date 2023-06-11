@@ -13,7 +13,7 @@
                     <span class="xi-long-arrow-right"></span
                 ></a>
             </div>
-            <div>
+            <div v-if="item.posts.sites[1]">
                 <img src="@/assets/image/figma.png" alt="피그마 로고" />
                 <a :href="item.posts.sites[1].link" target="_blank">
                     피그마

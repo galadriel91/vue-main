@@ -10,7 +10,7 @@
                     <div class="indexWrap">
                         <span
                             >{{
-                                10 > showNum
+                                10 > showNum + 1
                                     ? `0${showNum + index + 1}`
                                     : showNum + index + 1
                             }}.</span
