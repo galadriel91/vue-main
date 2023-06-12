@@ -31,8 +31,8 @@ const db: ProjectItem[] = [
             description: [
                 'Vue.js와 Pinia & VueRouter 그리고',
                 'Node Api를 Aws의 ec2에 배포하여',
-                '심플노트 사이트를 만들었습니다. 테스트용↓',
-                '아이디: test@test.com, 비밀번호: test1234',
+                '간단한 노트를 기록하는 사이트를 만들었습니다.',
+                '테스트 계정 - test@test.com, test1234',
             ],
             sites: [
                 {
