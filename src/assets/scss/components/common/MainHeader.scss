@@ -75,10 +75,12 @@ header{
                     }
                     &.active{
                         a{
-                            span::after{
-                                right: 0%;
-                                width: 100%; 
-
+                            span{
+                                font-weight: bold; color: #222;
+                                &::after{
+                                    right: 0%;
+                                    width: 100%; 
+                                }
                             }
                         }
                     }
@@ -94,7 +96,7 @@ header{
                         span{
                             position: relative; 
                             line-height: 8rem; 
-                            font-size: 1.6rem; font-weight: bold; 
+                            font-size: 1.6rem; font-weight: normal; color: #090909; 
                             &::after{
                                 content: ''; 
                                 position: absolute; bottom: -.7rem; right: 50%; 

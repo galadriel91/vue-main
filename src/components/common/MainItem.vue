@@ -16,6 +16,12 @@
                     :alt="item.posts.images[0].alt"
                     @load="onLoadImage"
                 />
+                <img
+                    v-if="item.posts.images[1]"
+                    :src="item.posts.images[1].pc"
+                    :alt="item.posts.images[1].alt"
+                    class="static"
+                />
             </div>
             <button
                 class="closeBtn xi-close-thin"
