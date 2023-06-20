@@ -42,7 +42,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/simple.gif',
+                    pc: '/images/simple.webp',
                     alt: '데스크탑 이미지',
                 },
                 {
@@ -145,7 +145,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/reactPc.gif',
+                    pc: '/images/reactPc.webp',
                     alt: '데스크탑 이미지',
                 },
                 {
@@ -197,7 +197,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/portPc.gif',
+                    pc: '/images/portPc.webp',
                     alt: '데스크탑 이미지',
                 },
                 {
@@ -299,7 +299,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/hackerPc.gif',
+                    pc: '/images/hackerPc.webp',
                     alt: '데스크탑 이미지',
                 },
                 {
