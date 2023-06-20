@@ -197,6 +197,10 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
+                    pc: '/images/portPc.gif',
+                    alt: '데스크탑 이미지',
+                },
+                {
                     pc: '/images/portPc.jpg',
                     alt: '데스크탑 이미지',
                 },
