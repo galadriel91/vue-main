@@ -67,3 +67,10 @@ button, input, textarea{
     }
 }
 
+.loadingimg{
+    position:absolute; 
+    width:0; 
+    height:0; 
+    overflow:hidden; 
+    z-index:-1;
+}

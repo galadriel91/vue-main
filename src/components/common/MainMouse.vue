@@ -27,8 +27,8 @@ const style = computed(() => {
 const render = () => {
     distX.value = targetPos.value.x - mousePos.value.x;
     distY.value = targetPos.value.y - mousePos.value.y;
-    mousePos.value.x = mousePos.value.x + distX.value * 0.15;
-    mousePos.value.y = mousePos.value.y + distY.value * 0.15;
+    mousePos.value.x = mousePos.value.x + distX.value * 0.1;
+    mousePos.value.y = mousePos.value.y + distY.value * 0.1;
     requestAnimationFrame(render);
 };
 

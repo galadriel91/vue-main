@@ -28,6 +28,22 @@
                 @load="onLoadImage"
             />
         </div>
+        <img
+            src="../public/images/reactPc.webp"
+            alt="로딩 이미지"
+            class="loadingimg"
+        />
+        <img
+            src="../public/images/portPc.webp"
+            alt="로딩 이미지"
+            class="loadingimg"
+            @load="onLoadImage"
+        />
+        <img
+            src="../public/images/simple.webp"
+            alt="로딩 이미지"
+            class="loadingimg"
+        />
         <div class="star star1"></div>
         <div class="star star2"></div>
         <div class="star star3"></div>
