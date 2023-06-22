@@ -42,7 +42,7 @@ const db: ProjectItem[] = [
             ],
             images: [
                 {
-                    pc: '/images/simple.webp',
+                    pc: '/images/simple.gif',
                     alt: '데스크탑 이미지',
                 },
                 {

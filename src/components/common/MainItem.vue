@@ -3,7 +3,11 @@
         <div class="itemWrapInner">
             <div class="itemWrapInnerInfo">
                 <div class="itemWrapInnerInfoImage">
-                    <img :src="item.posts.mainImage" :alt="item.title" />
+                    <img
+                        :src="item.posts.mainImage"
+                        :alt="item.title"
+                        @load="onLoadImage"
+                    />
                     <div>
                         <span>{{ item.title }}</span>
                     </div>
@@ -57,6 +61,7 @@ export default defineComponent({
     setup() {
         const commonStore = useCommon();
         const isShow = ref(false);
+        const isCheck = ref([] as boolean[]);
         const postStore = usePost();
         const { OFF_MAINITEM } = postStore;
         const { OFF_LOADING } = commonStore;
@@ -66,7 +71,8 @@ export default defineComponent({
         };
 
         const onLoadImage = () => {
-            OFF_LOADING();
+            isCheck.value.push(true);
+            isCheck.value.length === 2 ? OFF_LOADING() : '';
         };
 
         const onClickInfo = () => {

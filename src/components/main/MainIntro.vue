@@ -5,13 +5,11 @@
                 class="intro window"
                 src="@/assets/image/word.png"
                 alt="word"
-                @load="onLoadImage"
             />
             <img
                 class="intro mobile"
                 src="@/assets/image/word1.svg"
                 alt="word"
-                @load="onLoadImage"
             />
         </div>
         <div v-show="!dark">
@@ -19,31 +17,21 @@
                 class="intro window"
                 src="@/assets/image/wordark.png"
                 alt="word"
-                @load="onLoadImage"
             />
             <img
                 class="intro mobile"
                 src="@/assets/image/wordark1.svg"
                 alt="word"
-                @load="onLoadImage"
             />
         </div>
+        <img src="/images/reactPc.webp" alt="로딩 이미지" class="loadingimg" />
         <img
-            src="../public/images/reactPc.webp"
-            alt="로딩 이미지"
-            class="loadingimg"
-        />
-        <img
-            src="../public/images/portPc.webp"
+            src="/images/portPc.webp"
             alt="로딩 이미지"
             class="loadingimg"
             @load="onLoadImage"
         />
-        <img
-            src="../public/images/simple.webp"
-            alt="로딩 이미지"
-            class="loadingimg"
-        />
+        <img src="/images/simple.gif" alt="로딩 이미지" class="loadingimg" />
         <div class="star star1"></div>
         <div class="star star2"></div>
         <div class="star star3"></div>
